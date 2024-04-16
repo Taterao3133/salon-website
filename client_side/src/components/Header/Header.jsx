@@ -2,8 +2,8 @@
 
 function Header() {
   return (
-    <div className="Header w-[1920px] h-[100px] bg-[white] border-solid border-red-400 border-4">
-        <div className="flex flex-nowrap gap-x-[700px]  w-[1680px] h-[52px] ml-[120px] mt-[25px]">
+    <div className="Header  h-[50px] mb-3 bg-[white] ">
+        <div className="flex flex-nowrap gap-x-[700px]  h-[52px] ml-[120px] mt-[25px]">
             <div className="leftheader flex flex-nowrap">
                 <div className="logo">Logo</div>
                 <div className="name">
