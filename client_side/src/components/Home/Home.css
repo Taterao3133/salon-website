@@ -12,3 +12,30 @@
     position: relative;
     z-index: 1;   
   }
+
+.ih{
+    
+    color: white;
+}
+
+.exp_section{
+  background-color:rgba(235, 243, 245, 0.7);
+  height: fit-content;
+  width:12000;
+  padding-bottom: 64px;
+}
+
+  /* Vector */
+/* .ima{
+box-sizing: border-box;
+
+position: absolute;
+left: 8.86%;
+right: 8.85%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #FFFFFF;
+/* MainColor */
+/* border: 2px solid #BA7894;
+} */ 

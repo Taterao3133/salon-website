@@ -2,6 +2,11 @@ import '../Home/Home.css'
 
 import { IoIosSearch } from "react-icons/io";
 import { BsCalendar2Date } from "react-icons/bs";
+import Makeupicon from '../../Images/makeup1.svg'
+
+import exp1 from '../../Images/exp-pic3.jpg'
+import exp2 from '../../Images/exp-pic2.jpg'
+import exp3 from '../../Images/exp-pic4.jpg'
 
 function Home() {
   return <>
@@ -42,11 +47,78 @@ function Home() {
             </div>
         </div>
         {/* background -image */}
-        <div className="bg-image  "> </div>
-        
-        
+        <div className="bg-image  "> </div> 
      </div>
-     {/* category section */}
+
+
+     {/* category section  services section---*/}
+     <div className="c_section flex flex-nowrap space-x-[62px] h-40 w-[1300px] ml-28 mt-10">
+      <div className="c_content ml-14">
+        <div className="round_bg bg-[#BA7894] rounded-full h-24 w-24 ml-4">
+          <img src={Makeupicon} alt='' className='ih h-24 w-24 '/>
+        </div>
+        <div className="h3 mt-3 font-semibold text-lg text-center">Makeup-service</div>
+      </div>
+      <div className="c_content">
+        <div className="round_bg  bg-[#F7E5C1] rounded-full h-24 w-24 ml-4 ">
+          <img src={Makeupicon} alt='' className=' h-24 w-24 '/>
+        </div>
+        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
+      </div>
+      <div className="c_content">
+        <div className="round_bg  bg-[#BA7894] rounded-full h-24 w-24 ml-4 ">
+          <img src={Makeupicon} alt='' className=' h-24 w-24 '/>
+        </div> 
+        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
+      </div>
+      <div className="c_content">
+        <div className="round_bg bg-[#F7E5C1] rounded-full h-24 w-24 ml-4 ">
+          <img src={Makeupicon} alt='' className=' h-24 w-24'/>
+        </div>
+        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
+      </div>
+      <div className="c_content">
+        <div className="round_bg bg-[#F7E5C1] rounded-full h-24 w-24 ml-4">
+          <img src={Makeupicon} alt='' className=' h-24 w-24'/>
+        </div>
+        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
+      </div>
+      <div className="c_content">
+        <div className="round_bg bg-[#F7E5C1] rounded-full h-24 w-24 ml-4 ">
+          <img src={Makeupicon} alt='' className=' h-24 w-24'/>
+        </div>
+        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
+      </div>
+     </div>
+     {/* service section end */}
+
+     {/* exp- section start */}
+     <div className="exp_section  ">
+      <div className="inner_heading text-center pt-16">
+        <h2 className='i_text text-[#422A3C] font-playfair font-bold text-[45px]'>We are Experienced making you <br />
+            Very Beautiful
+        </h2>
+        <h4 className='text-[20px] text-[#555555]'> We always hear to happppyfkdfjdlkfjsdfjsdkjf kjdfjdkhf</h4>
+      </div>          
+      <div className="pics_section overflow-hidden container h-[400px] w-[1250px]  ml-36 mt-7 columns-3">
+        <div className="img_boxes ">
+          <div className="main_img">
+            <img src={exp1} alt="" className='g rounded-l-[50px] h-[398px] w-auto' />
+          </div>
+          <div className="img_boxes    columns-1   overflow-hidden">
+            <img src={exp3} alt="" className='g h-[198px] w-96 mb-4' />
+            <img src={exp2} alt="" className='g h-[198px] w-96 ' />
+          </div>
+          <div className="img_boxes   columns-1  overflow-hidden">
+           <img src={exp1} alt="" className='g h-[198px] w-96 mb-4 rounded-tr-[50px]' />
+            <img src={exp2} alt="" className='g h-[198px] w-96 rounded-br-[50px]' />
+          </div>
+        </div>
+      </div>
+     </div>
+     dkffndknfsnf
+     df;dsfmsdf
+     fsd;<fieldset>dkfsf</fieldset>
   
   </>
     
