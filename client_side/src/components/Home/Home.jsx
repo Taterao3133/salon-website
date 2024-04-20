@@ -3,6 +3,11 @@ import '../Home/Home.css'
 import { IoIosSearch } from "react-icons/io";
 import { BsCalendar2Date } from "react-icons/bs";
 import Makeupicon from '../../Images/makeup1.svg'
+import { FaRegStar } from "react-icons/fa";
+import { SlLocationPin } from "react-icons/sl";
+
+
+import "@fontsource/manrope";
 
 import exp1 from '../../Images/exp-pic3.jpg'
 import exp2 from '../../Images/exp-pic2.jpg'
@@ -106,19 +111,122 @@ function Home() {
             <img src={exp1} alt="" className='g rounded-l-[50px] h-[398px] w-auto' />
           </div>
           <div className="img_boxes    columns-1   overflow-hidden">
-            <img src={exp3} alt="" className='g h-[198px] w-96 mb-4' />
+            <img src={exp3} alt="" className='g h-[190px] w-96 mb-4' />
             <img src={exp2} alt="" className='g h-[198px] w-96 ' />
           </div>
           <div className="img_boxes   columns-1  overflow-hidden">
-           <img src={exp1} alt="" className='g h-[198px] w-96 mb-4 rounded-tr-[50px]' />
+           <img src={exp1} alt="" className='g h-[190px] w-96 mb-4 rounded-tr-[50px]' />
             <img src={exp2} alt="" className='g h-[198px] w-96 rounded-br-[50px]' />
           </div>
         </div>
       </div>
      </div>
-     dkffndknfsnf
-     df;dsfmsdf
-     fsd;<fieldset>dkfsf</fieldset>
+     {/* services section*/}
+     <div className="container1 ">
+        <div className="txt_heading text-center">
+          <h3 className='s_inner font-playfair text-[#BA7894] pt-16'>Our Services</h3>
+          <h2 className='b_inner font-playfair text-[#422A3C] text-5xl'> Recommended</h2>
+          <p className='inner_text text-lg pt-[16px]'>The CSS and web font files to easily self-host the “Manrope” font. ... JS. body </p>
+        </div>
+
+
+        {/* images cards section================= */}
+        <div className="inner_container  w-10/12  columns-4 gap-6 ml-28  mt-12 ">
+
+          <div className="max-w-[290px]  overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
+            <img src={exp1} className="w-full h-[190px]"  alt="Sunset in the mountains"/>
+            <div className="px-6 py-4">
+              <div className="rating_review flex justify-between ">
+                <div className="rating flex flex-w-nowrap gap-2">
+                  <FaRegStar className='fa w-6 h-6' />
+                  <p>4.5</p>
+                </div>
+                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
+              </div>
+              <div className="img_dt mt-4">
+                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
+                <div className="address flex flex-nowrap mt-2">
+                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
+                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
+                </div>
+              </div>
+            </div>
+            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+              <p className='bk '>Book Now</p>
+            </div>
+          </div>
+          <div className="max-w-[290px]  overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
+            <img src={exp2} className="w-full h-[190px]"  alt="Sunset in the mountains"/>
+            <div className="px-6 py-4">
+              <div className="rating_review flex justify-between ">
+                <div className="rating flex flex-w-nowrap gap-2">
+                  <FaRegStar className='fa w-6 h-6' />
+                  <p>4.5</p>
+                </div>
+                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
+              </div>
+              <div className="img_dt mt-4">
+                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
+                <div className="address flex flex-nowrap mt-2">
+                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
+                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
+                </div>
+              </div>
+            </div>
+            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+              <p className='bk '>Book Now</p>
+            </div>
+          </div>
+          <div className="max-w-[290px]  overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
+            <img src={exp3} className="w-full h-[190px]"  alt="Sunset in the mountains"/>
+            <div className="px-6 py-4">
+              <div className="rating_review flex justify-between ">
+                <div className="rating flex flex-w-nowrap gap-2">
+                  <FaRegStar className='fa w-6 h-6' />
+                  <p>4.5</p>
+                </div>
+                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
+              </div>
+              <div className="img_dt mt-4">
+                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
+                <div className="address flex flex-nowrap mt-2">
+                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
+                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
+                </div>
+              </div>
+            </div>
+            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+              <p className='bk '>Book Now</p>
+            </div>
+          </div>
+          <div className="max-w-[290px]  overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
+            <img src={exp3} className="w-full h-[190px]"  alt="Sunset in the mountains"/>
+            <div className="px-6 py-4">
+              <div className="rating_review flex justify-between ">
+                <div className="rating flex flex-w-nowrap gap-2">
+                  <FaRegStar className='fa w-6 h-6' />
+                  <p>4.5</p>
+                </div>
+                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
+              </div>
+              <div className="img_dt mt-4">
+                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
+                <div className="address flex flex-nowrap mt-2">
+                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
+                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
+                </div>
+              </div>
+            </div>
+            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+              <p className='bk '>Book Now</p>
+            </div>
+          </div>
+
+        </div>
+
+        {/* User reviews testmonial=============================== */}
+        
+     </div>
   
   </>
     
