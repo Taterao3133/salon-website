@@ -1,7 +1,7 @@
 import '../Home/Home.css'
 
 import { IoIosSearch } from "react-icons/io";
-import { BsCalendar2Date } from "react-icons/bs";
+import { BsCalendar2Date,  } from "react-icons/bs";
 import Makeupicon from '../../Images/makeup1.svg'
 import { FaRegStar } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
@@ -225,7 +225,12 @@ function Home() {
         </div>
 
         {/* User reviews testmonial=============================== */}
-        
+        <div className="container min-w-full h-[760px] text-center border-2 border-red-500 mt-16">
+          <p className='font-semibold text-[#BA7894]'> TESTIMONIALS.</p>
+          <p className='font-bold text-5xl font-playfair text-[#141414]'>
+            What our Constumers says....
+          </p>
+        </div>
      </div>
   
   </>
