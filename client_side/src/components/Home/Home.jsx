@@ -253,9 +253,9 @@ function Home() {
               </div>
       
             </div>
-            <div className="pageChange_buttons justify-center pt-10 flex flex-nowrap">
-              <div className="Bbtn  border-2 h-14 w-14 bg-[white]  rounded-full pl-4 pt-4 "><FaChevronLeft className=' t'/> </div>
-              <div className="Bbtn  border-2 h-14 w-14 bg-[white]  rounded-full pl-4 pt-4 "><FaChevronRight className=' t'/> </div>
+            <div className="pageChange_buttons justify-center pt-10 gap-2 flex flex-nowrap ">
+              <div className="Bbtn  border-2 h-14 w-14 bg-[white] text-[#422A3C] rounded-full pl-3 pt-4 "><FaChevronLeft className=' w-6 h-6'/> </div>
+              <div className="Bbtn  border-2 h-14 w-14 bg-[#422A3C] text-white  rounded-full pl-4 pt-4 "><FaChevronRight className=' w-6 h-6'/> </div>
             </div>
           </div>
 
