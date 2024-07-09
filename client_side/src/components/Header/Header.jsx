@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 function Header() {
@@ -12,13 +13,13 @@ function Header() {
             </div>
             <div className="rightheader flex flex-nowrap ">
                 <div className="headerlinks flex flex-nowrap space-x-[40px] mt-2">
-                   <p className=" cursor-pointer  text-[16px]">Home</p>
-                   <p className=" cursor-pointer text-[16px]">AboutUs</p>
+                  <Link to='/' ><p className=" cursor-pointer  text-[16px]">Home</p></Link>
+                   <Link to='/about' ><p className=" cursor-pointer text-[16px]">AboutUs</p></Link>
                    <p className=" cursor-pointer text-[16px]">Contact Us</p>
                    
                 </div>
                 <div className="AuthButtons flex flex-nowrap space-x-[20px] ml-[36px]">
-                    <p className="bt rounded-md cursor-pointer border-[black] border-solid border-[2px] text-center p-[8px] text-[16px] font-bold mb-2">Loggin</p>
+                <Link to='/about' > <p className="bt rounded-md cursor-pointer border-[black] border-solid border-[2px] text-center p-[8px] text-[16px] font-bold mb-2">Loggin  </p></Link>
                     <p className="bt rounded-md cursor-pointer border-[black] border-solid border-[2px] text-center p-[8px] text-[16px] font-bold mb-2">Sign-Up</p>
                     
                 </div>

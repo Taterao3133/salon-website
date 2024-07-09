@@ -1,5 +1,5 @@
 .bg-image{
-    background-image: url('../../../assests/herosection.jpg');
+    background-image: url('../../assests/herosection.jpg');
     background-size:cover;
     width: 900px;
     height: 650px;
@@ -31,9 +31,7 @@
 
   
 }
-.s_inner{
-  
-}
+
   /* Vector */
 /* .ima{
 box-sizing: border-box;

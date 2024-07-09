@@ -1,8 +1,7 @@
-import '../Home/Home.css'
+import './Home.css'
 
 import { IoIosSearch } from "react-icons/io";
 import { BsCalendar2Date,  } from "react-icons/bs";
-import Makeupicon from '../../Images/makeup1.svg'
 import { FaRegStar } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
@@ -10,9 +9,10 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 import "@fontsource/manrope";
 
-import exp1 from '../../Images/exp-pic3.jpg'
-import exp2 from '../../Images/exp-pic2.jpg'
-import exp3 from '../../Images/exp-pic4.jpg'
+import Makeupicon from '../Images/makeup1.svg'
+import exp1 from '../Images/exp-pic3.jpg'
+import exp2 from '../Images/exp-pic2.jpg'
+import exp3 from '../Images/exp-pic4.jpg'
 
 
 function Home() {
@@ -153,7 +153,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
               <p className='bk '>Book Now</p>
             </div>
           </div>
@@ -175,7 +175,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
               <p className='bk '>Book Now</p>
             </div>
           </div>
@@ -197,7 +197,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
               <p className='bk '>Book Now</p>
             </div>
           </div>
@@ -219,7 +219,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div class=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
+            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
               <p className='bk '>Book Now</p>
             </div>
           </div>
@@ -227,20 +227,20 @@ function Home() {
         </div>
       </div>
         {/* User reviews testmonial=============================== */}
-       <div class="container min-w-full h-[760px] text-center bg-[#EBF3F5]  -mt-9">
-            <p class='font-semibold text-[#BA7894] pt-6'>TESTIMONIALS</p>
-            <p class='font-bold text-5xl mt-1 font-playfair text-[#141414]'>
+       <div className="container min-w-full h-[760px] text-center bg-[#EBF3F5]  -mt-9">
+            <p className='font-semibold text-[#BA7894] pt-6'>TESTIMONIALS</p>
+            <p className='font-bold text-5xl mt-1 font-playfair text-[#141414]'>
               What our Customers Say
             </p>
-            <div class="comment_box bg-[#422A3C] h-[500px] max-w-[1100px] mx-auto mt-14 rounded-3xl grid grid-cols-2 gap-4">
-              <div class="l_content mt-28 ml-56 flex flex-nowrap">
-                <div class="white_box w-10 h-32 bg-white rounded-3xl"></div>
-                <div class="white_box ml-3 w-10 h-60 bg-white rounded-3xl"></div>
-                <div class="img_user w-36 h-36  ml-16 mt-14 border-2 border-white rounded-full absolute">
+            <div className="comment_box bg-[#422A3C] h-[500px] max-w-[1100px] mx-auto mt-14 rounded-3xl grid grid-cols-2 gap-4">
+              <div className="l_content mt-28 ml-56 flex flex-nowrap">
+                <div className="white_box w-10 h-32 bg-white rounded-3xl"></div>
+                <div className="white_box ml-3 w-10 h-60 bg-white rounded-3xl"></div>
+                <div className="img_user w-36 h-36  ml-16 mt-14 border-2 border-white rounded-full absolute">
                   <img src={exp3} alt="" className='user_img object-cover h-36 w-36 p-1 rounded-full overflow-hidden'/>
                   </div>
               </div>
-              <div class="R_content text-left text-white ">
+              <div className="R_content text-left text-white ">
                 <div className="box-c h-80 max-w-lg mt-28 mr-8">
                   <div className="c_section  ml-5">
                     <div className="u_name font-semibold text-[20px]">Taterao</div>

@@ -51,7 +51,7 @@ function Footer() {
             <div className="s_addrs pr-10 ">
               <p className="font-playfair font-bold text-xl"> Keep In Touch</p>
               <div className="s_address mt-4 space-y-2">
-                <p >Address :  Unique_Beauty_Salon, Beside HDFC Bank ,
+                <p > <span className="font-bold ">Address :</span>  Unique_Beauty_Salon, Beside HDFC Bank ,
                 <br />        SriRama colony , Banswada , Kamareddy 503187 </p>
                 <p>Email :    UniqueSalon@gmail.com</p>
               </div>
