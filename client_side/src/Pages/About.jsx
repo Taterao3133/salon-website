@@ -1,5 +1,6 @@
 
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import Testimonial from "../components/testimonial/Testimonial";
 
 import Aboutservice from '../Images/about-service.svg'
 import abt_img from '../Images/exp-pic3.jpg'
@@ -79,50 +80,41 @@ function About() {
       </div>
 
     </div>
+     {/* journey section... */}
     <div className="journey_section w-full h-[600px] flex">
-      <div className="jl_box flex-[0.5] border-2 border-black pr-24 pl-24 pt-11 ">
+      <div className="jl_box flex-[0.4]  pr-16 pl-24 pt-24  ">
         <p className='font-playfair text-[#422A3C] text-3xl font-bold'>The start of the journey</p>
-        <p className='font-mono text-base text-[#555555] '> ServiceMarket.dk was founded in 2021 by two young entrepreneurs who saw a problem with the fragmented service industry in Denmark.
+        <p className='font-mono text-base text-[#555555] mt-2 '> ServiceMarket.dk was founded in 2021 by two young entrepreneurs who saw a problem with the fragmented service industry in Denmark.
            There were thousands of small businesses offering services, but it was difficult for consumers to find them and know which ones to choose. 
-           They developed the idea of creating a platform that would bring all these service providers together in one place, 
-           making it easier for consumers to find what they need and get their issues resolved quickly and easily. 
-          Without having to go to many different websites, each with their own booking system.</p>
+           They developed the idea of creating a.</p>
 
-          <p className='font-playfair text-xl text-[#141414]'>Our Methodology</p>
+          <p className='font-playfair text-xl mt-3 text-[#141414]'>Our Methodology :</p>
 
-          <div className="OM flex">
-            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
-            <div className="jcontent">
-              <p>tftftf</p>
-              <p>tftftf</p>
+          <div className="OM flex mt-3">
+            <div className="jicon"><IoMdCheckmarkCircleOutline className="w-8 h-8" /></div>
+            <div className="jcontent ml-3">
+              <p className="font-bold font-mono text-lg">The Assessment Stage</p>
+              <p className="font-mono text-lg">The point of using Lorem Ipsum is that it has a more-or-less normal letters.</p>
             </div>
           </div>
-          <div className="OM flex">
-            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
-            <div className="jcontent">
-              <p>tftftf</p>
-              <p>tftftf</p>
+         
+          <div className="OM flex mt-3">
+            <div className="jicon"><IoMdCheckmarkCircleOutline className="w-8 h-8" /></div>
+            <div className="jcontent ml-3">
+              <p className="font-bold font-mono text-lg">The Treatment Stage</p>
+              <p className="font-mono text-lg">The point of using Lorem Ipsum is that it has a more-or-less normal letters.</p>
             </div>
-          </div>
-          <div className="OM flex">
-            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
-            <div className="jcontent">
-              <p>tftftf</p>
-              <p>tftftf</p>
-            </div>
-          </div>
-          <div className="OM flex">
-            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
-            <div className="jcontent">
-              <p>tftftf</p>
-              <p>tftftf</p>
-            </div>
-          </div>
+          </div> 
       </div>
 
-      <div className="jr_box flex-[0.5] border-2 border-black"></div>
+      <div className="jr_box flex-[0.6]   overflow-hidden ">
+        <img src={abt_img} alt="" className=" w-4/5 h-/5 mt-10 "/>
+      </div>
 
     </div>
+   {/* testimonial */}
+   <Testimonial/>
+         
   </div>
   )
 }

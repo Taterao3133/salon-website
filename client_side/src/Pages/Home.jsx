@@ -4,7 +4,7 @@ import { IoIosSearch } from "react-icons/io";
 import { BsCalendar2Date,  } from "react-icons/bs";
 import { FaRegStar } from "react-icons/fa";
 import { SlLocationPin } from "react-icons/sl";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+
 
 
 import "@fontsource/manrope";
@@ -13,7 +13,8 @@ import Makeupicon from '../Images/makeup1.svg'
 import exp1 from '../Images/exp-pic3.jpg'
 import exp2 from '../Images/exp-pic2.jpg'
 import exp3 from '../Images/exp-pic4.jpg'
-
+import Abt_img from '../Images/exp-pic3.jpg'
+import Testimonial from '../components/testimonial/Testimonial';
 
 function Home() {
   return <>
@@ -105,7 +106,7 @@ function Home() {
         <h2 className='i_text text-[#422A3C] font-playfair font-bold text-[45px]'>We are Experienced making you <br />
             Very Beautiful
         </h2>
-        <h4 className='text-[20px] text-[#555555]'> We always hear to happppyfkdfjdlkfjsdfjsdkjf kjdfjdkhf</h4>
+        <h4 className='text-[20px] text-[#555555]'> We always hear to Happy and Serve You</h4>
       </div>          
       <div className="pics_section overflow-hidden container h-[400px] w-[1250px]  ml-36 mt-7 columns-3">
         <div className="img_boxes ">
@@ -226,39 +227,25 @@ function Home() {
 
         </div>
       </div>
+
+      <div className="about_us_section w-full h-[600px] bg-[#F7E5C1] mt-10 ">
+      <div className="ab_box h-3/4 w-3/4  ml-48 pt-28 flex" >
+        <div className="abt_img flex-[0.5] bg-[#422A3C]">
+          <img src={Abt_img} alt=""  className='w-3/4 h-100% ml-16 -mt-14' />
+        </div>
+        <div className="abt_content flex-[0.5]  bg-[#422A3C]">
+          <p className='font-semibold font-mono text-white text-sm mt-6'>About Us</p>
+
+          <p className='text-white text-3xl font-playfair mt-4'> It’s the bridge between <br />
+           service  companies and consumers.</p>
+           <p className='text-lg font-mono text-[#FFFFFF] mt-6 pr-4'>ServiceMarket.dk is a Copenhagen-based technology company known for our overview platform.
+             Our aim is to simplify and improve everyday life for citizens in Denmark. 
+             One platform that brings together all services in an easy and controlled environment.</p>
+        </div>
+      </div>
+      </div>
         {/* User reviews testmonial=============================== */}
-       <div className="container min-w-full h-[760px] text-center bg-[#EBF3F5]  -mt-9">
-            <p className='font-semibold text-[#BA7894] pt-6'>TESTIMONIALS</p>
-            <p className='font-bold text-5xl mt-1 font-playfair text-[#141414]'>
-              What our Customers Say
-            </p>
-            <div className="comment_box bg-[#422A3C] h-[500px] max-w-[1100px] mx-auto mt-14 rounded-3xl grid grid-cols-2 gap-4">
-              <div className="l_content mt-28 ml-56 flex flex-nowrap">
-                <div className="white_box w-10 h-32 bg-white rounded-3xl"></div>
-                <div className="white_box ml-3 w-10 h-60 bg-white rounded-3xl"></div>
-                <div className="img_user w-36 h-36  ml-16 mt-14 border-2 border-white rounded-full absolute">
-                  <img src={exp3} alt="" className='user_img object-cover h-36 w-36 p-1 rounded-full overflow-hidden'/>
-                  </div>
-              </div>
-              <div className="R_content text-left text-white ">
-                <div className="box-c h-80 max-w-lg mt-28 mr-8">
-                  <div className="c_section  ml-5">
-                    <div className="u_name font-semibold text-[20px]">Taterao</div>
-
-                  </div>
-                  <div className="c_section2 mt-10 ml-5 text-lg pr-10">
-                    this salon is wonderfull and amazing services here . You should try once here.. gfjfhgf dfjhs sdhghf sdghsfgjh sdgH
-                  </div>
-                </div>
-              </div>
-      
-            </div>
-            <div className="pageChange_buttons justify-center pt-10 gap-2 flex flex-nowrap ">
-              <div className="Bbtn  border-2 h-14 w-14 bg-[white] text-[#422A3C] rounded-full pl-3 pt-4 "><FaChevronLeft className=' w-6 h-6'/> </div>
-              <div className="Bbtn  border-2 h-14 w-14 bg-[#422A3C] text-white  rounded-full pl-4 pt-4 "><FaChevronRight className=' w-6 h-6'/> </div>
-            </div>
-          </div>
-
+      <Testimonial/>
   
     
   

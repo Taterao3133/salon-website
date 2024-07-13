@@ -4,7 +4,7 @@ import Logo from '../../Images/salon-logo.png'
 function Header() {
   return (
     <div className="Header  h-[50px] mb-3 bg-[white] ">
-        <div className="flex flex-nowrap gap-x-[580px]  h-[52px] ml-[120px] mt-[25px]">
+        <div className="flex flex-nowrap gap-x-[660px]  h-[52px] ml-[120px] mt-[25px]">
             <div className="leftheader flex flex-nowrap">
                 <div className="logo cursor-pointer">
                   <img src={Logo} alt="" className="w-14 h-14"/>
