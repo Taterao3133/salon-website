@@ -1,4 +1,8 @@
+
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+
 import Aboutservice from '../Images/about-service.svg'
+import abt_img from '../Images/exp-pic3.jpg'
 
 function About() {
   return (
@@ -7,12 +11,9 @@ function About() {
       <div className="container ml-96  pt-24 w-2/4  ">
         <h5 className="text-[#ECBFD3] font-semibold ml-3">Short Story About Us</h5>
         <h2 className="text-5xl font-bold text-[#F7E5C1] pt-2 font-playfair">The Big Story Behind, Our <br />Beautyness Center</h2>
-        
         <div className="btn_c w-36 h-12 bg-[#BA7894] pt-3 rounded-md ml-80 mt-7">
           <p className="text-[#FFFFFF]">Contact Us</p>
         </div>
-
-
       </div>
     </div>
     <div className="values_content text-center mt-14">
@@ -62,14 +63,64 @@ function About() {
 
     </div>
     <div className="about_us_section w-full h-[600px] bg-[#F7E5C1] mt-10 ">
-      <div className="ab_box h-3/4 w-3/4 border-2 border-red-400 ml-48 pt-28 flex" >
-        <div className="abt_img flex-[0.5]">
-          ima
+      <div className="ab_box h-3/4 w-3/4  ml-48 pt-28 flex" >
+        <div className="abt_img flex-[0.5] bg-[#422A3C]">
+          <img src={abt_img} alt=""  className='w-3/4 h-100% ml-16 -mt-14' />
         </div>
-        <div className="abt_content flex-[0.5] border-2 border-red-700">
-          dkdfkd
+        <div className="abt_content flex-[0.5]  bg-[#422A3C]">
+          <p className='font-semibold font-mono text-white text-sm mt-6'>About Us</p>
+
+          <p className='text-white text-3xl font-playfair mt-4'> It’s the bridge between <br />
+           service  companies and consumers.</p>
+           <p className='text-lg font-mono text-[#FFFFFF] mt-6 pr-4'>ServiceMarket.dk is a Copenhagen-based technology company known for our overview platform.
+             Our aim is to simplify and improve everyday life for citizens in Denmark. 
+             One platform that brings together all services in an easy and controlled environment.</p>
         </div>
       </div>
+
+    </div>
+    <div className="journey_section w-full h-[600px] flex">
+      <div className="jl_box flex-[0.5] border-2 border-black pr-24 pl-24 pt-11 ">
+        <p className='font-playfair text-[#422A3C] text-3xl font-bold'>The start of the journey</p>
+        <p className='font-mono text-base text-[#555555] '> ServiceMarket.dk was founded in 2021 by two young entrepreneurs who saw a problem with the fragmented service industry in Denmark.
+           There were thousands of small businesses offering services, but it was difficult for consumers to find them and know which ones to choose. 
+           They developed the idea of creating a platform that would bring all these service providers together in one place, 
+           making it easier for consumers to find what they need and get their issues resolved quickly and easily. 
+          Without having to go to many different websites, each with their own booking system.</p>
+
+          <p className='font-playfair text-xl text-[#141414]'>Our Methodology</p>
+
+          <div className="OM flex">
+            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
+            <div className="jcontent">
+              <p>tftftf</p>
+              <p>tftftf</p>
+            </div>
+          </div>
+          <div className="OM flex">
+            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
+            <div className="jcontent">
+              <p>tftftf</p>
+              <p>tftftf</p>
+            </div>
+          </div>
+          <div className="OM flex">
+            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
+            <div className="jcontent">
+              <p>tftftf</p>
+              <p>tftftf</p>
+            </div>
+          </div>
+          <div className="OM flex">
+            <div className="jicon"><IoMdCheckmarkCircleOutline /></div>
+            <div className="jcontent">
+              <p>tftftf</p>
+              <p>tftftf</p>
+            </div>
+          </div>
+      </div>
+
+      <div className="jr_box flex-[0.5] border-2 border-black"></div>
 
     </div>
   </div>

@@ -48,12 +48,17 @@ function Footer() {
                 <p className="cursor-pointer">Terms Of Uses</p>
               </div>
             </div>
-            <div className="s_addrs pr-10 ">
+            <div className="s_addrs pr-8 ">
               <p className="font-playfair font-bold text-xl"> Keep In Touch</p>
-              <div className="s_address mt-4 space-y-2">
-                <p > <span className="font-bold ">Address :</span>  Unique_Beauty_Salon, Beside HDFC Bank ,
-                <br />        SriRama colony , Banswada , Kamareddy 503187 </p>
-                <p>Email :    UniqueSalon@gmail.com</p>
+              <div className="s_address mt-4 space-y-2 flex flex-nowrap">
+                <p className="font-bold mt-2">Address:</p>
+                <p className="ml-2">Unique_Beauty_Salon, Beside HDFC Bank ,<br /> SriRama colony , Banswada ,<br /> Kamareddy 503187</p>
+              
+              </div>
+              <div className="s_address mt-4 space-y-2 flex flex-nowrap">
+                <p className="font-bold mt-2 ml-5">Email:</p>
+                <p className="ml-2">Unique_Beauty_Salon90</p>
+              
               </div>
 
             </div>
