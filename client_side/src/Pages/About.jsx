@@ -62,7 +62,7 @@ function About() {
           </div>
         </div>
 
-    </div>
+    </div> 
     <div className="about_us_section w-full h-[600px] bg-[#F7E5C1] mt-10 ">
       <div className="ab_box h-3/4 w-3/4  ml-48 pt-28 flex" >
         <div className="abt_img flex-[0.5] bg-[#422A3C]">
