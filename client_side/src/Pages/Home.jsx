@@ -9,14 +9,24 @@ import { SlLocationPin } from "react-icons/sl";
 
 import "@fontsource/manrope";
 
-import Makeupicon from '../Images/makeup1.svg'
+
 import exp1 from '../Images/exp-pic3.jpg'
 import exp2 from '../Images/exp-pic2.jpg'
 import exp3 from '../Images/exp-pic4.jpg'
 import Abt_img from '../Images/exp-pic3.jpg'
 import Testimonial from '../components/testimonial/Testimonial';
+// import { useEffect } from 'react';
+import ServicesSlider from '../components/services/servicesslider';
+// import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import Bookingpop from './Bookingpop';
 
 function Home() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
+  
   return <>
      <div className="herosection  flex flex-nowrap">
         <div className="b_c bg-[#BA7894] w-[635px]">
@@ -24,9 +34,10 @@ function Home() {
               <div className="herocontent ml-[218px] pt-[207px]">
                   <p className='text-[#FFFFFF]'>HAIR SALON, BEAUTY SALON , WOMENS SALON  </p>
                   <h1 className='text-[#F7E5C1] font-playfair text-5xl font-semibold mb-6'>Find Your Service &<br/> Book Here</h1>
-                  <p className='text-[#FFFFFF]'>The italic utility can be used to make text italic.
-                   Likewise, the not-italic utility can be used to display text 
-                   normally — typically to reset italic text at different breakpoints.</p>
+                  <p className='text-[#FFFFFF]'>
+                  We aim to become the trendsetters in hair & make-up by offering you the best products and
+                   services that will ensure your needs are taken care of at our center. 
+                   We offer the latest trends, products and services at our salon</p>
                    <div className="search-box bg-[#F8F8F8] h-[80px] w-[730px] rounded-full mt-[52px]">
                     <div className="search-bc flex flex-nowrap space-x-[50px]" >
                       <div className="input-1 ml-11">
@@ -43,9 +54,10 @@ function Home() {
                             <BsCalendar2Date className='ml-[-18px] mt-1 h-4 w-4 cursor-pointer' />
                           </div>
                       </div>
-                      <div className="s_btn w-52 h-16 bg-[#BA7894] rounded-full mt-2 flex flex-nowrap cursor-pointer">
-                        <p className='text-white text-2xl font-medium ml-10 mt-4'>Search</p>
-                        <IoIosSearch className='text-white mt-[18px]  h-7 w-7 ml-2 '/>
+                      <div className="s_btn w-52 h-16 bg-[#BA7894] rounded-full mt-2 flex flex-nowrap cursor-pointer "onClick={openPopup}>
+                        <p className='text-white text-2xl font-medium ml-10 mt-4' onClick={openPopup}>Book Now</p>
+                        {/* <IoIosSearch className='text-white mt-[18px]  h-7 w-7 ml-2 '/> */}
+                        <Bookingpop isOpen={isPopupOpen} closePopup={closePopup} />
 
                       </div>
 
@@ -58,47 +70,12 @@ function Home() {
         <div className="bg-image  "> </div> 
      </div>
 
-
      {/* category section  services section---*/}
-     <div className="c_section flex flex-nowrap space-x-[62px] h-40 w-[1300px] ml-28 mt-10">
-      <div className="c_content ml-14">
-        <div className="round_bg bg-[#BA7894] rounded-full h-24 w-24 ml-4">
-          <img src={Makeupicon} alt='' className='ih h-24 w-24 '/>
-        </div>
-        <div className="h3 mt-3 font-semibold text-lg text-center">Makeup-service</div>
-      </div>
-      <div className="c_content">
-        <div className="round_bg  bg-[#F7E5C1] rounded-full h-24 w-24 ml-4 ">
-          <img src={Makeupicon} alt='' className=' h-24 w-24 '/>
-        </div>
-        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
-      </div>
-      <div className="c_content">
-        <div className="round_bg  bg-[#BA7894] rounded-full h-24 w-24 ml-4 ">
-          <img src={Makeupicon} alt='' className=' h-24 w-24 '/>
-        </div> 
-        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
-      </div>
-      <div className="c_content">
-        <div className="round_bg bg-[#F7E5C1] rounded-full h-24 w-24 ml-4 ">
-          <img src={Makeupicon} alt='' className=' h-24 w-24'/>
-        </div>
-        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
-      </div>
-      <div className="c_content">
-        <div className="round_bg bg-[#F7E5C1] rounded-full h-24 w-24 ml-4">
-          <img src={Makeupicon} alt='' className=' h-24 w-24'/>
-        </div>
-        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
-      </div>
-      <div className="c_content">
-        <div className="round_bg bg-[#F7E5C1] rounded-full h-24 w-24 ml-4 ">
-          <img src={Makeupicon} alt='' className=' h-24 w-24'/>
-        </div>
-        <div className="h3 mt-3 font-semibold text-lg">Makeup-service</div>
+     <div className="relative overflow-hidden h-40 w-[1300px] m-auto mt-10">
+      <div className="c_section flex space-x-12 absolute whitespace-nowrap">
+        <ServicesSlider/>
       </div>
      </div>
-     {/* service section end */}
 
      {/* exp- section start */}
      <div className="exp_section  ">
@@ -126,7 +103,7 @@ function Home() {
      </div>
      {/* services section*/}
      <div className="container1 ">
-        <div className="txt_heading text-center">
+        <div className="txt_heading text-center ">
           <h3 className='s_inner font-playfair text-[#BA7894] pt-16'>Our Services</h3>
           <h2 className='b_inner font-playfair text-[#422A3C] text-5xl'> Recommended</h2>
           <p className='inner_text text-lg pt-[16px]'>The CSS and web font files to easily self-host the “Manrope” font. ... JS. body </p>
