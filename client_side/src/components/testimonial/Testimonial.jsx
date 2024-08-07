@@ -74,12 +74,12 @@ function Testimonial() {
           )}
         </Slider>
       </div>
-      <div className="pageChange_buttons justify-center pt-10 gap-2 flex flex-nowrap">
-        <div className="Bbtn border-2 h-14 w-14 bg-[white] text-[#422A3C] rounded-full pl-3 pt-4">
-          <FaChevronLeft className='w-6 h-6' />
+      <div className="pageChange_buttons justify-center max-sm:pt-2 xl:pt-10 gap-2 flex flex-nowrap">
+        <div className="Bbtn border-2 max-sm:h-8 max-sm:w-8 xl:h-14 xl:w-14 bg-[white] text-[#422A3C] rounded-full pl-3 pt-4">
+          <FaChevronLeft className='xl:w-6 max-sm:w-3 max-sm:-mt-2 max-sm:-ml-1 h-auto' />
         </div>
-        <div className="Bbtn border-2 h-14 w-14 bg-[#422A3C] text-white rounded-full pl-4 pt-4">
-          <FaChevronRight className='w-6 h-6' />
+        <div className="Bbtn border-2 max-sm:h-8 max-sm:w-8 xl:h-14 xl:w-14 bg-[#422A3C] text-[white] rounded-full pl-3 pt-4">
+          <FaChevronRight className='xl:w-6 max-sm:w-3 max-sm:-mt-2 max-sm:-ml-1 h-auto' />
         </div>
       </div>
     </div>
