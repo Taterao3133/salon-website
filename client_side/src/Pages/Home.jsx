@@ -28,13 +28,14 @@ function Home() {
   const closePopup = () => setIsPopupOpen(false);
 
   return <>
-     <div className={`herosection flex flex-nowrap ${isPopupOpen ? 'overflow-hidden' : ''}`}>
+  <div className="home-section overflow-hidden">
+     <div className={`herosection  flex flex-nowrap ${isPopupOpen ? 'overflow-hidden' : ''}`}>
         <div className="b_c bg-[#BA7894]   xl:w-[635px]">
             <div className=" bg_gradient  ">
               <div className="herocontent absolute xl:ml-[218px] xl:pt-[207px]">
-                  <p className='hero-text max-sm:mt-28 max-sm:ml-6  text-[#FFFFFF]'>HAIR SALON, BEAUTY SALON , WOMENS SALON  </p>
+                  <p className='hero-text max-sm:mt-28 max-sm:ml-6 font-lato  text-[#FFFFFF]'>HAIR SALON, BEAUTY SALON , WOMENS SALON  </p>
                   <h1 className='hero-texts max-sm:ml-6 text-[#F7E5C1] font-playfair   xl:text-5xl font-semibold mb-6'>Find Your Service &<br/> Book Here</h1>
-                  <p className='hero-text3 text-[#FFFFFF] max-sm:hidden'>
+                  <p className='hero-text3 font-raleway text-[#FFFFFF] max-sm:hidden'>
                   We aim to become the trendsetters in hair & make-up by offering you the best products and
                    services that will ensure your needs are taken care of at our center. 
                    We offer the latest trends, products and services at our salon</p>
@@ -87,7 +88,7 @@ function Home() {
         <h2 className='i_text text-[#422A3C] font-playfair font-bold max-sm:text-xl xl:text-[45px]'>We are Experienced making you <br />
             Very Beautiful
         </h2>
-        <h4 className='xl:text-[20px] max-sm:text-sm text-[#555555]'> We always hear to Happy and Serve You</h4>
+        <h4 className='xl:text-[20px] max-sm:text-sm font-raleway text-[#555555]'> We always hear to Happy and Serve You</h4>
       </div>          
       <div className="pics_section overflow-hidden container max-sm:h-auto max-sm:-mt-3 max-sm:p-10  xl:h-[400px] xl:w-[1250px]  xl:ml-36 xl:mt-7 max-sm:columns-2 xl:columns-3">
         <div className="img_boxes max-sm:space-y-4 ">
@@ -113,7 +114,7 @@ function Home() {
         <div className="txt_heading text-center ">
           <h3 className='s_inner font-playfair text-[#BA7894] max-sm:text-sm max-sm:pt-8 xl:pt-16'>Our Services</h3>
           <h2 className='b_inner font-playfair text-[#422A3C] max-sm:text-xl xl:text-5xl'> Recommended</h2>
-          <p className='inner_text max-xm:text-sm md:text-lg xl:text-lg max-sm:pt-2 xl:pt-4'>The CSS and web font files to easily self-host the “Manrope” font. ... JS. body </p>
+          <p className='inner_text font-raleway max-xm:text-sm md:text-lg xl:text-lg max-sm:pt-2 xl:pt-4'>Unveil your best self with our personalized beauty treatments designed to pamper and refresh. </p>
         </div>
 
 
@@ -219,25 +220,25 @@ function Home() {
             <img src={Abt_img} alt=""  className='xl:w-3/4 h-100% xl:ml-16 xl-mt-14 max-sm:p-5' />
           </div>
           <div className="abt_content max-sm:flex-[0.3] xl:flex-[0.5]  bg-[#422A3C]">
-            <p className='font-semibold font-mono text-white text-sm max-sm:mt-8 xl:mt-6'>About Us</p>
+            <p className='font-semibold font-lato text-white text-sm max-sm:mt-8 xl:mt-6'>About Us</p>
 
-            <p className='text-white max-sm:text-base xl:text-3xl font-playfair max-sm:mt-8 xl:mt-4'> It’s the bridge between <br />
+            <p className='text-white max-sm:text-base xl:text-3xl font-lato max-sm:mt-8 xl:mt-4'> It’s the bridge between <br />
             service  companies and consumers.</p>
-            <p className='max-sm:hidden xl:text-lg max-sm:text-xs font-mono text-[#FFFFFF] xl:mt-6 max-sm:pt-2 max-sm:pr-2 xl:pr-4'>ServiceMarket.dk is 
+            <p className='max-sm:hidden xl:text-lg max-sm:text-xs font-raleway text-[#FFFFFF] xl:mt-6 max-sm:pt-2 max-sm:pr-2 xl:pr-4'>ServiceMarket.dk is 
               a Copenhagen-based technology company known for our overview platform.
               Our aim is to simplify and improve everyday life for citizens in Denmark. 
               One platform that brings together all services in an easy and controlled environment.</p>
           </div>
 
         </div>
-          <div className="ab-c2 xl:hidden md:hidden p-5">A Copenhagen-based technology company known for our overview platform.
+          <div className="ab-c2 xl:hidden md:hidden font-raleway p-5">A Copenhagen-based technology company known for our overview platform.
               Our aim is to simplify and improve everyday life for citizens in Denmark. 
               One platform that brings together all services in an easy and controlled environment.</div>
           
       </div>
         {/* User reviews testmonial=============================== */}
       <Testimonial/>
-  
+    </div>
       
   
   </>
