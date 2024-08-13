@@ -1,31 +1,32 @@
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import exp3 from '../../Images/exp-pic4.jpg';
-import { useEffect, useState } from "react";
-import Slider from "react-slick";
+// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+ import exp3 from '../../Images/s-1.jpg';
+// import { useEffect, useState } from "react";
+ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { RiDoubleQuotesR } from "react-icons/ri";
 
 function Testimonial() {
 
-  const [reviews, setReviews] = useState([]);
+  // const [reviews, setReviews] = useState([]);
 
-  useEffect(() => {
-    const fetchReviews = async () => {
-      const apiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
-      const placeId = 'YOUR_PLACE_ID';
-      const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=review&key=${apiKey}`;
+  // useEffect(() => {
+  //   const fetchReviews = async () => {
+  //     const apiKey = 'YOUR_GOOGLE_PLACES_API_KEY';
+  //     const placeId = 'YOUR_PLACE_ID';
+  //     const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=review&key=${apiKey}`;
 
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-        setReviews(data.result.reviews);
-      } catch (error) {
-        console.error(error);
-      }
-    };
+  //     try {
+  //       const response = await fetch(url);
+  //       const data = await response.json();
+  //       setReviews(data.result.reviews);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
 
-    fetchReviews();
-  }, []);
+  //   fetchReviews();
+  // }, []);
 
   const settings = {
     dots: true,
@@ -35,53 +36,123 @@ function Testimonial() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <FaChevronRight />,
-    prevArrow: <FaChevronLeft />,
+    // nextArrow: <FaChevronRight />,
+    // prevArrow: <FaChevronLeft />,
   };
 
+
+
   return (
-    <div className="container min-w-full h-[760px] text-center bg-[#EBF3F5] mt-4">
-      <p className='font-semibold text-[#BA7894] pt-6'>TESTIMONIALS</p>
-      <p className='font-bold text-5xl mt-1 font-playfair text-[#141414]'>
-        What our Customers Say
-      </p>
-      <div className="comment_box bg-[#422A3C] h-[500px] max-w-[1100px] mx-auto mt-14 rounded-3xl">
-        <Slider {...settings}>
-          {reviews.length > 0 ? (
-            reviews.map((review, index) => (
-              <div key={index} className="grid grid-cols-2 gap-4">
-                <div className="l_content mt-28 ml-56 flex flex-nowrap">
-                  <div className="white_box w-10 h-32 bg-white rounded-3xl"></div>
-                  <div className="white_box ml-3 w-10 h-60 bg-white rounded-3xl"></div>
-                  <div className="img_user w-36 h-36 ml-16 mt-14 border-2 border-white rounded-full absolute">
-                    <img src={exp3} alt="" className='user_img object-cover h-36 w-36 p-1 rounded-full overflow-hidden' />
-                  </div>
-                </div>
-                <div className="R_content text-left text-white">
-                  <div className="box-c h-80 max-w-lg mt-28 mr-8">
-                    <div className="c_section ml-5">
-                      <div className="u_name font-semibold text-[20px]">{review.author_name}</div>
-                    </div>
-                    <div className="c_section2 mt-10 ml-5 text-lg pr-10">
-                      {review.text}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div>Loading...</div>
-          )}
-        </Slider>
-      </div>
-      <div className="pageChange_buttons justify-center max-sm:pt-2 xl:pt-10 gap-2 flex flex-nowrap">
-        <div className="Bbtn border-2 max-sm:h-8 max-sm:w-8 xl:h-14 xl:w-14 bg-[white] text-[#422A3C] rounded-full pl-3 pt-4">
-          <FaChevronLeft className='xl:w-6 max-sm:w-3 max-sm:-mt-2 max-sm:-ml-1 h-auto' />
+    <div className="container min-w-full h-auto pb-16 text-center bg-[#ffffff] xl:mt-6 xl:mb-6">
+      <div className="inner-c w-[80%] xl:mt-16 h-auto  m-auto  xl:flex">
+        <div className="header-c  h-auto  flex-[0.5] max-sm:pt-5 xl:p-5">
+          <div className="h max-sm:text-3xl md:text-4xl xl:text-5xl tracking-wider font-playfair text-left max-sm: max-sm:mt-9 xl:ml-7 xl:mt-5 font-semibold  "><p>Testimonials
+            </p>
+            <hr className='max-sm:hidden border-[2px] w-24 mt-12 border-[#cef1ea]  '/> 
+            <p className='xl:ml-28 xl:-mt-7'>Of Our Clients</p>
+          </div>
+          <p className="font-raleway tracking-wide max-sm:text-base xl:text-lg text-gray-800 max-sm:mt-3 xl:p-5 text-left font-medium">Thanks to our clients’ regular reviews, testimonials, and comments we are able to improve our salon.</p>
+          <p className="font-lato -mt-2 max-sm:text-sm xl:text-base text-gray-500 max-sm:mt-3 xl:p-5 text-left">Unlike other salons, we prefer to maintain a constant connection with our customers and receive feedback on every service, whether
+             it’s a simple haircut or complex wedding makeup. If you’ve already visited Glory, feel free to contact us and send your testimonial.</p>
         </div>
-        <div className="Bbtn border-2 max-sm:h-8 max-sm:w-8 xl:h-14 xl:w-14 bg-[#422A3C] text-[white] rounded-full pl-3 pt-4">
-          <FaChevronRight className='xl:w-6 max-sm:w-3 max-sm:-mt-2 max-sm:-ml-1 h-auto' />
+        <div className="header-test overflow-hidden pb-5   flex-[0.5] row">
+        <Slider {...settings} >
+          {/* original */}
+          <div className="review-bx w-[90%] max-sm:h-auto pl-6 pr-6 m-auto max-sm:mb-14 xl:mb-5 mt-9 h-80 border-l-2  border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl ">
+            <div className="clientname  mt-5 space-x-2 flex p-8">
+              <h2 className="font-lato font-normal  text-xl tracking-wider">Akhila Suri</h2>
+              <p>|</p>
+              <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
+            </div> 
+            <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
+               am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
+             
+            <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
+
+            <div className="clientImg absolute max-sm:h-20 max-sm:w-20 max-sm:-mt-10 xl:w-24 xl:-mt-14 ml-5 border-2 rounded-full xl:h-24">
+              <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
+
+            </div>
+          </div>
+          
+          <div className="review-bx w-[90%] max-sm:h-auto pl-6 pr-6 m-auto mb-5 mt-9 h-80 border-l-2  border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl ">
+            <div className="clientname  mt-5 space-x-2 flex p-8">
+              <h2 className="font-lato font-normal  text-xl tracking-wider">Akhila Suri</h2>
+              <p>|</p>
+              <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
+            </div> 
+            <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
+               am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
+             
+            <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
+
+            <div className="clientImg absolute max-sm:h-20 max-sm:w-20 max-sm:-mt-10 xl:w-24 xl:-mt-14 ml-5 border-2 rounded-full xl:h-24">
+              <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
+
+            </div>
+          </div>
+
+          <div className="review-bx w-[90%] max-sm:h-auto pl-6 pr-6 m-auto mb-5 mt-9 h-80 border-l-2  border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl ">
+            <div className="clientname  mt-5 space-x-2 flex p-8">
+              <h2 className="font-lato font-normal  text-xl tracking-wider">Akhila Suri</h2>
+              <p>|</p>
+              <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
+            </div> 
+            <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
+               am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
+             
+            <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
+
+            <div className="clientImg absolute max-sm:h-20 max-sm:w-20 max-sm:-mt-10 xl:w-24 xl:-mt-14 ml-5 border-2 rounded-full xl:h-24">
+              <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
+
+            </div>
+          </div>
+
+          <div className="review-bx w-[90%] max-sm:h-auto pl-6 pr-6 m-auto mb-5 mt-9 h-80 border-l-2  border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl ">
+            <div className="clientname  mt-5 space-x-2 flex p-8">
+              <h2 className="font-lato font-normal  text-xl tracking-wider">Akhila Suri</h2>
+              <p>|</p>
+              <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
+            </div> 
+            <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
+               am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
+             
+            <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
+
+            <div className="clientImg absolute max-sm:h-20 max-sm:w-20 max-sm:-mt-10 xl:w-24 xl:-mt-14 ml-5 border-2 rounded-full xl:h-24">
+              <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
+
+            </div>
+          </div>
+
+          <div className="review-bx w-[90%] max-sm:h-auto pl-6 pr-6 m-auto mb-5 mt-9 h-80 border-l-2  border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl ">
+            <div className="clientname  mt-5 space-x-2 flex p-8">
+              <h2 className="font-lato font-normal  text-xl tracking-wider">Akhila Suri</h2>
+              <p>|</p>
+              <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
+            </div> 
+            <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
+               am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
+             
+            <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
+
+            <div className="clientImg absolute max-sm:h-20 max-sm:w-20 max-sm:-mt-10 xl:w-24 xl:-mt-14 ml-5 border-2 rounded-full xl:h-24">
+              <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
+
+            </div>
+          </div>
+
+          {/* testing1 */}
+          
+          </Slider>
+          
         </div>
+
       </div>
+
+     
+     
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import Logo from '../../Images/salon-logo.png';
+import { Link } from "react-router-dom";
 
 
 
@@ -35,17 +36,17 @@ function Footer() {
           <div className="f_services text-white justify-between max-sm:columns-2 xl:flex max-sm:mt-5 xl:mt-5">
             <div className="s_explore">
               <p className="font-playfair font-bold max-sm:text-base xl:text-xl">Expore Pages</p>
-              <div className="s_pages max-sm:text-xs max-sm:mt-2 xl:mt-4 max-sm:space-y-1 xl:space-y-2">
-                <p className="cursor-pointer" >Home</p>
-                <p className="cursor-pointer">About services</p>
-                <p className="cursor-pointer">Contact Us</p>
+              <div className="s_pages max-sm:text-xs max-sm:mt-2 xl:mt-4 max-sm:space-y-1 ">
+               <Link to='/home'> <p className="cursor-pointer" >Home</p></Link>
+                <p className="cursor-pointer"><Link to='/about'>About services</Link></p>
+                <Link to='/contact'><p className="cursor-pointer">Contact Us</p></Link>
               </div>
             </div>
             <div className="s_utility">
               <p className="font-playfair font-bold max-sm:text-base max-sm:mt-2 xl:text-xl"> Utility Pages </p>
-              <div className="s_Upages max-sm:text-xs  xl:mt-4 max-sm:space-y-1 xl:space-y-2">
-                <p className="cursor-pointer">Privacy Policy</p>
-                <p className="cursor-pointer">Terms Of Uses</p>
+              <div className="s_Upages max-sm:text-xs  xl:mt-4 max-sm:space-y-1 xl:space-y-3">
+                <Link to="/privacy" ><p className="cursor-pointer">Privacy Policy</p></Link>
+                <Link to='/privacy'><p className="cursor-pointer">Terms Of Uses</p></Link>
               </div>
             </div>
             <div className="s_addrs max-sm:-ml-5 xl:pr-8 ">

@@ -1,16 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Logo from '../../Images/salon-logo.png';
 import { FiMenu, FiX } from "react-icons/fi";
 
 
+
 function Header({ isPopupOpen }) {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100 && !isPopupOpen) {
+      if (window.scrollY > -1 && !isPopupOpen) {
 
         setIsSticky(true);
       } else {
@@ -33,7 +35,7 @@ function Header({ isPopupOpen }) {
 
   return (
     <>
-      <div className={`Header max-sm:h-16 xl:h-[70px] pt-1 ${isPopupOpen ? 'overflow-hidden' : ''} bg-white ${isSticky ? 'fixed top-0 left-0 w-full shadow-lg z-50' : ''} transition-all duration-500`}>
+      <div className={`Header max-sm:h-16  xl:h-[70px] pt-1 ${isPopupOpen  ? 'overflow-hidden ' : ''} bg-white ${isSticky ? 'fixed top-0 left-0 w-full shadow-lg z-50' : ''} transition-all duration-500`}>
         <div className="flex justify-between items-center w-full h-full px-4 md:px-[120px]">
           <div className="leftheader flex items-center">
             <div className="logo cursor-pointer">
@@ -44,12 +46,12 @@ function Header({ isPopupOpen }) {
             </div>
           </div>
           <div className="rightheader hidden md:flex items-center">
-            <div className="headerlinks flex space-x-[40px]">
-              <Link to='/'><p className="cursor-pointer text-base hover:text-lg font-semibold">Home</p></Link>
-              <Link to='/service'><p className="cursor-pointer text-base hover:text-lg font-semibold">Services</p></Link>
-              <Link to='/about'><p className="cursor-pointer text-base hover:text-lg font-semibold">About Us</p></Link>
-              <Link to='/contact'><p className="cursor-pointer text-base hover:text-lg font-semibold">Contact Us</p></Link>
-            </div>
+            <div className="headerlinks flex space-x-[40px]  ">
+            <Link to='/' className={`cursor-pointer text-base font-semibold ${location.pathname === '/' ? ' scale-110 text-[#cef1ea] rounded-lg' : ''} hover:scale-110`}>Home</Link>
+            <Link to='/service' className={`cursor-pointer text-base font-semibold ${location.pathname === '/service' ? ' scale-110 text-[#cef1ea]  rounded-lg' : ''} hover:scale-110`}>Services</Link>
+            <Link to='/about' className={`cursor-pointer text-base font-semibold ${location.pathname === '/about' ? 'scale-110 text-[#cef1ea]  rounded-lg' : ''} hover:scale-110`}>About Us</Link>
+            <Link to='/contact' className={`cursor-pointer text-base font-semibold ${location.pathname === '/contact' ? 'scale-110 text-[#cef1ea]  rounded-lg' : ''} hover:scale-110`}>Contact Us</Link>
+          </div>
           </div>
           <div className="md:hidden  flex items-center">
             <button onClick={toggleMenu} className="text-2xl">
@@ -57,14 +59,12 @@ function Header({ isPopupOpen }) {
             </button>
           </div>
         {isMenuOpen && (
-          <div className="md:hidden bg-white fixed bg-opacity-80  top-16  h-[25%] ml-48  w-1/2 inset-0 shadow-lg z-50">
-            <div className="flex flex-col text-center space-y-2  p-4">
-              <Link to='/' onClick={toggleMenu}><p className="cursor-pointer text-base font-semibold">Home</p></Link>
-              <p className="cursor-pointer text-base font-semibold">Services</p>
-              <Link to='/about' onClick={toggleMenu}><p className="cursor-pointer text-base  font-semibold">About Us</p></Link>
-              <Link to='/contact' onClick={toggleMenu}><p className="cursor-pointer text-base font-semibold">Contact Us</p></Link>
-            </div>
-          </div>
+          <div className="md:hidden bg-[#fffefe] fixed top-16 border-[1px] right-0 h-full w-3/4 z-50 flex flex-col items-end transition-transform duration-300">
+            <Link to='/' onClick={toggleMenu} className={`${location.pathname === '/' ? 'bg-[#cef1ea]' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 mt-2 rounded-lg w-full text-center`}>Home</Link>
+            <Link to='/service' onClick={toggleMenu} className={`${location.pathname === '/service' ? 'bg-[#cef1ea]' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 rounded-lg w-full text-center`}>Services</Link>
+            <Link to='/about' onClick={toggleMenu} className={`${location.pathname === '/about' ? 'bg-[#cef1ea]' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 rounded-lg w-full text-center`}>About Us</Link>
+            <Link to='/contact' onClick={toggleMenu} className={`${location.pathname === '/contact' ? 'bg-[#cef1ea] text-white' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 rounded-lg w-full text-center`}>Contact Us</Link>
+        </div>
         )}
         </div>
       </div>

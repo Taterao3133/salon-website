@@ -2,33 +2,48 @@ import './Home.css'
 
 import { IoIosSearch } from "react-icons/io";
 import { BsCalendar2Date,  } from "react-icons/bs";
-import { FaRegStar } from "react-icons/fa";
-import { SlLocationPin } from "react-icons/sl";
+// import { FaRegStar } from "react-icons/fa";
+// import { SlLocationPin } from "react-icons/sl";
+import Haircut from '../Images/hair-cutting.png'
+import home1 from '../Images/home-1.jpg'
+import home2 from '../Images/home-2.jpg'
+import home3 from '../Images/home-3.jpg'
+import home4 from '../Images/home-4.jpg'
+import Makaup from '../Images/clean.png'
+import Pedicure from '../Images/hands.png'
+import Waxing from '../Images/waxing.png'
+import Skincare from '../Images/skincare.png'
 
 
 
 import "@fontsource/manrope";
 
-
-import exp1 from '../Images/exp-pic3.jpg'
-import exp2 from '../Images/exp-pic2.jpg'
-import exp3 from '../Images/exp-pic4.jpg'
-import Abt_img from '../Images/exp-pic3.jpg'
 import Testimonial from '../components/testimonial/Testimonial';
 // import { useEffect } from 'react';
 import ServicesSlider from '../components/services/servicesslider';
 // import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Bookingpop from './Bookingpop';
+import { RiDoubleQuotesR } from 'react-icons/ri';
 
 function Home() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const openPopup = () => setIsPopupOpen(true);
   const closePopup = () => setIsPopupOpen(false);
+    const [offsetY, setOffsetY] = useState(0);
+  
+    const handleScroll = () => {
+      setOffsetY(window.scrollY);
+    };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
   return <>
-  <div className="home-section overflow-hidden">
+  <div className="home-section max-sm:mt-8 xl:mt-14 overflow-hidden">
      <div className={`herosection  flex flex-nowrap ${isPopupOpen ? 'overflow-hidden' : ''}`}>
         <div className="b_c bg-[#BA7894]   xl:w-[635px]">
             <div className=" bg_gradient  ">
@@ -83,159 +98,116 @@ function Home() {
      </div>
 
      {/* exp- section start */}
-     <div className="exp_section  ">
-      <div className="inner_heading text-center max-sm:pt-6 xl:pt-16">
-        <h2 className='i_text text-[#422A3C] font-playfair font-bold max-sm:text-xl xl:text-[45px]'>We are Experienced making you <br />
-            Very Beautiful
-        </h2>
-        <h4 className='xl:text-[20px] max-sm:text-sm font-raleway text-[#555555]'> We always hear to Happy and Serve You</h4>
-      </div>          
-      <div className="pics_section overflow-hidden container max-sm:h-auto max-sm:-mt-3 max-sm:p-10  xl:h-[400px] xl:w-[1250px]  xl:ml-36 xl:mt-7 max-sm:columns-2 xl:columns-3">
-        <div className="img_boxes max-sm:space-y-4 ">
-          <div className="main_img max-sm:space-y-4">
-            <img src={exp1} alt="" className='g max-sm:rounded-lg xl:rounded-l-[50px] max-sm:h-32 xl:h-[398px] max-sm:w-40 xl:w-auto' />
-          </div>
-          <div className="img_boxes  max-sm:space-y-4  columns-1   overflow-hidden">
-            <img src={exp3} alt="" className='g max-sm:h-32 max-sm:w-40 xl:h-[190px] w-96 xl:mb-4 max-sm:rounded-lg' />
-            <img src={exp2} alt="" className='g max-sm:hidden max-sm:h-32 max-sm:w-52 xl:h-[198px] w-96 max-sm:rounded-lg ' />
-            {/* <img src={exp2} alt=""  className='g absolute max-sm:visible md:hidden xl:hidden  max-sm:h-28 max-sm:w-80  xl:h-[198px] w-96 max-sm:rounded-lg  overflow-hidden' /> */}
-          </div>
-          <div className="img_boxes max-sm:space-y-4  columns-1  overflow-hidden ">
-           <img src={exp1} alt="" className='g max-sm:h-32 max-sm:w-40 xl:h-[190px] xl:w-96 xl:mb-4 max-sm:rounded-lg xl:round-tr[50px]' />
-            <img src={exp2} alt="" className='g  max-sm:h-32 max-sm:w-40 xl:h-[198px] xl:w-96 max-sm:rounded-lg' />
+     <div className="d bg-gray-100 xl:pb-16 max-sm:pt-5 max-sm:pb-6 md:pt-10 xl:pt-10 h-auto xl:flex">
+        <div className="l-c flex-[50%] xl:ml-32 max-sm:p-5 xl:p-14">
+            <div className="-z-1 relative circle-b prev-element transition-transform duration-500 transform rounded-full  -ml-7 w-28 h-28 bg-[#cef1ea]"
+              style={{ transform: `translateY(${offsetY * -0.09}px)` }}>
+
+              </div>
             
-          </div>
+            <div className="img-f ">
+            <img src={home1} alt=""  className='max-sm:w-[80%] max-sm:h-auto absolute -mt-28 w-auto drop-shadow-2xl ' />
+            </div>
+            <div className="circle-b  rounded-full xl:ml-72 max-sm:ml-64 max-sm:mt-44 xl:mt-56  w-28 h-28 bg-[#cef1ea]"
+            style={{ transform: `translateY(${offsetY * 0.09}px)` }}></div>
+        </div>
+        <div className="r-c xl:flex-[50%] max-sm:mt-8 xl:-ml-24 xl:mt-12  xl:p-8 ">
+            <div className="h max-sm:text-3xl md:text-4xl xl:text-6xl font-playfair max-sm:ml-9 max-sm:mt-9   xl:mt-5 font-semibold  "><p>Why Our
+            Clients <br /></p>
+            <hr className='max-sm:hidden border-[2px] w-20 mt-12 border-[#cef1ea]  '/> 
+            <p className='xl:ml-24 xl:-mt-8'>Choose Us</p></div>
+            <p className='font-raleway text-gray-800 max-sm:pr-5 max-sm:pl-9  max-sm:mt-3 font-semibold tracking-wide max-sm:text-sm xl:pt-10 text-left  xl:pr-32'>" We are the leading beauty salon in LA providing high-quality hairdressing,
+               makeup, and skin care services to everyone."</p>
+            <p className='font-lato xl:text-base max-sm:text-sm max-sm:pl-9 text-gray-500 max-sm:mt-2 max-md:pr-5 xl:mt-6 xl:pr-36'>Our clients appreciate and value our level of customer service, the skills of our stylists 
+              and estheticians as well as our professional approach to everything we do.</p>
+            <button className='bg-[#cef1ea] xl:mt-6 max-sm:mt-3 max-sm:ml-9 max-sm:text-sm  max-sm:hover:text-xl xl:text-base font-medium hover:text-lg border-[#cef1ea] font-lato p-3 rounded-full'>LEARN MORE</button>
+
         </div>
       </div>
-      
-     </div>
+      {/* salon details */}
+      <div className="s-details bg-[#ffffff] max-sm:mt-5 max-sm:pt-10 xl:pt-5 pb-5 h-auto w-full">
+        <div className="in-details  w-[80%]  m-auto xl:flex h-auto">
+          <div className="r-c flex-[0.5] xl:p-10 ">
+          <hr className='max-sm:hidden border-[2px] w-20 mt-14  :border-[#cef1ea]  '/>
+            <h2 className='max-sm:text-3xl xl:text-5xl font-playfair font-semibold tracking-wider xl:ml-24 xl:-mt-7 '>Our Beauty Salon</h2>
+            <p className='font-raleway max-sm:mt-3  xl:mt-5 max-sm:text-base xl:text-lg pr-5 font-medium'><span className=' font-bold'>Unique Beauty Salon</span> offers beauty services of an 
+            utmost level to all LA residents and guests who are looking for high-quality beauty care.</p>
+            <p className='font-lato max-sm:text-sm xl:text-base max-sm:mt-3 xl:mt-5 text-gray-500'>Our Beauty Salon is based on the belief that our customers' needs are of the utmost importance. Our entire team is committed to
+               meeting those needs. As a result, a high percentage of our business is from regular customers.</p>
+            <img src={home2} alt=""  className= ' max-sm:mt-5 xl:mt-10'/>
+            <RiDoubleQuotesR className="text-right text-[#d5d5d5]  mt-5 max-sm:w-16 max-sm:h-16 xl:h-24 xl:w-24"/>
+            <p className='xl:text-3xl max-sm:text-xl font-playfair font-bold  xl:ml-14 max-sm:-mt-12 xl:-mt-16 xl:pr-7 text-right'>We are responsible for the quality of the services you receive!</p>
+
+
+          </div>
+          <div className="l-c flex-[0.5] max-sm:hidden p-10 ">
+            <img src={home3} alt="" />
+            <p className='font-lato text-base mt-5 text-gray-500'>All our salons in LA are uniquely designed to offer our clients the best beauty, hairstyling, and skin care experience, which we hope you and 
+              your body will appreciate. Let yourself relax and be pampered at the best salon in California!</p>
+            <img src={home4} alt="" className='mt-5' />
+          </div>
+
+        </div>
+
+      </div>
+
      {/* services section*/}
-     <div className="container1 max-sm:hidden ">
-        <div className="txt_heading text-center ">
-          <h3 className='s_inner font-playfair text-[#BA7894] max-sm:text-sm max-sm:pt-8 xl:pt-16'>Our Services</h3>
-          <h2 className='b_inner font-playfair text-[#422A3C] max-sm:text-xl xl:text-5xl'> Recommended</h2>
-          <p className='inner_text font-raleway max-xm:text-sm md:text-lg xl:text-lg max-sm:pt-2 xl:pt-4'>Unveil your best self with our personalized beauty treatments designed to pamper and refresh. </p>
-        </div>
+     
+     <div className="our-services pb-20  h-auto w-full bg-[#f6f9f9]">
+        <h2 className='text-center max-sm:text-3xl xl:text-5xl font-playfair font-bold tracking-wide leading-8 max-sm:pt-8 xl:pt-20'>Our Services</h2>
+        <hr className='border-[2px] mx-auto max-sm:w-10  xl:w-20 max-sm:mt-2 xl:mt-6 border-[#cef1ea] ' />
+        <p className='text-center font-montserrat max-sm:text-base max-sm:p-7 max-sm:text-[#9b9b9b] xl:mt-6'>At our salon, we offer top-tier beauty and wellness services <br />
+        tailored to enhance your natural elegance and rejuvenate your spirit.</p>
 
-
-        {/* images cards section================= */}
-        <div className="inner_container max-sm:hidden max-sm:p-5 max-sm:overflow-hidden  md:w-10/12 xl:w-10/12 max-sm:columns-2 md:columns-3 xl:columns-4 gap-6  md:ml-28 xl:ml-28 md:mt-12 xl:mt-12 ">
-
-          <div className="max-w-[290px]  max-sm:h-80 overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
-            <img src={exp1} className="w-full  xl:h-48 md:h-48"  alt="Sunset in the mountains"/>
-            <div className="px-6 py-4">
-              <div className="rating_review flex justify-between ">
-                <div className="rating flex flex-w-nowrap gap-2">
-                  <FaRegStar className='fa w-6 h-6' />
-                  <p>4.5</p>
-                </div>
-                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
-              </div>
-              <div className="img_dt mt-4">
-                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
-                <div className="address flex flex-nowrap mt-2">
-                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
-                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
-                </div>
-              </div>
+        <div className="container w-[75%]  h-auto  m-auto xl:mt-7 max-sm:row xl:columns-3 ">
+          <div className="bx1  xl:pt-10  hover:bg-[#ffffff] border-[1px]  hover:drop-shadow-xl hover:transition hover:duration-300 hover:scale-105">
+            <div className="inbx max-sm:m-auto max-sm:mt-6 xl:ml-36 h-20 w-20 rounded-full bg-[#ccf1ea] ">
+              <img src={Haircut} alt=""  className='absolute w-20 h-auto '/>
             </div>
-            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
-              <p className='bk '>Book Now</p>
-            </div>
+            <h2 className='font-playfair text-center font-bold max-sm:text-xl xl:text-2xl max-sm:mt-5 xl:mt-10 hover:text-[#ccf1ea]'>HairCut & Styling</h2>
+            <p className=' p-8 max-sm:text-sm xl:text-base -mt-5 text-center font-raleway'>Improve your look with our professional haircut & hairstyling services.</p>
           </div>
-          <div className="max-w-[290px]  overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
-            <img src={exp2} className="w-full h-[190px]"  alt="Sunset in the mountains"/>
-            <div className="px-6 py-4">
-              <div className="rating_review flex justify-between ">
-                <div className="rating flex flex-w-nowrap gap-2">
-                  <FaRegStar className='fa w-6 h-6' />
-                  <p>4.5</p>
-                </div>
-                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
-              </div>
-              <div className="img_dt mt-4">
-                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
-                <div className="address flex flex-nowrap mt-2">
-                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
-                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
-                </div>
-              </div>
+          <div className="bx1  xl:pt-10  hover:bg-[#ffffff] border-[1px]  hover:drop-shadow-xl hover:transition hover:duration-300 hover:scale-105">
+            <div className="inbx max-sm:m-auto max-sm:mt-6 xl:ml-36 h-20 w-20 rounded-full bg-[#ccf1ea] ">
+              <img src={Makaup} alt=""  className='absolute w-20 h-auto '/>
             </div>
-            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
-              <p className='bk '>Book Now</p>
-            </div>
+            <h2 className='font-playfair text-center font-bold max-sm:text-xl xl:text-2xl max-sm:mt-5 xl:mt-10 hover:text-[#ccf1ea]'>Makeup</h2>
+            <p className=' p-8 max-sm:text-sm xl:text-base -mt-5 text-center font-raleway'>"Our makeup experts will have you looking your best in less than 30 minutes."</p>
           </div>
-          <div className="max-w-[290px]  overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
-            <img src={exp3} className="w-full h-[190px]"  alt="Sunset in the mountains"/>
-            <div className="px-6 py-4">
-              <div className="rating_review flex justify-between ">
-                <div className="rating flex flex-w-nowrap gap-2">
-                  <FaRegStar className='fa w-6 h-6' />
-                  <p>4.5</p>
-                </div>
-                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
-              </div>
-              <div className="img_dt mt-4">
-                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
-                <div className="address flex flex-nowrap mt-2">
-                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
-                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
-                </div>
-              </div>
+          <div className="bx1  xl:pt-10  hover:bg-[#ffffff] border-[1px]  hover:drop-shadow-xl hover:transition hover:duration-300 hover:scale-105">
+            <div className="inbx max-sm:m-auto max-sm:mt-6 xl:ml-36 h-20 w-20 rounded-full bg-[#ccf1ea] ">
+              <img src={Pedicure} alt=""  className='absolute w-20 h-auto '/>
             </div>
-            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
-              <p className='bk '>Book Now</p>
-            </div>
+            <h2 className='font-playfair text-center font-bold max-sm:text-xl xl:text-2xl max-sm:mt-5 xl:mt-10 hover:text-[#ccf1ea]'>Manicure & Pedicure</h2>
+            <p className=' p-8 max-sm:text-sm xl:text-base -mt-5 text-center font-raleway'>"Pamper yourself with our manicure & pedicure services ."</p>
           </div>
-          <div className="max-w-[290px]  overflow-hidden border-2 rounded-2xl shadow-sm border-[#e1d9d9]">
-            <img src={exp3} className="w-full h-[190px]"  alt="Sunset in the mountains"/>
-            <div className="px-6 py-4">
-              <div className="rating_review flex justify-between ">
-                <div className="rating flex flex-w-nowrap gap-2">
-                  <FaRegStar className='fa w-6 h-6' />
-                  <p>4.5</p>
-                </div>
-                <p className='font-bold font-playfair text-lg'> <span>105</span> Reviews</p>
-              </div>
-              <div className="img_dt mt-4">
-                <h2 className='h2  font-playfair text-2xl font-bold'>Beauty Salon</h2>
-                <div className="address flex flex-nowrap mt-2">
-                  <SlLocationPin  className='sl w-4 h-4 mt-1'/>
-                  < p className='ml-2 text-base'>kphb hyderabad telangana</p>
-                </div>
-              </div>
+          <div className="bx1  xl:pt-10  hover:bg-[#ffffff] border-[1px]  hover:drop-shadow-xl hover:transition hover:duration-300 hover:scale-105">
+            <div className="inbx max-sm:m-auto max-sm:mt-6 xl:ml-36 h-20 w-20 rounded-full bg-[#ccf1ea] ">
+              <img src={Skincare} alt=""  className='absolute w-20 h-auto '/>
             </div>
-            <div className=" bg-[#BA7894] text-white h-11 w-60 text-center pt-2 rounded-lg ml-6 mb-6">
-              <p className='bk '>Book Now</p>
+            <h2 className='font-playfair text-center font-bold max-sm:text-xl xl:text-2xl max-sm:mt-5 xl:mt-10 hover:text-[#ccf1ea]'>Skin Care</h2>
+            <p className=' p-8 max-sm:text-sm xl:text-base -mt-5 text-center font-raleway'>"We offer a full range of relaxing skin care services, including all types of facials."</p>
+          </div>
+          <div className="bx1  xl:pt-10  hover:bg-[#ffffff] border-[1px]  hover:drop-shadow-xl hover:transition hover:duration-300 hover:scale-105">
+            <div className="inbx max-sm:m-auto max-sm:mt-6 xl:ml-36 h-20 w-20 rounded-full bg-[#ccf1ea] ">
+              <img src={Waxing} alt=""  className='absolute w-20 h-auto '/>
             </div>
+            <h2 className='font-playfair text-center font-bold max-sm:text-xl xl:text-2xl max-sm:mt-5 xl:mt-10 hover:text-[#ccf1ea]'>Waxination</h2>
+            <p className=' p-8 max-sm:text-sm xl:text-base -mt-5 text-center font-raleway'>Improve your look with our professional haircut & hairstyling services.</p>
+          </div>
+          <div className="bx1  xl:pt-10  hover:bg-[#ffffff] border-[1px]  hover:drop-shadow-xl hover:transition hover:duration-300 hover:scale-105">
+            <div className="inbx max-sm:m-auto max-sm:mt-6 xl:ml-36 h-20 w-20 rounded-full bg-[#ccf1ea] ">
+              <img src={Makaup} alt=""  className='absolute w-20 h-auto '/>
+            </div>
+            <h2 className='font-playfair text-center font-bold max-sm:text-xl xl:text-2xl max-sm:mt-5 xl:mt-10 hover:text-[#ccf1ea]'>Brider Services</h2>
+            <p className=' p-8 max-sm:text-sm xl:text-base -mt-5 text-center font-raleway'>"Experience luxurious bridal services tailored to make your special day unforgettable."</p>
           </div>
 
-        </div>
-      </div>
-                {/* about section */}
-      <div className="about_us_section max-sm:w-100% max-sm:overflow-hidden xl:w-full md:h-[600px] xl:h-[600px] bg-[#f7ad17] md:mt-10 xl:mt-10 ">
-        <div className="ab_box md:h-3/4 xl:h-3/4 md:w-3/4 xl:w-3/4 md:ml-44 xl:ml-48 xl:pt-28 flex" >
-      
-          <div className="abt_img max-sm:flex-[0.7]  xl:flex-[0.5] bg-[#422A3C]">
-            <img src={Abt_img} alt=""  className='xl:w-3/4 h-100% xl:ml-16 xl-mt-14 max-sm:p-5' />
-          </div>
-          <div className="abt_content max-sm:flex-[0.3] xl:flex-[0.5]  bg-[#422A3C]">
-            <p className='font-semibold font-lato text-white text-sm max-sm:mt-8 xl:mt-6'>About Us</p>
-
-            <p className='text-white max-sm:text-base xl:text-3xl font-lato max-sm:mt-8 xl:mt-4'> It’s the bridge between <br />
-            service  companies and consumers.</p>
-            <p className='max-sm:hidden xl:text-lg max-sm:text-xs font-raleway text-[#FFFFFF] xl:mt-6 max-sm:pt-2 max-sm:pr-2 xl:pr-4'>ServiceMarket.dk is 
-              a Copenhagen-based technology company known for our overview platform.
-              Our aim is to simplify and improve everyday life for citizens in Denmark. 
-              One platform that brings together all services in an easy and controlled environment.</p>
-          </div>
-
-        </div>
-          <div className="ab-c2 xl:hidden md:hidden font-raleway p-5">A Copenhagen-based technology company known for our overview platform.
-              Our aim is to simplify and improve everyday life for citizens in Denmark. 
-              One platform that brings together all services in an easy and controlled environment.</div>
           
+        </div>
+
       </div>
+      
         {/* User reviews testmonial=============================== */}
       <Testimonial/>
     </div>
