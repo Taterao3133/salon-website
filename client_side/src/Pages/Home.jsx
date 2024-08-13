@@ -43,7 +43,7 @@ function Home() {
     }, []);
 
   return <>
-  <div className="home-section max-sm:mt-8 xl:mt-14 overflow-hidden">
+  <div className="home-section  overflow-hidden">
      <div className={`herosection  flex flex-nowrap ${isPopupOpen ? 'overflow-hidden' : ''}`}>
         <div className="b_c bg-[#BA7894]   xl:w-[635px]">
             <div className=" bg_gradient  ">
