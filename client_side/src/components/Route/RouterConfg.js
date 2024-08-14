@@ -8,9 +8,9 @@ import ScrollTop from '../../utils/ScrollTop';
 import Privacyterms from '../../Pages/Privacyterms';
 
 function RouterConfg() {
-  <ScrollTop /> 
   return( 
-   <>
+    <>
+    <ScrollTop /> 
     <Routes>
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Home />} />

@@ -15,7 +15,7 @@ function About() {
   return (
     <div className="about_section overflow-hidden">
     <div className="tagline bg-[#422A3C] w-full xl:h-80 max-sm:h-52 justify-items-center  text-center ">
-      <div className="container max-sm:m-auto xl:ml-96 pt-11  xl:pt-24 w-2/4  ">
+      <div className="container max-sm:m-auto xl:ml-96 pt-11  xl:pt-24 xl:w-2/4  ">
         <h5 className="text-[#ECBFD3] max-sm:text-xs max-sm:pt-8 font-raleway font-semibold xl:ml-6 ">Short Story About Us</h5>
         <h2 className="xl:text-5xl max-sm:text-sm font-bold text-[#F7E5C1] pt-2 font-playfair">The Big Story Behind, Our <br />Beautyness Center</h2>
         <div className="btn_c max-sm:w-28 max-sm:9  max-sm:mt-4 xl:w-36 xl:h-12 bg-[#BA7894] max-sm:text-center xl:pt-3 rounded-md max-sm:m-auto xl:m-auto xl:mt-7">

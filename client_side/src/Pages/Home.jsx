@@ -55,7 +55,7 @@ function Home() {
                    services that will ensure your needs are taken care of at our center. 
                    We offer the latest trends, products and services at our salon</p>
                   
-                   <div className="search-box max-sm:ml-auto max-sm:h-auto max-sm:w-5/6 max-sm:rounded-lg bg-[#faf8f8] md:h-[80px] xl:w-[730px] md:rounded-full xl:mt-[52px]">
+                   <div className="search-box max-sm:m-auto max-sm:h-auto max-sm:w-5/6 max-sm:rounded-lg bg-[#faf8f8] md:h-[80px] xl:w-[730px] md:rounded-full xl:mt-[52px]">
                     <div className="search-bc max-sm:text-center max-sm:p-1 flex flex-nowrap xl:space-x-[50px]" >
                       <div className="input-1  xl:ml-11">
                         <p className='text-[#BA7894] max-sm:text-sm font-semibold xl:text-lg xl:mt-3 '>Service Name</p>
@@ -91,8 +91,8 @@ function Home() {
      </div>
 
      {/* category section  services section---*/}
-     <div className="relative  max-sm:h-36 max-sm:max-w-full max-sm:mt-14 xl:h-40 xl:w-[1300px] m-auto xl:mt-10">
-      <div className="c_section flex  xl:space-x-12 absolute whitespace-nowrap">
+     <div className="relative  max-sm:pr-2 max-sm:h-36 max-sm:max-w-full max-sm:mt-14 xl:h-40 xl:w-[1300px] m-auto xl:mt-10">
+      <div className="c_section flex  absolute whitespace-nowrap">
         <ServicesSlider/>
       </div>
      </div>

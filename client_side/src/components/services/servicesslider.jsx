@@ -65,7 +65,7 @@ const ServicesSlider = () => {
   };
 
   return (
-    <div className="relative overflow-hidden max-sm:h-32 max-sm:text-xs max-sm:w-96 xl:h-40 xl:w-[1300px] m-auto mt-1">
+    <div className="relative overflow-hidden max-sm:h-32 max-sm:text-xs  max-sm:w-96 xl:h-40 xl:w-[1300px] max-sm:m-auto m-auto mt-1">
       <Slider {...settings}>
         {services.map((service) => (
           <ServiceCard key={service.id}

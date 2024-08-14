@@ -13,7 +13,7 @@ function Contact() {
   return (
     <div className="contact_section">
       <div className="tagline bg-[#422A3C] w-full xl:h-80 max-sm:h-52 justify-items-center text-center ">
-        <div className="container m-auto xl:pt-32  max-sm:pt-24 w-2/4  ">
+        <div className="container m-auto xl:pt-32  max-sm:pt-24 xl:w-2/4  ">
           <h5 className="text-[#ECBFD3] max-sm:text-xs xl:text-sm font-montserrat font-semibold ml-3">GET IN TOUCH WITH US</h5>
           <h2 className="max-sm:text-2xl xl:text-5xl font-bold text-[#FFFFFF] pt-2 font-playfair">We Are Ready To <br />Assist You.</h2>
           
