@@ -34,7 +34,8 @@ function About() {
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10 ">
               <p className='font-playfair font-bold max-sm:text-base xl:text-xl'>Beauty Experts</p>
-              <p className='font-montserrat text-[#555555] max-sm:text-xs max-sm:pr-3 xl:text-base'>"Our team of beauty experts is dedicated to transforming your look with professional expertise and a touch of elegance."</p>
+              <p className='font-montserrat text-[#555555] max-sm:text-xs max-sm:pr-3 xl:text-base'>"Our team of beauty 
+                experts is dedicated to transforming your look with professional expertise and a touch of elegance."</p>
               
             </div>
           </div>
@@ -47,7 +48,8 @@ function About() {
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10 ">
               <p className='font-playfair font-bold max-sm:text-base xl:text-xl'>Great Service</p>
-              <p className='font-montserrat text-[#555555] max-sm:text-xs max-sm:pr-3 xl:text-base'>"Our salon offers a comprehensive range of services designed to cater to all your beauty needs. From precision haircuts and 
+              <p className='font-montserrat text-[#555555] max-sm:text-xs max-sm:pr-3 xl:text-base'>"Our salon offers a comprehensive range of services 
+                designed to cater to all your beauty needs. From precision haircuts and 
                 vibrant coloring to relaxing spa treatments and professional makeup application, 
                 our skilled team ensures you receive the highest level of care and expertise."</p>
               
@@ -58,7 +60,7 @@ function About() {
 
           <div className="box flex max-sm:ml-14 xl:ml-28 max-sm:mt-2 xl:mt-8">
             <div className="v_innner_content flex-[0.2] text-center xl:border-2 border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto xl:w-24 xl:h-24 xl:rounded-lg">
-                <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg'/>
+                <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 max-sm:bg-[#F7E5C1] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg'/>
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10">
                 <p className='font-playfair font-bold max-sm:text-base xl:text-xl'>100% Genuine</p>
