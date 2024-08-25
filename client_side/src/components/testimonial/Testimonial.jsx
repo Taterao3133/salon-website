@@ -53,7 +53,7 @@ function Testimonial() {
           </div>
           <p className="font-raleway tracking-wide max-sm:text-base xl:text-lg text-gray-800 max-sm:mt-3 xl:p-5 text-left font-medium">Thanks to our clients’ regular reviews, testimonials, and comments we are able to improve our salon.</p>
           <p className="font-lato -mt-2 max-sm:text-sm xl:text-base text-gray-500 max-sm:mt-3 xl:p-5 text-left">Unlike other salons, we prefer to maintain a constant connection with our customers and receive feedback on every service, whether
-             it’s a simple haircut or complex wedding makeup. If you’ve already visited Glory, feel free to contact us and send your testimonial.</p>
+             it’s a simple haircut or complex wedding makeup. If you’ve already visited Unique Beauty Salon, feel free to contact us and send your testimonial.</p>
         </div>
         <div className="header-test overflow-hidden pb-5   flex-[0.5] row">
         <Slider {...settings} >
@@ -63,17 +63,19 @@ function Testimonial() {
               <h2 className="font-lato font-normal  text-xl tracking-wider">Akhila Suri</h2>
               <p>|</p>
               <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
+              <div className="clientImg -mt-5 max-sm:h-20 max-sm:w-20  xl:w-20  ml-5 border-2 rounded-full xl:h-20">
+                <img src={exp3} alt="" className='cover-fill xl:w-20 xl:h-20 max-sm:w-16 max-sm:h-16 rounded-full' />
+
+              </div>
             </div> 
             <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
                am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
              
             <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
 
-            <div className="clientImg absolute max-sm:h-20 max-sm:w-20 max-sm:-mt-10 xl:w-24 xl:-mt-14 ml-5 border-2 rounded-full xl:h-24">
-              <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
-
-            </div>
           </div>
+
+          {/* dummis */}
           
           <div className="review-bx w-[90%] max-sm:h-auto pl-6 pr-6 m-auto mb-5 mt-9 h-80 border-l-2  border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl ">
             <div className="clientname  mt-5 space-x-2 flex p-8">
@@ -81,8 +83,9 @@ function Testimonial() {
               <p>|</p>
               <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
             </div> 
-            <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
-               am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
+            <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights 
+              and my experience was excellent! She took her time doing my hair and I
+               am very pleased with the results. If you are still looking where to have your hair cut the best way, head for unique Beauty Salon!</p>
              
             <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
 
@@ -131,16 +134,17 @@ function Testimonial() {
               <h2 className="font-lato font-normal  text-xl tracking-wider">Akhila Suri</h2>
               <p>|</p>
               <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
+              <div className="clientImg  max-sm:h-20 max-sm:w-20 xl:w-24  ml-5 border-2 rounded-full xl:h-24">
+                <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
+
+
+              </div>
+
             </div> 
             <p className="r-client font-lato xl:p-8 -mt-5 text-left max-sm:text-sm xl:text-base">Janette cut my hair and did partial highlights and my experience was excellent! She took her time doing my hair and I
                am very pleased with the results. If you are still looking where to have your hair cut the best way, head for Glory!</p>
              
             <RiDoubleQuotesR className="text-right text-[#d5d5d5] max-sm:ml-52 xl:ml-96 xl:-mt-8  max-sm:h-14 max-sm:w-14 xl:h-20  xl:w-20"/>
-
-            <div className="clientImg absolute max-sm:h-20 max-sm:w-20 max-sm:-mt-10 xl:w-24 xl:-mt-14 ml-5 border-2 rounded-full xl:h-24">
-              <img src={exp3} alt="" className='cover-fill xl:w-24 xl:h-24 max-sm:w-20 max-sm:h-20 rounded-full' />
-
-            </div>
           </div>
 
           {/* testing1 */}

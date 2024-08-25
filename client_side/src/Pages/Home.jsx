@@ -19,6 +19,7 @@ import Skincare from '../Images/skincare.png'
 import "@fontsource/manrope";
 
 import Testimonial from '../components/testimonial/Testimonial';
+import HeroSlider from '../components/services/heroslider'
 // import { useEffect } from 'react';
 import ServicesSlider from '../components/services/servicesslider';
 // import { Link } from 'react-router-dom';
@@ -44,9 +45,12 @@ function Home() {
 
   return <>
   <div className="home-section  overflow-hidden">
-     <div className={`herosection  flex flex-nowrap ${isPopupOpen ? 'overflow-hidden' : ''}`}>
-        <div className="b_c bg-[#BA7894]   xl:w-[635px]">
-            <div className=" bg_gradient  ">
+     {/* <div className={`herosection  flex flex-nowrap ${isPopupOpen ? 'overflow-hidden' : ''}`}> */}
+      
+        <HeroSlider/>
+
+
+            {/* <div className=" bg_gradient  ">
               <div className="herocontent absolute xl:ml-[218px] xl:pt-[207px]">
                   <p className='hero-text max-sm:mt-28 max-sm:ml-6 font-lato  text-[#FFFFFF]'>HAIR SALON, BEAUTY SALON , WOMENS SALON  </p>
                   <h1 className='hero-texts max-sm:ml-6 text-[#F7E5C1] font-playfair   xl:text-5xl font-semibold mb-6'>Find Your Service &<br/> Book Here</h1>
@@ -76,19 +80,19 @@ function Home() {
                         {/* <IoIosSearch className='text-white mt-[18px]  h-7 w-7 ml-2 '/> */}
                         
 
-                      </div>
+                      {/* </div>
 
                     </div>
                    
                          {isPopupOpen && <Bookingpop isOpen={isPopupOpen} closePopup={closePopup} />}
                    </div>
-                  
-              </div>
-            </div>
-        </div>
+                   */}
+              {/* </div>  */}
+            
+        
         {/* background -image */}
-        <div className="bg-image  "> </div> 
-     </div>
+         
+     
 
      {/* category section  services section---*/}
      <div className="relative  max-sm:pr-2 max-sm:h-36 max-sm:max-w-full max-sm:mt-14 xl:h-40 xl:w-[1300px] m-auto xl:mt-10">
@@ -143,7 +147,7 @@ function Home() {
           <div className="l-c flex-[0.5] max-sm:hidden p-10 ">
             <img src={home3} alt="" />
             <p className='font-lato text-base mt-5 text-gray-500'>All our salons in LA are uniquely designed to offer our clients the best beauty, hairstyling, and skin care experience, which we hope you and 
-              your body will appreciate. Let yourself relax and be pampered at the best salon in California!</p>
+              your body will appreciate. Let yourself relax and be pampered at the best salon in Banswada</p>
             <img src={home4} alt="" className='mt-5' />
           </div>
 

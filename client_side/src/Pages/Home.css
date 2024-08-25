@@ -1,18 +1,18 @@
-.bg-image{
+/* .bg-image{
     background-image: url('../../assests/herosection.jpg');
     background-size:cover;
     width: 900px;
     height: 650px;
-}
+} */
 
-.bg_gradient {
+/* .bg_gradient {
     background-image: linear-gradient(to right, rgba(66, 42, 60, 1) 68% , rgba(66, 42, 60, 0.80)80% , rgba(66, 42, 60, 0.31) ,rgba(66, 42, 60, 0.05) );
     height: 650px;
     width: 1000px;
     position: relative;
     z-index: 1;   
-  }
-
+  } */
+/* 
 .ih{
     
     color: white;
@@ -58,7 +58,7 @@
     font-size: 16px;
   } */
 
-  .search-box {
+  /* .search-box {
     flex-direction: column;
     align-items: stretch;
   }
@@ -81,5 +81,5 @@
   }
 
   
-}
-
+} */
+ 
