@@ -1,9 +1,4 @@
 import './Home.css'
-
-import { IoIosSearch } from "react-icons/io";
-import { BsCalendar2Date,  } from "react-icons/bs";
-// import { FaRegStar } from "react-icons/fa";
-// import { SlLocationPin } from "react-icons/sl";
 import Haircut from '../Images/hair-cutting.png'
 import home1 from '../Images/home-1.jpg'
 import home2 from '../Images/home-2.jpg'
@@ -24,14 +19,9 @@ import HeroSlider from '../components/services/heroslider'
 import ServicesSlider from '../components/services/servicesslider';
 // import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Bookingpop from './Bookingpop';
 import { RiDoubleQuotesR } from 'react-icons/ri';
 
 function Home() {
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
-
-  const openPopup = () => setIsPopupOpen(true);
-  const closePopup = () => setIsPopupOpen(false);
     const [offsetY, setOffsetY] = useState(0);
   
     const handleScroll = () => {
@@ -45,55 +35,7 @@ function Home() {
 
   return <>
   <div className="home-section  overflow-hidden">
-     {/* <div className={`herosection  flex flex-nowrap ${isPopupOpen ? 'overflow-hidden' : ''}`}> */}
-      
         <HeroSlider/>
-
-
-            {/* <div className=" bg_gradient  ">
-              <div className="herocontent absolute xl:ml-[218px] xl:pt-[207px]">
-                  <p className='hero-text max-sm:mt-28 max-sm:ml-6 font-lato  text-[#FFFFFF]'>HAIR SALON, BEAUTY SALON , WOMENS SALON  </p>
-                  <h1 className='hero-texts max-sm:ml-6 text-[#F7E5C1] font-playfair   xl:text-5xl font-semibold mb-6'>Find Your Service &<br/> Book Here</h1>
-                  <p className='hero-text3 font-raleway text-[#FFFFFF] max-sm:hidden'>
-                  We aim to become the trendsetters in hair & make-up by offering you the best products and
-                   services that will ensure your needs are taken care of at our center. 
-                   We offer the latest trends, products and services at our salon</p>
-                  
-                   <div className="search-box max-sm:m-auto max-sm:h-auto max-sm:w-5/6 max-sm:rounded-lg bg-[#faf8f8] md:h-[80px] xl:w-[730px] md:rounded-full xl:mt-[52px]">
-                    <div className="search-bc max-sm:text-center max-sm:p-1 flex flex-nowrap xl:space-x-[50px]" >
-                      <div className="input-1  xl:ml-11">
-                        <p className='text-[#BA7894] max-sm:text-sm font-semibold xl:text-lg xl:mt-3 '>Service Name</p>
-                        <div className="search-icon text-center flex flex-nowrap">
-                          <input type="text" className='border-b-2 max-sm:h-6 max-sm:w-24 max-sm:text-xs  focus:outline-none border-[#786666] bg-[#F8F8F8] ' placeholder='Enter Service' />
-                            <IoIosSearch  className='ml-[-18px] mt-1 h-5 w-5 cursor-pointer'/>
-                        </div>
-                      </div>
-                      <div className="input-2  max-sm:ml-3">
-                         <p className='text-[#BA7894] max-sm:text-sm font-semibold text-lg xl:mt-3'>Time & Date</p>
-                          <div className="search-icon flex flex-nowrap">
-                            <input type="text" className='border-b-2 max-sm:h-6 max-sm:w-24 max-sm:text-[12px] max-sm:text-xs focus:outline-none border-[#786666] bg-[#F8F8F8] ' placeholder='Enter date' />
-                            <BsCalendar2Date className='ml-[-18px] mt-1 h-4 w-4 cursor-pointer' />
-                          </div>
-                      </div>
-                      <div className="s_btn xl:w-52 xl:h-16 sm:h-auto  bg-[#BA7894] rounded-full max-sm:ml-3 xl:mt-2 flex flex-nowrap cursor-pointer "onClick={openPopup}>
-                        <p className='text-white max-sm:w-24 max-sm:text-base  xl:text-2xl font-medium xl:ml-10 max-sm:m-auto xl:mt-4' onClick={openPopup}>Book Now</p>
-                        {/* <IoIosSearch className='text-white mt-[18px]  h-7 w-7 ml-2 '/> */}
-                        
-
-                      {/* </div>
-
-                    </div>
-                   
-                         {isPopupOpen && <Bookingpop isOpen={isPopupOpen} closePopup={closePopup} />}
-                   </div>
-                   */}
-              {/* </div>  */}
-            
-        
-        {/* background -image */}
-         
-     
-
      {/* category section  services section---*/}
      <div className="relative  max-sm:pr-2 max-sm:h-36 max-sm:max-w-full max-sm:mt-14 xl:h-40 xl:w-[1300px] m-auto xl:mt-10">
       <div className="c_section flex  absolute whitespace-nowrap">
