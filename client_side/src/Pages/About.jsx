@@ -14,26 +14,27 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 function About() {
   return (
     <div className="about_section overflow-hidden">
-    <div className="tagline bg-[#422A3C] w-full xl:h-80 max-sm:h-52 justify-items-center  text-center ">
+    <div className="tagline bg-[#422A3C] w-full xl:h-80 md:h-60 max-sm:h-52 justify-items-center  text-center ">
       <div className="container max-sm:m-auto xl:ml-96 pt-11  xl:pt-24 xl:w-2/4  ">
-        <h5 className="text-[#ECBFD3] max-sm:text-xs max-sm:pt-8 font-raleway font-semibold xl:ml-6 ">Short Story About Us</h5>
-        <h2 className="xl:text-5xl max-sm:text-sm font-bold text-[#F7E5C1] pt-2 font-playfair">The Big Story Behind, Our <br />Beautyness Center</h2>
-        <div className="btn_c max-sm:w-28 max-sm:9  max-sm:mt-4 xl:w-36 xl:h-12 bg-[#BA7894] max-sm:text-center xl:pt-3 rounded-md max-sm:m-auto xl:m-auto xl:mt-7">
-         <Link to='/contact'><p className="text-[#FFFFFF] max-sm:text-xs font-semibold max-sm:p-2">Contact Us</p></Link>
+        <h5 className="text-[#ECBFD3] max-sm:text-xs max-sm:pt-8 md:pt-7 font-raleway font-semibold xl:ml-6 ">Short Story About Us</h5>
+        <h2 className="xl:text-5xl md:text-3xl max-sm:text-sm font-bold text-[#F7E5C1] pt-2 font-playfair">The Big Story Behind, Our <br />Beautyness Center</h2>
+        <div className="btn_c max-sm:w-28 max-sm:9  max-sm:mt-4 md:w-32 md:m-auto md:h-11 md:mt-3 xl:w-36 xl:h-12 bg-[#BA7894] max-sm:text-center xl:pt-3 rounded-md max-sm:m-auto xl:m-auto xl:mt-7">
+         <Link to='/contact'><p className="text-[#FFFFFF] max-sm:text-xs md:text-sm md:pt-3 font-semibold max-sm:p-2">Contact Us</p></Link>
         </div>
       </div>
     </div>
     {/* values section */}
-    <div className="values_content pb-10 text-center max-sm:mt-4 xl:mt-14">
+    <div className="values_content md:pb-0 md:pt-5 pb-10 text-center max-sm:mt-4 xl:mt-14">
         <p className="V_heading text-[#BA7894] font-semibold max-sm:text-xs xl:text-lg ">Our Values...</p>
-        <p className="v_h2 font-playfair font-bold max-sm:text-base xl:text-5xl max-sm:pt-2 xl:pt-4"> The Works values we thrive for</p>
-        <div className="container xl:w-2/4 max-sm:p-3 xl:ml-80 xl:space-y-6 ">
-          <div className="box flex max-sm:ml-14 xl:ml-28 xl:mt-8 ">
-            <div className="v_innner_content flex-[0.2] text-center  xl:border-2 xl: border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto xl:w-24 xl:h-24 xl:rounded-lg  ">
-              <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 max-sm:border-2 max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg max-sm:bg-[#F7E5C1] xl:pt-3 xl:ml-5'/>
+        <p className="v_h2 font-playfair font-bold max-sm:text-base md:text-3xl xl:text-5xl max-sm:pt-2 xl:pt-4"> The Works values we thrive for</p>
+        <div className="container md:3/4 md:ml-16 md:pr-20 xl:w-2/4 max-sm:p-3 xl:ml-80 xl:space-y-6 ">
+          <div className="box flex md:mb-5 md:mt-3 md:mr-5 max-sm:ml-14  xl:ml-28 xl:mt-8 ">
+            <div className="v_innner_content flex-[0.2] text-center  xl:border-2 xl:border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto md:h-20 md:w-20  xl:w-24 xl:h-24 xl:rounded-lg  ">
+              <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 md:bg-[#F7E5C1] md:p-2 md:rounded-lg
+               max-sm:border-2 max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2  md:mt-3 max-sm:rounded-lg md:text-[#BA7894] md:border-red-300 border-2 max-sm:bg-[#F7E5C1] xl:pt-3 xl:ml-5'/>
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10 ">
-              <p className='font-playfair font-bold max-sm:text-base xl:text-xl'>Beauty Experts</p>
+              <p className='font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl'>Beauty Experts</p>
               <p className='font-montserrat text-[#555555] max-sm:text-xs max-sm:pr-3 xl:text-base'>"Our team of beauty 
                 experts is dedicated to transforming your look with professional expertise and a touch of elegance."</p>
               
@@ -42,12 +43,12 @@ function About() {
 
           <hr className="border-t border-[#D3D3D3] max-sm:mt-3 xl:mt-2 max-sm:w-5/6 max-sm:ml-12 xl:w-6/7 xl:ml-28" />
 
-          <div className="box flex max-sm:ml-14 xl:ml-28 max-sm:mt-2 xl:mt-8 ">
+          <div className="box flex max-sm:ml-14 md:mb-5 md:mt-3 md:mr-5 xl:ml-28 max-sm:mt-2 xl:mt-8 ">
             <div className="v_innner_content flex-[0.2] text-center  xl:border-2 xl:border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto xl:w-24 xl:h-24 xl:rounded-lg   ">
-              <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg '/>
+              <img src={Aboutservice} alt="img" className='fill-current md:mt-3  text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 md:border-red-300 border-2 md:p-2 md:rounded-lg md:text-[#BA7894] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg '/>
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10 ">
-              <p className='font-playfair font-bold max-sm:text-base xl:text-xl'>Great Service</p>
+              <p className='font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl'>Great Service</p>
               <p className='font-montserrat text-[#555555] max-sm:text-xs max-sm:pr-3 xl:text-base'>"Our salon offers a comprehensive range of services 
                 designed to cater to all your beauty needs. From precision haircuts and 
                 vibrant coloring to relaxing spa treatments and professional makeup application, 
@@ -58,12 +59,12 @@ function About() {
           
           <hr className="border-t border-[#D3D3D3] max-sm:mt-3 xl:mt-2 max-sm:w-5/6 max-sm: max-sm:ml-12 xl:w-6/7 xl:ml-28" />
 
-          <div className="box flex max-sm:ml-14 xl:ml-28 max-sm:mt-2 xl:mt-8">
+          <div className="box flex max-sm:ml-14 md:mb-5 md:mt-3 md:mr-5 xl:ml-28 max-sm:mt-2 xl:mt-8">
             <div className="v_innner_content flex-[0.2] text-center xl:border-2 border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto xl:w-24 xl:h-24 xl:rounded-lg">
-                <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 max-sm:bg-[#F7E5C1] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg'/>
+                <img src={Aboutservice} alt="img" className='fill-current md:mt-3  text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 md:bg-[#BA7894] md:border-red-300 border-2 md:p-2 md:rounded-lg max-sm:bg-[#F7E5C1] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg'/>
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10">
-                <p className='font-playfair font-bold max-sm:text-base xl:text-xl'>100% Genuine</p>
+                <p className='font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl'>100% Genuine</p>
                 <p className='font-montserrat text-[#555555] max-sm:text-xs max-sm:pr-3 xl:text-base'>"We pride ourselves on offering 100% genuine services and products. 
                   Using only top-quality, authentic items, our professional team ensures every treatment is safe and effective. 
                   Trust us to provide you with an exceptional beauty experience that prioritizes your well-being and satisfaction."</p>
@@ -74,25 +75,25 @@ function About() {
     </div> 
     {/* salon details */}
     <div className="s-details bg-[#ffffff] max-sm:mt-5 max-sm:pt-10 xl:pt-5 pb-5 h-auto w-full">
-        <div className="in-details  w-[80%]  m-auto xl:flex h-auto">
+        <div className="in-details  w-[80%]  m-auto md:flex xl:flex h-auto">
           <div className="r-c flex-[0.5] xl:p-10 ">
-          <hr className='max-sm:hidden border-[2px] w-20 mt-14  :border-[#cef1ea]  '/>
-            <h2 className='max-sm:text-3xl xl:text-5xl font-playfair font-semibold tracking-wider xl:ml-24 xl:-mt-7 '>Our Beauty Salon</h2>
-            <p className='font-raleway max-sm:mt-3  xl:mt-5 max-sm:text-base xl:text-lg pr-5 font-medium'><span className=' font-bold'>Unique Beauty Salon</span> offers beauty services of an 
+          <hr className='max-sm:hidden border-[2px] md:hidden w-20 mt-14  :border-[#cef1ea]  '/>
+            <h2 className='max-sm:text-3xl md:text-4xl xl:text-5xl font-playfair font-semibold tracking-wider xl:ml-24 md:mt-10 xl:-mt-7 '>Our Beauty Salon</h2>
+            <p className='font-raleway max-sm:mt-3 md:mt-3  xl:mt-5 max-sm:text-base xl:text-lg pr-5 font-medium'><span className=' font-bold'>Unique Beauty Salon</span> offers beauty services of an 
             utmost level to all LA residents and guests who are looking for high-quality beauty care.</p>
             <p className='font-lato max-sm:text-sm xl:text-base max-sm:mt-3 xl:mt-5 text-gray-500'>Our Beauty Salon is based on the belief that our customers' needs are of the utmost importance. Our entire team is committed to
                meeting those needs. As a result, a high percentage of our business is from regular customers.</p>
-            <img src={home2} alt=""  className= ' max-sm:mt-5 xl:mt-10'/>
+            <img src={home2} alt=""  className= 'md:mt-5 max-sm:mt-5 xl:mt-10'/>
             <RiDoubleQuotesR className="text-right text-[#d5d5d5]  mt-5 max-sm:w-16 max-sm:h-16 xl:h-24 xl:w-24"/>
             <p className='xl:text-3xl max-sm:text-xl font-playfair font-bold  xl:ml-14 max-sm:-mt-12 xl:-mt-16 xl:pr-7 text-right'>We are responsible for the quality of the services you receive!</p>
 
 
           </div>
-          <div className="l-c flex-[0.5] xl:p-10 max-sm:mt-3 ">
+          <div className="l-c flex-[0.5] max-sm:hidden p-10 ">
             <img src={home3} alt="" />
-            <p className='font-lato max-sm:text-sm xl:text-base max-sm:mt-3 xl:mt-5 text-gray-500'>All our salons in LA are uniquely designed to offer our clients the best beauty, hairstyling, and skin care experience, which we hope you and 
-              your body will appreciate. Let yourself relax and be pampered at the best salon in California!</p>
-            <img src={home4} alt="" className='max-sm:mt-3 xl:mt-5' />
+            <p className='font-lato text-base mt-5 text-gray-500'>All our salons in LA are uniquely designed to offer our clients the best beauty, hairstyling, and skin care experience, which we hope you and 
+              your body will appreciate. Let yourself relax and be pampered at the best salon in Banswada</p>
+            <img src={home4} alt="" className='mt-5' />
           </div>
 
         </div>
@@ -100,8 +101,8 @@ function About() {
       </div>
      {/* journey section... */}
     <div className="journey_section w-full max-sm:h-auto xl:h-auto max-sm:pb-3  xl:pb-8 xl:flex">
-      <div className="jl_box flex-[0.4] max-sm:p-6 xl:pr-16 xl:pl-24 xl:pt-24  ">
-        <p className='font-playfair text-[#422A3C] max-sm:text-lg xl:text-3xl font-bold'>The start of the journey</p>
+      <div className="jl_box flex-[0.4] max-sm:p-6 md:pl-16 md:pt-14 md:pr-16  xl:pr-16 xl:pl-24 xl:pt-24  ">
+        <p className='font-playfair text-[#422A3C] max-sm:text-lg md:text-2xl xl:text-3xl font-bold'>The start of the journey</p>
         <p className=' max-sm:text-xs font-raleway xl:text-base text-[#555555]  mt-2 '> Akhila Suri embarked on her journey to create a unique beauty salon in December 2023, 
           bringing with her two years of hands-on experience in the beauty care industry. With a passion for helping clients feel their best, she combined her expertise with a vision for 
           a salon that offers personalized and innovative services. Her dedication to quality and customer satisfaction has quickly set her salon apart, making it a trusted 
@@ -131,7 +132,7 @@ function About() {
       </div>
 
       <div className="jr_box flex-[0.6]   overflow-hidden xl:mt-10 ">
-        <img src={abt_img} alt="" className=" max-sm:m-auto w-[80%] max-sm:mt-2 xl:mt-10 "/>
+        <img src={abt_img} alt="" className=" max-sm:m-auto  md:w-[60%] md:m-auto md:mt-4 md:mb-4 md:rounded-xl w-[80%] max-sm:mt-2 xl:mt-10 "/>
       </div>
 
     </div>
