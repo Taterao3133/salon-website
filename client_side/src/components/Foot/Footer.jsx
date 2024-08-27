@@ -27,8 +27,9 @@ function Footer() {
               </div>
             </div>
             <div className="f_sIcons text-white md:mb-6 md:gap-3 md:mr-5 xl:mb-8 flex items-end max-sm:gap-2 xl:gap-4">
-              <FaInstagram className="max-sm:h-8 w-auto p-1 xl:p-2 md:h-10 md:p-1 xl:h-12 border-2 cursor-pointer rounded-md"/>
-              <FaWhatsapp className="max-sm:h-8 w-auto xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" />
+              <Link to='https://www.instagram.com/unique_beauty_salon90/'><FaInstagram className="max-sm:h-8 w-auto p-1 xl:p-2 md:h-10 md:p-1 xl:h-12 border-2 cursor-pointer rounded-md"/></Link>
+              <a href="https://wa.me/8331950396?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="max-sm:h-8 w-auto xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" /></a>
               <FaFacebookF className="max-sm:h-8 w-auto  xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" />
             </div>
           </div>
@@ -37,16 +38,16 @@ function Footer() {
             <div className="s_explore">
               <p className="font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl">Expore Pages</p>
               <div className="s_pages max-sm:text-xs md:text-base max-sm:mt-2 xl:mt-4 max-sm:space-y-1 ">
-               <Link to='/home'> <p className="cursor-pointer" >Home</p></Link>
-                <p className="cursor-pointer"><Link to='/about'>About services</Link></p>
-                <Link to='/contact'><p className="cursor-pointer">Contact Us</p></Link>
+               <Link to='/home'> <p className="cursor-pointer hover:text-[#dbafd7]" >Home</p></Link>
+                <p className="cursor-pointer hover:text-[#dbafd7]"><Link to='/about'>About services</Link></p>
+                <Link to='/contact'><p className="cursor-pointer hover:text-[#dbafd7]">Contact Us</p></Link>
               </div>
             </div>
             <div className="s_utility">
               <p className="font-playfair font-bold max-sm:text-base max-sm:mt-2 md:text-lg xl:text-xl"> Utility Pages </p>
               <div className="s_Upages max-sm:text-xs  md:text-base xl:mt-4 max-sm:space-y-1 xl:space-y-3">
-                <Link to="/privacy" ><p className="cursor-pointer">Privacy Policy</p></Link>
-                <Link to='/privacy'><p className="cursor-pointer">Terms Of Uses</p></Link>
+                <Link to="/privacy" ><p className="cursor-pointer hover:text-[#dbafd7]">Privacy Policy</p></Link>
+                <Link to='/privacy'><p className="cursor-pointer hover:text-[#dbafd7]">Terms Of Uses</p></Link>
               </div>
             </div>
             <div className="s_addrs max-sm:-ml-5 xl:pr-8 ">

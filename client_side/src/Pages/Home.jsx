@@ -39,15 +39,15 @@ function Home() {
         <HeroSlider/>
 
      {/* category section  services section---*/}
-     <div className="relative  max-sm:pr-2 max-sm:h-36  max-sm:max-w-full md:ml-16 max-sm:mt-14 xl:h-40 xl:w-[1300px] m-auto xl:mt-10">
+     <div className="relative  max-sm:pr-2 max-sm:h-36  max-sm:max-w-full md:ml-16 max-sm:mt-14 lg:h-20 lg:ml-40 xl:ml-36 xl:h-40 xl:w-[1300px] m-auto lg:mt-5 xl:mt-10">
       <div className="c_section flex  absolute whitespace-nowrap">
         <ServicesSlider/>
       </div>
      </div>
 
      {/* exp- section start */}
-     <div className="d bg-gray-100 md:mt-32  lg:mt-10 xl:pb-16 max-sm:pt-5 max-sm:pb-6 md:pt-10 xl:pt-10 h-auto xl:flex">
-        <div className="l-c flex-[50%] xl:ml-32 md:ml-48 max-sm:p-5 xl:p-14">
+     <div className="d bg-gray-100 md:mt-32 lg:mt-14  xl:mt-10  xl:pb-16 max-sm:pt-5 max-sm:pb-6 md:pt-10 xl:pt-10 lg:h-auto h-auto lg:flex xl:flex">
+        <div className="l-c flex-[50%] lg:ml-24 xl:ml-32 md:ml-48 max-sm:p-5 xl:p-14">
             <div className="-z-1 relative circle-b prev-element transition-transform duration-500 transform rounded-full  -ml-7 w-28 h-28 bg-[#cef1ea]"
               style={{ transform: `translateY(${offsetY * -0.09}px)` }}>
 
@@ -56,10 +56,10 @@ function Home() {
             <div className="img-f ">
             <img src={home1} alt=""  className='max-sm:w-[80%] max-sm:h-auto absolute -mt-28 w-auto drop-shadow-2xl ' />
             </div>
-            <div className="circle-b  rounded-full xl:ml-72 max-sm:ml-64 max-sm:mt-44 xl:mt-56  w-28 h-28 bg-[#cef1ea]"
+            <div className="circle-b  rounded-full xl:ml-72 max-sm:ml-64 max-sm:mt-44 md:ml-72 md:mt-64 lg:mt-64 lg:ml-72 xl:mt-56  w-28 h-28 bg-[#cef1ea]"
             style={{ transform: `translateY(${offsetY * 0.09}px)` }}></div>
         </div>
-        <div className="r-c xl:flex-[50%] max-sm:mt-8 md:p-8 md:ml-10 md:mt-56 xl:-ml-24 xl:mt-12  xl:p-8 ">
+        <div className="r-c xl:flex-[50%] max-sm:mt-8 md:p-8 md:ml-10 md:mt-5 lg:mt-6 lg:pb-36 lg:ml-36  xl:-ml-24 xl:mt-12  xl:p-8 ">
             <div className="h max-sm:text-3xl md:text-4xl xl:text-6xl font-playfair max-sm:ml-9 max-sm:mt-9   xl:mt-5 font-semibold  "><p>Why Our
             Clients <br /></p>
             <hr className='max-sm:hidden border-[2px] w-20 md:mt-4  mt-12 border-[#cef1ea]  '/> 
@@ -85,8 +85,6 @@ function Home() {
             <img src={home2} alt=""  className= 'md:mt-5 max-sm:mt-5 xl:mt-10'/>
             <RiDoubleQuotesR className="text-right text-[#d5d5d5]  mt-5 max-sm:w-16 max-sm:h-16 xl:h-24 xl:w-24"/>
             <p className='xl:text-3xl max-sm:text-xl font-playfair font-bold  xl:ml-14 max-sm:-mt-12 xl:-mt-16 xl:pr-7 text-right'>We are responsible for the quality of the services you receive!</p>
-
-
           </div>
           <div className="l-c flex-[0.5] max-sm:hidden p-10 ">
             <img src={home3} alt="" />
@@ -111,7 +109,7 @@ function Home() {
         tailored to enhance your natural elegance and rejuvenate your spirit.
       </p>
 
-      <div className="container w-[75%] h-auto m-auto xl:mt-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div className="container w-[75%] h-auto m-auto lg:mt-5 xl:mt-7 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         <div className="bx1 flex flex-col justify-between h-full p-8 bg-[#f6f9f9] hover:bg-white border hover:shadow-xl transition duration-300 transform hover:scale-105">
           <div className="inbx flex justify-center items-center w-20 h-20 rounded-full bg-[#ccf1ea] mx-auto">
             <img src={Haircut} alt="Haircut & Styling" className="w-20 h-auto" />

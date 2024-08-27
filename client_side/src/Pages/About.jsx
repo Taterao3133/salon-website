@@ -14,12 +14,12 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 function About() {
   return (
     <div className="about_section overflow-hidden">
-    <div className="tagline bg-[#422A3C] w-full xl:h-80 md:h-60 max-sm:h-52 justify-items-center  text-center ">
-      <div className="container max-sm:m-auto xl:ml-96 pt-11  xl:pt-24 xl:w-2/4  ">
+    <div className="tagline bg-[#422A3C] xl:h-auto w-full xl:pb-5  md:h-60 max-sm:h-52 justify-items-center  text-center ">
+      <div className="container  max-sm:m-auto xl:ml-96 pt-11  xl:pt-24 xl:w-2/4  ">
         <h5 className="text-[#ECBFD3] max-sm:text-xs max-sm:pt-8 md:pt-7 font-raleway font-semibold xl:ml-6 ">Short Story About Us</h5>
         <h2 className="xl:text-5xl md:text-3xl max-sm:text-sm font-bold text-[#F7E5C1] pt-2 font-playfair">The Big Story Behind, Our <br />Beautyness Center</h2>
-        <div className="btn_c max-sm:w-28 max-sm:9  max-sm:mt-4 md:w-32 md:m-auto md:h-11 md:mt-3 xl:w-36 xl:h-12 bg-[#BA7894] max-sm:text-center xl:pt-3 rounded-md max-sm:m-auto xl:m-auto xl:mt-7">
-         <Link to='/contact'><p className="text-[#FFFFFF] max-sm:text-xs md:text-sm md:pt-3 font-semibold max-sm:p-2">Contact Us</p></Link>
+        <div className="btn_c max-sm:w-28 max-sm:9  max-sm:mt-4 md:w-32 md:m-auto md:h-11 md:mt-3 xl:w-36 xl:h-12 bg-[#BA7894] max-sm:text-center   rounded-md max-sm:m-auto xl:m-auto xl:mt-6">
+         <Link to='/contact'><p className="text-[#FFFFFF] max-sm:text-xs md:text-sm md:pt-3 xl:text-base  font-semibold max-sm:p-2">Contact Us</p></Link>
         </div>
       </div>
     </div>
@@ -29,9 +29,10 @@ function About() {
         <p className="v_h2 font-playfair font-bold max-sm:text-base md:text-3xl xl:text-5xl max-sm:pt-2 xl:pt-4"> The Works values we thrive for</p>
         <div className="container md:3/4 md:ml-16 md:pr-20 xl:w-2/4 max-sm:p-3 xl:ml-80 xl:space-y-6 ">
           <div className="box flex md:mb-5 md:mt-3 md:mr-5 max-sm:ml-14  xl:ml-28 xl:mt-8 ">
-            <div className="v_innner_content flex-[0.2] text-center  xl:border-2 xl:border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto md:h-20 md:w-20  xl:w-24 xl:h-24 xl:rounded-lg  ">
-              <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 md:bg-[#F7E5C1] md:p-2 md:rounded-lg
-               max-sm:border-2 max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2  md:mt-3 max-sm:rounded-lg md:text-[#BA7894] md:border-red-300 border-2 max-sm:bg-[#F7E5C1] xl:pt-3 xl:ml-5'/>
+            <div className="v_innner_content flex-[0.2] text-center  xl:border-2 xl:border-[#BA7894] xl:bg-[#F7E5C1]  max-sm:w-16 max-sm:h-auto md:h-20 md:w-20  xl:w-24 xl:h-24 xl:rounded-lg  ">
+              <img src={Aboutservice} alt="img" className='fill-current text-[#BA7894] w-20 h-20 xl:bg-none   md:bg-[#F7E5C1] md:p-2 md:rounded-lg
+               max-sm:border-2 max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 xl:ml-2   md:mt-3 max-sm:rounded-lg md:text-[#BA7894]
+                md:border-red-300 md:border-2 xl: max-sm:bg-[#F7E5C1] xl:pt-0 xl:border-none'/>
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10 ">
               <p className='font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl'>Beauty Experts</p>
@@ -44,8 +45,9 @@ function About() {
           <hr className="border-t border-[#D3D3D3] max-sm:mt-3 xl:mt-2 max-sm:w-5/6 max-sm:ml-12 xl:w-6/7 xl:ml-28" />
 
           <div className="box flex max-sm:ml-14 md:mb-5 md:mt-3 md:mr-5 xl:ml-28 max-sm:mt-2 xl:mt-8 ">
-            <div className="v_innner_content flex-[0.2] text-center  xl:border-2 xl:border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto xl:w-24 xl:h-24 xl:rounded-lg   ">
-              <img src={Aboutservice} alt="img" className='fill-current md:mt-3  text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 md:border-red-300 border-2 md:p-2 md:rounded-lg md:text-[#BA7894] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg '/>
+            <div className="v_innner_content flex-[0.2] text-center  xl:border-2 xl:border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto xl:h-24 xl:rounded-lg   ">
+              <img src={Aboutservice} alt="img" className='fill-current md:mt-3  text-[#BA7894] w-20 h-20 xl:ml-2 max-sm:border-2 md:border-red-300 xl:border-none
+                 md:border-2 md:p-2 md:rounded-lg md:text-[#BA7894] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg '/>
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10 ">
               <p className='font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl'>Great Service</p>
@@ -61,7 +63,7 @@ function About() {
 
           <div className="box flex max-sm:ml-14 md:mb-5 md:mt-3 md:mr-5 xl:ml-28 max-sm:mt-2 xl:mt-8">
             <div className="v_innner_content flex-[0.2] text-center xl:border-2 border-[#BA7894] xl:bg-[#F7E5C1] max-sm:w-16 max-sm:h-auto xl:w-24 xl:h-24 xl:rounded-lg">
-                <img src={Aboutservice} alt="img" className='fill-current md:mt-3  text-[#BA7894] w-20 h-20 xl:pt-3 xl:ml-5 max-sm:border-2 md:bg-[#BA7894] md:border-red-300 border-2 md:p-2 md:rounded-lg max-sm:bg-[#F7E5C1] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg'/>
+                <img src={Aboutservice} alt="img" className='fill-current md:mt-3  w-20 h-20 xl:ml-2 xl:pt-1 xl:bg-[#F7E5C1]  max-sm:border-2 md:bg-[#F7E5C1] md:border-red-300 xl:border-none md:border-2 md:p-2 md:rounded-lg max-sm:bg-[#F7E5C1] max-sm:border-[#BA7894] max-sm:p-2 max-sm:mt-2 max-sm:rounded-lg'/>
             </div>
             <div className="v_innner_content flex-[0.8] max-sm:ml-5 text-left xl:ml-10">
                 <p className='font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl'>100% Genuine</p>
