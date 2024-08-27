@@ -5,6 +5,7 @@ import Homeslide3 from '../../Images/home-slide-3.png';
 import Homeslide4 from '../../Images/home-slide-3sm.png';
 import Homeslide5 from '../../Images/home-slide-2sm.png';
 import Homeslide6 from '../../Images/home-slide-1sm.png';
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
@@ -81,7 +82,12 @@ function HeroSlider() {
               <h2 className='xl:-mt-8 md:-mt-5 xl:ml-24  md:ml-12 text-2xl md:text-3xl xl:text-5xl font-playfair text-[#151515] font-bold'>{slides[currentSlide].subheading}</h2>
               <p className='font-lato hidden lg:block lg:-mt-0 text-[#939191] xl:text-xl lg:p-3 p-8 text-left '>{slides[currentSlide].text}</p>
             </div>
-            <button className='bg-[#b0ebdf] md:ml-16 ml-10 mt-6 lg:mt-0 lg:ml-32 hover:scale-110 xl:mt-10 xl:ml-44 cursor-pointer p-3 xl:p-4 rounded-full text-lg xl:text-xl tracking-wider font-montserrat font-medium'>Book Now</button>
+            <a href="https://wa.me/+918331950396?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
+            className="relative z-10">
+              <button className='bg-[#b0ebdf] md:ml-16 ml-10 mt-6  lg:mt-0 lg:ml-32 hover:scale-110 xl:mt-10 xl:ml-44 cursor-pointer p-3 xl:p-4 rounded-full text-lg xl:text-xl tracking-wider font-montserrat font-medium'>
+                Book Now
+              </button>
+            </a>
           </div>
 
           {/* Large Device Image */}
