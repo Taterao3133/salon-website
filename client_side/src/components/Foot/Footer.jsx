@@ -28,7 +28,7 @@ function Footer() {
             </div>
             <div className="f_sIcons text-white md:mb-6 md:gap-3 md:mr-5 xl:mb-8 flex items-end max-sm:gap-2 xl:gap-4">
               <Link to='https://www.instagram.com/unique_beauty_salon90/'><FaInstagram className="max-sm:h-8 w-auto p-1 xl:p-2 md:h-10 md:p-1 xl:h-12 border-2 cursor-pointer rounded-md"/></Link>
-              <a href="https://wa.me/+918331950396?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/918331950396?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="max-sm:h-8 w-auto xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" /></a>
               <FaFacebookF className="max-sm:h-8 w-auto  xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" />
             </div>
