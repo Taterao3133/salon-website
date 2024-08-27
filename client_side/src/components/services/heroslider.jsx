@@ -75,11 +75,11 @@ function HeroSlider() {
 
         <div className="hero-flex flex absolute top-0 left-0 w-full h-full md:overflow-hidden ">
           <div className="bx1 xl:flex-[0.6] md:flex[0.6] lg:flex-[0.6]  h-full  mt-10">
-            <div className={`heading text-left max-sm:ml-10 md:ml-16 lg:ml-32 xl:ml-44 md:mt-40 lg:mt-24 max-sm:mt-48 xl:mt-48 transition-transform duration-1000 ${isAnimating ? 'translate-y-[-50px] opacity-0' : 'translate-y-0 opacity-100'}`}>
-              <h2 className='text-3xl md:text-4xl xl:text-6xl font-playfair tracking-normal font-bold text-[#151515]'>{slides[currentSlide].heading}</h2>
+            <div className={`heading text-left max-sm:ml-10 md:ml-16 lg:ml-32 xl:ml-44 md:mt-40 lg:mt-20 max-sm:mt-48 xl:mt-48 transition-transform duration-1000 ${isAnimating ? 'translate-y-[-50px] opacity-0' : 'translate-y-0 opacity-100'}`}>
+              <h2 className='text-2xl md:text-3xl xl:text-5xl font-playfair tracking-normal font-bold text-[#151515]'>{slides[currentSlide].heading}</h2>
               <hr className='border-[#b0ebdf] hidden md:block mt-5 xl:mt-10  md:ml-1 md:w-10 xl:w-20 border-[2px]' />
-              <h2 className='xl:-mt-8 md:-mt-5 xl:ml-24  md:ml-12 text-3xl md:text-4xl xl:text-6xl font-playfair text-[#151515] font-bold'>{slides[currentSlide].subheading}</h2>
-              <p className='font-lato hidden lg:block lg:-mt-0 text-[#9b9b9b] xl:text-xl lg:p-3 lg: p-8 text-left '>{slides[currentSlide].text}</p>
+              <h2 className='xl:-mt-8 md:-mt-5 xl:ml-24  md:ml-12 text-2xl md:text-3xl xl:text-5xl font-playfair text-[#151515] font-bold'>{slides[currentSlide].subheading}</h2>
+              <p className='font-lato hidden lg:block lg:-mt-0 text-[#939191] xl:text-xl lg:p-3 p-8 text-left '>{slides[currentSlide].text}</p>
             </div>
             <button className='bg-[#b0ebdf] md:ml-16 ml-10 mt-6 lg:mt-0 lg:ml-32 hover:scale-110 xl:mt-10 xl:ml-44 cursor-pointer p-3 xl:p-4 rounded-full text-lg xl:text-xl tracking-wider font-montserrat font-medium'>Book Now</button>
           </div>
