@@ -5,7 +5,7 @@ import Homeslide3 from '../../Images/home-slide-3.png';
 import Homeslide4 from '../../Images/home-slide-3sm.png';
 import Homeslide5 from '../../Images/home-slide-2sm.png';
 import Homeslide6 from '../../Images/home-slide-1sm.png';
-import { Link } from 'react-router-dom';
+
 
 const slides = [
   {
