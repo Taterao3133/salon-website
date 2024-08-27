@@ -5,9 +5,9 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import kuser from '../../Images/k-user.png'
-import tuser from '../../Images/t-user.png'
-import user1 from '../../Images/user1.png'
+// import kuser from '../../Images/k-user.png'
+// import tuser from '../../Images/t-user.png'
+// import user1 from '../../Images/user1.png'
 
 function Testimonial() {
 
