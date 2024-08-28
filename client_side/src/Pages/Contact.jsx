@@ -39,7 +39,7 @@ const handleSubmit = async (e) => {
         const result = await submitContactForm(formData);
         setSuccess(result.message);
         setError(null);
-        setFormData({ name: '', email: '', phone: '', message: '', service: '' });
+        setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (err) {
         setError('Failed to submit contact form.');
         setSuccess(null);
@@ -97,7 +97,8 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-xl text-[#422A3C]'>
               Call Us:
              </p>
-             <p className='text-sm font-lato font-semibold'> 8788179986 </p>
+             <p className='text-sm font-lato font-semibold'> 
+             +91 8688664812 </p>
              </div>
            
             </div>
@@ -133,7 +134,7 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-base text-[#422A3C]'>
               Call Us:
              </p>
-             <p className='text-xs font-lato font-semibold'> 8788179986 </p>
+             <p className='text-xs font-lato font-semibold'> +91 8688664812 </p>
              </div>
            
             </div>
@@ -195,18 +196,7 @@ const handleSubmit = async (e) => {
                                 required
                             />
                         </div>
-                        <div className="cdInput border-2 border-[#555555] md:h-11 max-sm:h-9 xl:h-12 max-w-full">
-                            <FiBookOpen className='absolute max-sm:w-4  md:h-6  md:mt-2 md:w-6 max-sm:h-4 xl:w-6 xl:h-6 max-sm:mt-2 ml-2 xl:mt-3' />
-                            <input 
-                                type="text"
-                                name="service"
-                                value={formData.service}
-                                onChange={handleChange}
-                                className='w-full h-full max-sm:pl-7 md:pl-10 max-sm:text-xs xl:pl-10 font-sans'
-                                placeholder='Service You Need'
-                                required
-                            />
-                        </div>
+                        
                         <div className="btn border-2 cursor-pointer border-[#555555] max-sm:h-9 md:h-11 xl:h-12 max-sm:w-4/5 max-sm:m-auto xl:w-full text-center bg-[#422A3C] text-white">
                             <button onSubmit={handleSubmit} type="submit" className='mt-2 font-bold max-sm:text-sm xl:text-lg'>SUBMIT</button>
                         </div>

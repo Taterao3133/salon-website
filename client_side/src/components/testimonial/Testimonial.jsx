@@ -1,13 +1,14 @@
-// import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
- import exp3 from '../../Images/s-1.jpg';
-// import { useEffect, useState } from "react";
+
  import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RiDoubleQuotesR } from "react-icons/ri";
-// import kuser from '../../Images/k-user.png'
-// import tuser from '../../Images/t-user.png'
-// import user1 from '../../Images/user1.png'
+import kuser from '../../Images/k-user.png'
+import tuser from '../../Images/t-user.png'
+import kauser from '../../Images/kauser.png'
+import auser from "../../Images/a-user.png"
+import vauser from "../../Images/Va-user.png"
+import mauser from "../../Images/ma-user.png"
 
 function Testimonial() {
 
@@ -44,7 +45,7 @@ function Testimonial() {
                   <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
                 </div>
                 <div className="clientImg flex-[0.2] lg:flex-[0.4]">
-                  <img src={exp3} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
+                  <img src={kauser} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
                 </div>
               </div>
               <p className="r-client font-lato xl:p-8 pt-1 text-left max-sm:text-sm lg:text-sm lg:pr-2 lg:pl-2 xl:text-base">
@@ -53,83 +54,95 @@ function Testimonial() {
               </p>
               <RiDoubleQuotesR className="text-right text-[#d5d5d5] xl:ml-96  lg:ml-72 lg:w-14   lg:-mt-0 xl:-mt-8 md:w-20 md:h-20 md:ml-[450px] md:opacity-70 max-sm:h-14 max-sm:w-14 xl:h-20 xl:w-20" />
             </div>
+
             <div className="review-bx w-[90%] max-sm:h-auto p-0 m-auto lg:h-auto xl:mb-5 mt-1 h-80 border-l-2 border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl">
               <div className="clientname flex items-center mt-5 p-0">
                 <div className="flex-[0.8] lg:flex-[0.6] ">
-                  <h2 className="font-lato font-normal text-xl tracking-wider">Kalpana</h2>
+                  <h2 className="font-lato font-normal text-xl tracking-wider">Akshaya Padigela</h2>
                   <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
                 </div>
                 <div className="clientImg flex-[0.2] lg:flex-[0.4]">
-                  <img src={exp3} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
+                  <img src={auser} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
                 </div>
               </div>
               <p className="r-client font-lato xl:p-8 pt-1 text-left max-sm:text-sm lg:text-sm lg:pr-2 lg:pl-2 xl:text-base">
-                Hi I'm Kalpana and I am sharing my experience here. Recently I went to this salon and it was awesome.
-                Her talk is so polite and friendly, and she looks like she has experience. She did a good job yaar.
+              I don’t usually write hair salon reviews, but I can’t even begin how impressed I am with this salon. When it comes to haircutting and styling, 
+              this hairdresser is the ultimate. She inquired as to how I needed it cut. She did so with perfection and the attitude that everyone who leaves her chair
+               symbolizes her identity. She can handle all kinds of hair as she have done with my very silk hair.I’ve finally found my go-to place. You will not be disappointed.I strongly suggest it!!!
               </p>
               <RiDoubleQuotesR className="text-right text-[#d5d5d5] xl:ml-96  lg:ml-72 lg:w-14   lg:-mt-0 xl:-mt-8 md:w-20 md:h-20 md:ml-[450px] md:opacity-70 max-sm:h-14 max-sm:w-14 xl:h-20 xl:w-20" />
             </div>
+
             <div className="review-bx w-[90%] max-sm:h-auto p-0 m-auto lg:h-auto xl:mb-5 mt-1 h-80 border-l-2 border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl">
               <div className="clientname flex items-center mt-5 p-0">
                 <div className="flex-[0.8] lg:flex-[0.6] ">
-                  <h2 className="font-lato font-normal text-xl tracking-wider">Kalpana</h2>
+                  <h2 className="font-lato font-normal text-xl tracking-wider">TanwveerWaheed</h2>
                   <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
                 </div>
                 <div className="clientImg flex-[0.2] lg:flex-[0.4]">
-                  <img src={exp3} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
+                  <img src={tuser} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
                 </div>
               </div>
               <p className="r-client font-lato xl:p-8 pt-1 text-left max-sm:text-sm lg:text-sm lg:pr-2 lg:pl-2 xl:text-base">
-                Hi I'm Kalpana and I am sharing my experience here. Recently I went to this salon and it was awesome.
-                Her talk is so polite and friendly, and she looks like she has experience. She did a good job yaar.
+              Not every salon is professional and worthful. Got the facial with amazing result which is worthful. Glad with the 
+              service and hoping to be the best in upcoming days.... I recommend to visit....
+                You won't regret on spending.... <br />
+                <span className='font-bold'>Services</span> <br />
+                Skin care, Facials
               </p>
               <RiDoubleQuotesR className="text-right text-[#d5d5d5] xl:ml-96  lg:ml-72 lg:w-14   lg:-mt-0 xl:-mt-8 md:w-20 md:h-20 md:ml-[450px] md:opacity-70 max-sm:h-14 max-sm:w-14 xl:h-20 xl:w-20" />
             </div>
+
             <div className="review-bx w-[90%] max-sm:h-auto p-0 m-auto lg:h-auto xl:mb-5 mt-1 h-80 border-l-2 border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl">
               <div className="clientname flex items-center mt-5 p-0">
                 <div className="flex-[0.8] lg:flex-[0.6] ">
-                  <h2 className="font-lato font-normal text-xl tracking-wider">Kalpana</h2>
+                  <h2 className="font-lato font-normal text-xl tracking-wider">Vaishu Kummu </h2>
                   <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
                 </div>
                 <div className="clientImg flex-[0.2] lg:flex-[0.4]">
-                  <img src={exp3} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
+                  <img src={vauser} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
                 </div>
               </div>
               <p className="r-client font-lato xl:p-8 pt-1 text-left max-sm:text-sm lg:text-sm lg:pr-2 lg:pl-2 xl:text-base">
-                Hi I'm Kalpana and I am sharing my experience here. Recently I went to this salon and it was awesome.
-                Her talk is so polite and friendly, and she looks like she has experience. She did a good job yaar.
+              Really beautiful salon and beautiful service also. Definitely you will also like the service of unique beautysalon. 
+              Trust me please visit it first... Truly it's unique as it's name ... 😊 …
               </p>
               <RiDoubleQuotesR className="text-right text-[#d5d5d5] xl:ml-96  lg:ml-72 lg:w-14   lg:-mt-0 xl:-mt-8 md:w-20 md:h-20 md:ml-[450px] md:opacity-70 max-sm:h-14 max-sm:w-14 xl:h-20 xl:w-20" />
             </div>
+
             <div className="review-bx w-[90%] max-sm:h-auto p-0 m-auto lg:h-auto xl:mb-5 mt-1 h-80 border-l-2 border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl">
               <div className="clientname flex items-center mt-5 p-0">
                 <div className="flex-[0.8] lg:flex-[0.6] ">
-                  <h2 className="font-lato font-normal text-xl tracking-wider">Kalpana</h2>
+                  <h2 className="font-lato font-normal text-xl tracking-wider">Kanugula Srija</h2>
                   <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
                 </div>
                 <div className="clientImg flex-[0.2] lg:flex-[0.4]">
-                  <img src={exp3} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
+                  <img src={kuser} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
                 </div>
               </div>
               <p className="r-client font-lato xl:p-8 pt-1 text-left max-sm:text-sm lg:text-sm lg:pr-2 lg:pl-2 xl:text-base">
-                Hi I'm Kalpana and I am sharing my experience here. Recently I went to this salon and it was awesome.
-                Her talk is so polite and friendly, and she looks like she has experience. She did a good job yaar.
+                 The salon wos super hygienic and the service also to good 👍 I love this and also they wos full friendly ❣️ <br />
+                 <span className='font-bold'> Services</span> <br />
+                  Bridal services, Eyebrow beautification, Eyebrow shaping, Makeup, Waxing, Skin care, Manicure, Facials
               </p>
               <RiDoubleQuotesR className="text-right text-[#d5d5d5] xl:ml-96  lg:ml-72 lg:w-14   lg:-mt-0 xl:-mt-8 md:w-20 md:h-20 md:ml-[450px] md:opacity-70 max-sm:h-14 max-sm:w-14 xl:h-20 xl:w-20" />
             </div>
+
             <div className="review-bx w-[90%] max-sm:h-auto p-0 m-auto lg:h-auto xl:mb-5 mt-1 h-80 border-l-2 border-r-2 border-b-[10px] border-b-[#cef1ea] drop-shadow-xl">
               <div className="clientname flex items-center mt-5 p-0">
                 <div className="flex-[0.8] lg:flex-[0.6] ">
-                  <h2 className="font-lato font-normal text-xl tracking-wider">Kalpana</h2>
+                  <h2 className="font-lato font-normal text-xl tracking-wider">Meghana Gourishetty</h2>
                   <h3 className="font-lato text-lg text-[#d5d5d5]">Client</h3>
                 </div>
                 <div className="clientImg flex-[0.2] lg:flex-[0.4]">
-                  <img src={exp3} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
+                  <img src={mauser} alt="" className='w-16 h-16 md:w-24 md:h-24 xl:w-20 xl:h-20 rounded-full border-2 object-cover' />
                 </div>
               </div>
               <p className="r-client font-lato xl:p-8 pt-1 text-left max-sm:text-sm lg:text-sm lg:pr-2 lg:pl-2 xl:text-base">
-                Hi I'm Kalpana and I am sharing my experience here. Recently I went to this salon and it was awesome.
-                Her talk is so polite and friendly, and she looks like she has experience. She did a good job yaar.
+              <span className='font-bold'>Services </span> <br />
+              Spa services <br />
+               <span className='font-bold'>Hair type</span> <br />
+              Iam very happy with the hair spa experience I never feel any rough service from them.thank you so much akka..
               </p>
               <RiDoubleQuotesR className="text-right text-[#d5d5d5] xl:ml-96  lg:ml-72 lg:w-14   lg:-mt-0 xl:-mt-8 md:w-20 md:h-20 md:ml-[450px] md:opacity-70 max-sm:h-14 max-sm:w-14 xl:h-20 xl:w-20" />
             </div>

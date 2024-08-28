@@ -9,21 +9,14 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
    <>
-   {/* <style jsx>{`
-      p:hover {
-        cursor: pointer;
-      }
-    `}</style> */}
-
-
     <div className="footer ">
       <div className="box w-full max-sm:h-auto xl:h-96 border-2 bg-[#241520]">
         <div className="inner_Container max-sm:h-80   xl:h-80 xl:w-3/4 max-sm:ml-5 max-sm:m-5  xl:ml-48 xl:mt-10 ">
           <div className="ls_icons md:h-24  xl:h-24 max-sm:mb-5 flex">
             <div className="f_logo flex-1  md:mt-5 md:ml-5">
               <div className="logo_bx flex items-center text-[#FFFFFF] gap-2">
-                <img src={Logo} alt="" className="max-sm:w-auto max-sm:h-9 md:h-14 xl:h-16 xl:w-auto" />
-                <p className="max-sm:text-sm font-playfair">Unique_Beauty_Salon</p>
+               <Link to="/"> <img src={Logo} alt="" className="max-sm:w-auto max-sm:h-9 md:h-14 xl:h-16 xl:w-auto" /></Link>
+               <Link to="/"> <p className="max-sm:text-sm font-playfair">Unique_Beauty_Salon</p> </Link>
               </div>
             </div>
             <div className="f_sIcons text-white md:mb-6 md:gap-3 md:mr-5 xl:mb-8 flex items-end max-sm:gap-2 xl:gap-4">

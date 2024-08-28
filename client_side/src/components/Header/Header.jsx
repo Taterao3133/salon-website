@@ -42,7 +42,7 @@ function Header({ isPopupOpen }) {
             <Link to="/"> <img src={Logo} alt="Salon Logo" className="w-9 h-9  xl:w-14 xl:h-14" /></Link>
             </div>
             <div className="name ml-2 xl:ml-4">
-              <p className="cursor-pointer text-lg xl:text-2xl font-playfair">Unique Beauty <br /><span>Salon</span></p>
+            <Link to="/">  <p className="cursor-pointer text-lg xl:text-2xl font-playfair">Unique Beauty <br /><span>Salon</span></p></Link>
             </div>
           </div>
           <div className="rightheader md:hidden hidden lg:flex items-center">
