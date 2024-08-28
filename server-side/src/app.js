@@ -1,4 +1,3 @@
-// src/app.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -17,18 +16,13 @@ app.use(cors());
 // Use body-parser middleware
 app.use(bodyParser.json());
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI,{ ssl: true })
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log('MongoDB connection error:', err));
 
-
 // Import and use routes
 const contactRoutes = require('./routes/contact');
-const bookingRoutes = require('./routes/Booking');
-
 app.use('/api/contact', contactRoutes);
-app.use('/api/booking', bookingRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -36,5 +30,4 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Internal server error' });
 });
 
-// Export the app module
 module.exports = app;

@@ -14,13 +14,4 @@ export const submitContactForm = async (contactData) => {
   }
 };
 
-// Booking API
-export const submitBooking = async (bookingData) => {
-  try {
-    const response = await axios.post(`${API_URL}/booking`, bookingData);
-    return response.data;
-  } catch (error) {
-    console.error('Error submitting booking:', error);
-    throw error;
-  }
-};
+

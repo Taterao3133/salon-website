@@ -27,7 +27,7 @@ function Testimonial() {
     <div className="container min-w-full h-auto pb-16 text-center bg-[#ffffff] xl:mt-6 xl:mb-6">
       <div className="inner-c w-[80%] xl:mt-10 h-auto  m-auto lg:flex  xl:flex">
         <div className="header-c  h-auto  flex-[0.5] max-sm:pt-5 xl:p-5">
-          <div className="h max-sm:text-3xl md:text-4xl xl:text-5xl tracking-wider font-playfair text-left max-sm: max-sm:mt-9 md:pt-8 xl:ml-7 xl:mt-5 font-semibold  "><p>Testimonials
+          <div className="h max-sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-wider font-playfair text-left max-sm: max-sm:mt-9 md:pt-8 xl:ml-7 xl:mt-5 font-semibold  "><p>Testimonials
             </p>
             <hr className='max-sm:hidden border-[2px] w-24 md:mt-5 mt-12 border-[#cef1ea]  '/> 
             <p className='xl:ml-28 md:ml-28 md:-mt-5 xl:-mt-7'>Of Our Clients</p>
