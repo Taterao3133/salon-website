@@ -12,6 +12,9 @@ const app = express();
 
 // Use CORS middleware
 app.use(cors());
+app.use(cors({ origin: 'https://uniquebeautysalon.netlify.app' }));
+
+
 
 // Use body-parser middleware
 app.use(bodyParser.json());
