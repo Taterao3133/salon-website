@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { FaWhatsapp } from "react-icons/fa";
 import Homeslide1 from '../../Images/home-slide-1.png';
 import Homeslide2 from '../../Images/home-slide-2.png';
 import Homeslide3 from '../../Images/home-slide-3.png';
@@ -85,7 +84,7 @@ function HeroSlider() {
               <p className='font-lato hidden lg:block lg:-mt-0 text-[#939191] xl:text-xl lg:p-3 p-8 text-left '>{slides[currentSlide].text}</p>
             </div>
             
-            <a href="https://wa.me/918331950396?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
             className="relative  z-10">
               <button className='bg-[#b0ebdf] md:ml-16 ml-10 mt-6  lg:mt-0 lg:ml-32 hover:scale-110 xl:mt-10 xl:ml-44  p-3 xl:p-4 rounded-full text-lg xl:text-xl tracking-wider font-montserrat font-medium'>
                 Book Now 

@@ -49,6 +49,7 @@ function Header({ isPopupOpen }) {
             <div className="headerlinks flex space-x-[40px]  ">
             <Link to='/' className={`cursor-pointer text-base font-semibold ${location.pathname === '/' ? ' scale-110 text-[#cef1ea] rounded-lg' : ''} hover:scale-110`}>Home</Link>
             <Link to='/service' className={`cursor-pointer text-base font-semibold ${location.pathname === '/service' ? ' scale-110 text-[#cef1ea]  rounded-lg' : ''} hover:scale-110`}>Services</Link>
+            <Link to='/courses' className={`cursor-pointer text-base font-semibold ${location.pathname === '/courses' ? ' scale-110 text-[#cef1ea]  rounded-lg' : ''} hover:scale-110`}>Courses</Link>
             <Link to='/about' className={`cursor-pointer text-base font-semibold ${location.pathname === '/about' ? 'scale-110 text-[#cef1ea]  rounded-lg' : ''} hover:scale-110`}>About Us</Link>
             <Link to='/contact' className={`cursor-pointer text-base font-semibold ${location.pathname === '/contact' ? 'scale-110 text-[#cef1ea]  rounded-lg' : ''} hover:scale-110`}>Contact Us</Link>
           </div>
@@ -62,6 +63,7 @@ function Header({ isPopupOpen }) {
           <div className="lg:hidden bg-[#fffefe] fixed top-16 border-[1px] right-0 h-full w-3/4 z-50 flex flex-col items-end transition-transform duration-300">
             <Link to='/' onClick={toggleMenu} className={`${location.pathname === '/' ? 'bg-[#cef1ea]' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 mt-2 rounded-lg w-full text-center`}>Home</Link>
             <Link to='/service' onClick={toggleMenu} className={`${location.pathname === '/service' ? 'bg-[#cef1ea]' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 rounded-lg w-full text-center`}>Services</Link>
+            <Link to='/courses' onClick={toggleMenu} className={`${location.pathname === '/courses' ? 'bg-[#cef1ea]' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 rounded-lg w-full text-center`}>Courses</Link>
             <Link to='/about' onClick={toggleMenu} className={`${location.pathname === '/about' ? 'bg-[#cef1ea]' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 rounded-lg w-full text-center`}>About Us</Link>
             <Link to='/contact' onClick={toggleMenu} className={`${location.pathname === '/contact' ? 'bg-[#cef1ea] text-white' : ''} text-lg font-medium font-raleway hover:text-white hover:bg-[#cef1ea] p-2 rounded-lg w-full text-center`}>Contact Us</Link>
         </div>

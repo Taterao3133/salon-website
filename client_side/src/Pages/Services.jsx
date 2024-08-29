@@ -49,8 +49,10 @@ function Services() {
             <p className='font-raleway text-gray-800 max-sm:p-9 max-sm:text-sm xl:p-16 md:mt-3 md:pr-10  xl:-mt-5'>"Our clients choose us for our personalized care, expert services, 
                 and dedication to making every visit a luxurious and relaxing experience. 
                 We take pride in our attention to detail, ensuring that each client leaves feeling confident and rejuvenated.</p>
+                <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
+            className="r">
             <button className='bg-[#cef1ea] xl:ml-16 max-sm:ml-9 max-sm:text-lg max-sm:hover:text-xl xl:text-xl hover:text-2xl border-[#cef1ea] font-raleway p-3 rounded-full'>Book Now</button>
-
+             </a>
         </div>
         <div className="l-c flex-[50%] max-sm:p-9  md:ml-24 md:mt-7 xl:p-14">
             <div className="img-f flex space-x-9">

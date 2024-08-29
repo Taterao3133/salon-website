@@ -5,6 +5,7 @@ import Contact from '../../Pages/Contact';
 import Services from '../../Pages/Services';
 import ScrollTop from '../../utils/ScrollTop';
 import Privacyterms from '../../Pages/Privacyterms';
+import Courses from '../../Pages/Courses';
 
 function RouterConfg() {
   return( 
@@ -15,6 +16,7 @@ function RouterConfg() {
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/courses" element={<Courses />} />
       
       <Route path='/service' element={<Services/>}/>
       <Route path='/privacy' element={<Privacyterms/>}/>

@@ -77,7 +77,7 @@ const handleSubmit = async (e) => {
                 <p className='font-playfair font-bold text-xl text-[#422A3C]'>
                 Visit Us:
               </p>
-              <p className='text-xs font-raleway font-semibold'> Unique_Beauty_Salon, Beside HDFC Bank ,<br /> SriRama colony , Banswada , Kamareddy 503187</p>
+              <p className='text-sm font-raleway '> Unique_Beauty_Salon, Beside HDFC Bank ,<br /> SriRama colony , Banswada , Kamareddy 503187</p>
               </div>
            
             </div>
@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-xl text-[#422A3C]'>
               Email Us:
              </p>
-             <p className='text-sm font-raleway font-semibold'> Uniquebeautysalon90@gmail.com </p>
+             <p className='text-sm font-raleway '> Uniquebeautysalon90@gmail.com </p>
              </div>
            
             </div>
@@ -97,7 +97,7 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-xl text-[#422A3C]'>
               Call Us:
              </p>
-             <p className='text-sm font-lato font-semibold'> 
+             <p className='text-sm font-lato '> 
              +91 8688664812 </p>
              </div>
            
@@ -134,7 +134,7 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-base text-[#422A3C]'>
               Call Us:
              </p>
-             <p className='text-xs font-lato font-semibold'> +91 8688664812 </p>
+             <p className='text-xs font-lato '> +91 8688664812 </p>
              </div>
            
             </div>
@@ -197,8 +197,8 @@ const handleSubmit = async (e) => {
                             />
                         </div>
                         
-                        <div className="btn border-2 cursor-pointer border-[#555555] max-sm:h-9 md:h-11 xl:h-12 max-sm:w-4/5 max-sm:m-auto xl:w-full text-center bg-[#422A3C] text-white">
-                            <button onSubmit={handleSubmit} type="submit" className='mt-2 font-bold max-sm:text-sm xl:text-lg'>SUBMIT</button>
+                        <div className="btn border-2  cursor-pointer border-[#555555] max-sm:h-9 md:h-11 xl:h-12 max-sm:w-4/5 max-sm:m-auto xl:w-full text-center active:bg-[#FBF2E0] bg-[#422A3C] text-white">
+                            <button onSubmit={handleSubmit} type="submit" className='mt-2 transition-transform transform active:scale-125 hover:scale-110 active:text-[#422A3C] font-bold max-sm:text-sm xl:text-lg'>SUBMIT</button>
                         </div>
                         {success && <p className="text-green-500 text-center mt-3">{success}</p>}
                         {error && <p className="text-red-500 text-center mt-3">{error}</p>}
