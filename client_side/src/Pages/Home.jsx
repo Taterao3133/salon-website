@@ -42,7 +42,7 @@ function Home() {
         <HeroSlider/>
 
      {/* category section  services section---*/}
-     <div className="relative  max-sm:pr-2 max-sm:h-36  max-sm:max-w-full md:ml-16 max-sm:mt-14 lg:h-20 lg:ml-40 xl:ml-36 xl:h-40 xl:w-[1300px] m-auto lg:mt-5 xl:mt-10">
+     <div className="relative  max-sm:pr-2 max-sm:h-36  max-sm:max-w-full md:ml-16 max-sm:mt-5 lg:h-20 lg:ml-40 xl:ml-36 xl:h-40 xl:w-[1300px] m-auto lg:mt-5 xl:mt-10">
       <div className="c_section flex  absolute whitespace-nowrap">
         <ServicesSlider/>
       </div>

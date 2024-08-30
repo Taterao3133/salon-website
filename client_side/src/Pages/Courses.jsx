@@ -7,17 +7,17 @@ function Courses() {
   return (
     <div className="ntg  overflow-hidden">
       <div className="h-auto w-full relative">
-        <img src={courseimg1} alt="" />
+        <img src={courseimg1} alt="" className='opacity-100' />
         <div className="absolute inset-0 flex flex-col lg:mt-40  lg:ml-28 max-xl:ml-40 max-xl:mt-44    p-4">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair text-[#21203b]  font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair text-[#1f2c32]  font-bold mb-4">
             Start Your Career <br /> In the Beauty Industry
           </h2>
-          <p className="text-base text-[#5c7a6c] font-raleway  md:text-lg mb-6">
+          <p className="text-base text-[#576c57]  font-raleway  md:text-lg mb-6">
             The Beauty Academy specializes in providing students with quality education 
             and <br /> individualized training to maintain the high standards required by the Beauty Industry.
           </p>
           
-          <button className="bg-green-500 hover:bg-green-600 active:bg-white active:text-green-400 w-32 text-white py-2 px-4 rounded-md">
+          <button className="bg-white hover:bg-green-600 active:bg-white active:text-green-400 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
             Register Now
           </button>
         </div>
