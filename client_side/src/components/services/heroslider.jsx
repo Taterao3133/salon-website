@@ -47,12 +47,12 @@ function HeroSlider() {
   }, []);
 
   return (
-    <div className='hero-section relative border-b-2 overflow-hidden'>
-      <div className="bg-[#fff] md:h-auto xl:h-[700px] w-full xl:relative overflow-hidden">
+    <div className='hero-section relative border-b-2  overflow-hidden'>
+      <div className="bg-[#fff] md:h-auto xl:h-[650px]  max-lg:h-[400px] w-full xl:relative overflow-hidden">
         
             
         {/* Small Device Image */}
-        <div className="bx2 sm:hidden relative pt-16 opacity-40">
+        <div className="bx2 sm:hidden relative  pt-10 opacity-40">
           <img
             src={slides[currentSlide].smallImage}
             alt=""
@@ -62,12 +62,12 @@ function HeroSlider() {
 
         {/* Large Device Background Circles */}
         <div className="bg-rounds hidden sm:block">
-          <div className="xl:ml-[750px] md:ml-[360px] xl:-mt-20 bg-[#cef1ea] md:w-32 md:h-32 xl:h-60 xl:w-60 rounded-full"></div>
-          <div className="bg-[#cef1ea]  md:ml-[450px] md:opacity-60 xl:mt-14 xl:ml-[870px] md:h-[300px] md:w-[300px] xl:h-[600px] xl:w-[600px] rounded-full"></div>
+          <div className="xl:ml-[750px] md:ml-[360px] md:-mt-20 xl:-mt-44 bg-[#cef1ea] md:w-32 md:h-32 xl:h-60 xl:w-60 rounded-full"></div>
+          <div className="bg-[#cef1ea]  md:ml-[450px] md:opacity-60 lg:ml-[630px]  lg:h-[400px] lg:w-[400px] xl:mt-20 2xl:mt-16 2xl:ml-[890px] md:h-[300px] md:w-[300px] 2xl:h-[600px] 2xl:w-[600px] rounded-full"></div>
         </div>
 
         {/* Large Device Image */}
-        <div className="bx2 hidden sm:block absolute opacity-80">
+        <div className="bx2 hidden sm:block xl:hidden  absolute opacity-80">
           <img
             src={slides[currentSlide].image}
             alt=""
@@ -75,9 +75,9 @@ function HeroSlider() {
           />
         </div>
 
-        <div className="hero-flex flex absolute top-0 left-0 w-full h-full md:overflow-hidden ">
-          <div className="bx1 xl:flex-[0.6] md:flex[0.6] lg:flex-[0.6]  h-full  mt-10">
-            <div className={`heading text-left max-sm:ml-10 md:ml-16 lg:ml-32 xl:ml-44 md:mt-40 lg:mt-20 max-sm:mt-48 xl:mt-48 transition-transform duration-1000 ${isAnimating ? 'translate-y-[-50px] opacity-0' : 'translate-y-0 opacity-100'}`}>
+        <div className="hero-flex flex absolute top-0 left-0 w-full h-full  md:overflow-hidden ">
+          <div className="bx1 xl:flex-[0.6] md:flex[0.6] lg:flex-[0.6]  h-full xl:mt-5 2xl:mt-10">
+            <div className={`heading text-left max-sm:ml-10 md:ml-16 lg:ml-32 2xl:ml-44 md:mt-28 lg:mt-28 max-sm:mt-48 xl:mt-40 2xl:mt-48 transition-transform duration-1000 ${isAnimating ? 'translate-y-[-50px] opacity-0' : 'translate-y-0 opacity-100'}`}>
               <h2 className='text-2xl md:text-3xl xl:text-5xl font-playfair tracking-normal font-bold text-[#151515]'>{slides[currentSlide].heading}</h2>
               <hr className='border-[#b0ebdf] hidden md:block mt-5 xl:mt-10  md:ml-1 md:w-10 xl:w-20 border-[2px]' />
               <h2 className='xl:-mt-8 md:-mt-5 xl:ml-24  md:ml-12 text-2xl md:text-3xl xl:text-5xl font-playfair text-[#151515] font-bold'>{slides[currentSlide].subheading}</h2>
@@ -94,11 +94,11 @@ function HeroSlider() {
           </div>
 
           {/* Large Device Image */}
-          <div className="bx2 absolute hidden sm:flex  lg:ml-24 flex-[0.4] h-full ">
+          <div className="bx2 absolute  hidden sm:flex  lg:ml-24 flex-[0.4] h-full ">
             <img
               src={slides[currentSlide].image}
               alt=""
-              className={`animated-image md:pb-6 mt-16 md:ml-[110px] xl:ml-[200px] h-[100%] w-full transition-transform duration-1000 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}
+              className={`animated-image md:pb-6 max-lg:mt-2 mt-14 xl:mt-7  md:mt-7 md:ml-[110px] xl:ml-[200px] h-[100%] w-full transition-transform duration-1000 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}
             />
           </div>
         </div>

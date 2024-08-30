@@ -35,9 +35,9 @@ function Services() {
 
   return (
     <div className="services-section max-sm:overflow-hidden overflow-hidden ">
-      <div className="tagline bg-[#422A3C] w-full md:h-40 xl:h-48 max-sm:h-48  justify-items-center  text-center ">
-        <div className="container md:m-auto max-sm:m-auto xl:ml-96  md:pt-10 pt-3 max-sm:pt-16 xl:pt-16 w-2/4  ">
-            <h2 className="xl:text-5xl max-sm:text-2xl md:text-4xl font-bold text-[#F7E5C1] pt-12 font-playfair">Services..</h2>
+      <div className="tagline bg-[#422A3C] w-full md:h-40 xl:h-auto max-sm:h-28  justify-items-center  text-center ">
+        <div className="container md:m-auto max-sm:m-auto xl:m-auto  md:pt-16 pt-3  xl:pt-5 w-2/4  ">
+            <h2 className="xl:text-5xl max-sm:text-2xl md:text-4xl font-bold text-[#F7E5C1] max-sm:pt-7 xl:pb-5 font-playfair">Services..</h2>
         </div>
       </div>
       <div className="d bg-[#ffffff] xl:pb-5  max-sm:pt-5 md:pt-10 xl:pt-10 h-auto xl:flex">
@@ -51,7 +51,7 @@ function Services() {
                 We take pride in our attention to detail, ensuring that each client leaves feeling confident and rejuvenated.</p>
                 <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
             className="r">
-            <button className='bg-[#cef1ea] xl:ml-16 max-sm:ml-9 max-sm:text-lg max-sm:hover:text-xl xl:text-xl hover:text-2xl border-[#cef1ea] font-raleway p-3 rounded-full'>Book Now</button>
+            <button className='bg-[#cef1ea] xl:ml-16 max-sm:ml-9  md:mt-5 xl:mt-0 max-sm:text-lg max-sm:hover:text-xl xl:text-xl hover:text-2xl border-[#cef1ea] font-raleway p-3 rounded-full'>Book Now</button>
              </a>
         </div>
         <div className="l-c flex-[50%] max-sm:p-9  md:ml-24 md:mt-7 xl:p-14">

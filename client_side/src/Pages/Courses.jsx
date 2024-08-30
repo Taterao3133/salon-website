@@ -6,9 +6,7 @@ import pedicure1 from '../Images/pedicure1.jpg'
 function Courses() {
   return (
     <div className="ntg  overflow-hidden">
-      <div className="t h-[70px] md:h-14 max-sm:h-12 bg-green-500 w-full"></div>
-
-      <div className="h-auto w-full border-2 relative">
+      <div className="h-auto w-full relative">
         <img src={courseimg1} alt="" />
         <div className="absolute inset-0 flex flex-col lg:mt-40  lg:ml-28 max-xl:ml-40 max-xl:mt-44    p-4">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair text-[#21203b]  font-bold mb-4">

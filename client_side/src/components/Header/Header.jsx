@@ -12,7 +12,7 @@ function Header({ isPopupOpen }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > -1 && !isPopupOpen) {
+      if (window.scrollY > 0) {
 
         setIsSticky(true);
       } else {

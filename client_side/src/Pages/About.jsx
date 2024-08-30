@@ -14,10 +14,10 @@ import { RiDoubleQuotesR } from "react-icons/ri";
 function About() {
   return (
     <div className="about_section overflow-hidden">
-    <div className="tagline bg-[#422A3C] xl:h-auto w-full xl:pb-5  md:h-60 max-sm:h-52 justify-items-center  text-center ">
-      <div className="container  max-sm:m-auto xl:ml-96 pt-11  xl:pt-24 xl:w-2/4  ">
-        <h5 className="text-[#ECBFD3] max-sm:text-xs max-sm:pt-8 md:pt-7 font-raleway font-semibold xl:ml-6 ">Short Story About Us</h5>
-        <h2 className="xl:text-5xl md:text-3xl max-sm:text-sm font-bold text-[#F7E5C1] pt-2 font-playfair">The Big Story Behind, Our <br />Beautyness Center</h2>
+    <div className="tagline bg-[#422A3C] xl:h-auto w-full xl:pb-5 lg:pb-5 lg:h-auto md:pb-4  max-sm:pb-3 max-md:h-auto max-sm:h-auto justify-items-center  text-center ">
+      <div className="container  max-sm:m-auto xl:m-auto pt-5  xl:pt-5 xl:w-2/4  ">
+        <h5 className="text-[#ECBFD3] max-sm:text-xs max-sm:pt-1 md:pt-3 font-raleway font-semibold xl:ml-6 ">Short Story About Us</h5>
+        <h2 className="xl:text-5xl lg:text-4xl md:text-3xl max-sm:text-sm font-bold text-[#F7E5C1] pt-2 font-playfair">The Big Story Behind, Our <br />Beautyness Center</h2>
         <div className="btn_c max-sm:w-28 max-sm:9  max-sm:mt-4 md:w-32 md:m-auto md:h-11 md:mt-3 xl:w-36 xl:h-12 bg-[#BA7894] max-sm:text-center   rounded-md max-sm:m-auto xl:m-auto xl:mt-6">
          <Link to='/contact'><p className="text-[#FFFFFF] max-sm:text-xs md:text-sm md:pt-3 xl:text-base  font-semibold max-sm:p-2">Contact Us</p></Link>
         </div>

@@ -11,7 +11,7 @@ function Footer() {
    <>
     <div className="footer ">
       <div className="box w-full max-sm:h-auto xl:h-96 border-2 bg-[#241520]">
-        <div className="inner_Container max-sm:h-80   xl:h-80 xl:w-3/4 max-sm:ml-5 max-sm:m-5  xl:ml-48 xl:mt-10 ">
+        <div className="inner_Container max-sm:h-auto   xl:h-80 xl:w-3/4 max-sm:ml-5 max-sm:m-5  xl:ml-48 xl:mt-10 ">
           <div className="ls_icons md:h-24  xl:h-24 max-sm:mb-5 flex">
             <div className="f_logo flex-1  md:mt-5 md:ml-5">
               <div className="logo_bx flex items-center text-[#FFFFFF] gap-2">
@@ -27,7 +27,7 @@ function Footer() {
             </div>
           </div>
           <hr className="border-t border-white md:ml-5 md:w-[95%]  mt-2 w-full" />
-          <div className="f_services text-white justify-between max-sm:columns-2 md:mb-5 md:flex md:mr-5 xl:flex md:ml-5 md:mt-3 max-sm:mt-5 xl:mt-5">
+          <div className="f_services text-white justify-between max-sm:grid-cols-2 grid max-sm:h-56 md:mb-5 md:flex md:mr-5 xl:flex md:ml-5 md:mt-3 max-sm:mt-5 xl:mt-5">
             <div className="s_explore">
               <p className="font-playfair font-bold max-sm:text-base md:text-lg xl:text-xl">Expore Pages</p>
               <div className="s_pages max-sm:text-xs md:text-base max-sm:mt-2 xl:mt-4 max-sm:space-y-1 xl:space-y-1">
@@ -37,26 +37,32 @@ function Footer() {
                 <Link to='/contact'><p className="cursor-pointer hover:text-[#dbafd7]">Contact Us</p></Link>
               </div>
             </div>
-            <div className="s_utility">
+            <div className="s_utility max-sm:hidden">
               <p className="font-playfair font-bold max-sm:text-base max-sm:mt-2 md:text-lg xl:text-xl"> Utility Pages </p>
               <div className="s_Upages max-sm:text-xs  md:text-base xl:mt-4 max-sm:space-y-1 xl:space-y-3">
                 <Link to="/privacy" ><p className="cursor-pointer hover:text-[#dbafd7]">Privacy Policy</p></Link>
                 <Link to='/privacy'><p className="cursor-pointer hover:text-[#dbafd7]">Terms Of Uses</p></Link>
               </div>
             </div>
-            <div className="s_addrs max-sm:-ml-5 xl:pr-8 ">
+            <div className="s_addrs xl:pr-8 ">
               <p className="font-playfair font-bold max-sm:ml-2 max-sm:text-base md:text-lg xl:text-xl"> Keep In Touch</p>
               <div className="s_address max-sm:text-xs md:text-base max-sm:mt-2 xl:mt-4 max-sm:space-y-1 xl:space-y-2 flex flex-nowrap">
                 <p className="font-bold max-sm:text-sm mt-2 max-sm:hidden">Address:</p>
-                <p className="ml-2 max-sm:text-xs max-sm:pr-2">Unique_Beauty_Salon, Beside HDFC Bank ,<br /> SriRama colony , Banswada ,<br /> Kamareddy 503187</p>
+                <p className="ml-2 max-sm:ml-0 max-sm:text-xs max-sm:pr-2">Unique_Beauty_Salon, Beside HDFC Bank ,<br /> SriRama colony , Banswada ,<br /> Kamareddy 503187</p>
               
               </div>
               <div className="s_address max-sm:mt-4  xl:mt-4 space-y-2 flex flex-nowrap ">
                 <p className="font-bold max-sm:hidden max-sm:mt-2 xl:mt-2 md:mt-2 max-sm:text-sm xl:ml-5">Email:</p>
-                <p className="ml-2 max-sm:text-xs md:text-base ">Unique_Beauty_Salon90@gmail.com</p>
+                <p className="ml-2 max-sm:ml-0 max-sm:text-xs md:text-base ">Unique_Beauty_Salon90@gmail.com</p>
               
               </div>
-
+            </div>
+            <div className="s_utility md:hidden max-sm:-mt-16 xl:hidden lg:hidden 2xl:hidden">
+              <p className="font-playfair font-bold max-sm:text-base "> Utility Pages </p>
+              <div className="s_Upages max-sm:text-xs mt-2  max-sm:space-y-1 ">
+                <Link to="/privacy" ><p className="cursor-pointer hover:text-[#dbafd7]">Privacy Policy</p></Link>
+                <Link to='/privacy'><p className="cursor-pointer hover:text-[#dbafd7]">Terms Of Uses</p></Link>
+              </div>
             </div>
           </div>
 
