@@ -10,17 +10,34 @@ function Courses() {
       <div className="h-auto w-full relative">
         <img src={courseimg1} alt="" className='opacity-100 max-sm:hidden'  />
         <img src={courseimg2} alt="" className='opacity-100 md:hidden lg:hidden xl:hidden'  />
-        <div className="absolute inset-0 flex flex-col max-sm:mt-10 max-sm:ml-7 md:mt-10 md:ml-14 lg:mt-40  lg:ml-28 max-xl:ml-40 max-xl:mt-44    p-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair text-[#1f2c32]  font-bold mb-4">
-              Start Your Career <br /> <span className='text-2xl md:text-3xl lg:text-4xl'> In the Beauty Industry</span>
+        {/* <div className="absolute lg:hidden xl:hidden 2xl:hidden inset-0 flex flex-col max-sm:mt-10 max-sm:ml-7 md:mt-8 md:ml-14 lg:mt-20 xl:mt-28  lg:ml-24 max-xl:ml-32 2xl:mt-40    p-4">
+          <h2 className="text-3xl md:text-3xl lg:text-5xl font-playfair text-[#1f2c32]  font-bold mb-4">
+              Start Your Career <br /> <span className='text-2xl md:text-2xl lg:text-4xl'> In the Beauty Industry</span>
             </h2>
-            <p className="text-base text-[#576c57]  font-raleway md:pr-72  md:text-lg mb-6">
+            <p className="text-base text-[#576c57]  font-raleway md:pr-72  max-2xl:pr-[600px] md:text-lg md:mb-3 mb-6">
               The Beauty Academy specializes in providing students with quality education 
-             <span className='md:hidden'> and <br /> individualized training to maintain the high standards required by the Beauty Industry.</span>
+               <span className=''> and individualized training to maintain the high standards required by the Beauty Industry.</span>
             </p>
+               
             <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
             className="">
-            <button className="bg-white hover:bg-green-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
+            <button className="bg-white hover:bg-blue-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
+              Register Now
+            </button></a>
+        </div> */}
+        {/* large scree */}
+        <div className="absolute  h-86 w-1/2  max-sm:w-full max-sm:h-auto max-sm:pr-10   inset-0 flex flex-col max-sm:mt-16 max-sm:ml-7 md:mt-8 md:ml-14  lg:mt-20 xl:mt-28  lg:ml-24 max-xl:ml-32 2xl:mt-40 ">
+          <h2 className="text-3xl md:text-3xl lg:text-5xl font-playfair text-[#1f2c32]  font-bold mb-4">
+              Start Your Career <br /> <span className='text-2xl md:text-2xl lg:text-4xl'> In the Beauty Industry</span>
+            </h2>
+            <p className="text-base text-[#576c57]  font-raleway  md:text-lg md:mb-3 mb-6">
+              The Beauty Academy specializes in providing students with quality education 
+               <span className=''> and individualized training to maintain the high standards required by the Beauty Industry.</span>
+            </p>
+               
+            <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
+            className="">
+            <button className="bg-white hover:bg-blue-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
               Register Now
             </button></a>
         </div>
@@ -93,7 +110,7 @@ function Courses() {
             <div className="flex md:mt-7 max-sm:mt-3 xl:mt-7 2xl:mt-7 lg:mt-3 justify-between lg:px-2 xl:px-5 px-5">
               <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
               className="">
-              <button className='bg-blue-600 text-lg max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl xl:p-2 2xl:p-2  px-3 2xl:px-3 xl:px-3 lg:px-2  hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
+              <button className='bg-blue-600 text-lg max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl p-2 px-3 2xl:px-3 xl:px-3 lg:px-2 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
               </a>
               <h4 className='text-lg font-playfair font-bold rounded-xl text-white bg-pink-400 max-sm:px-2 max-sm:text-base p-2 px-3'>Don't miss</h4>
 
