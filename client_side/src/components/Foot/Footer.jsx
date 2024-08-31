@@ -46,7 +46,7 @@ function Footer() {
               <p className="font-playfair font-bold max-sm:ml-2 max-sm:text-base md:text-lg xl:text-xl"> Keep In Touch</p>
               <div className="s_address max-sm:text-xs md:text-base max-sm:mt-2 xl:mt-4 max-sm:space-y-1 xl:space-y-2 flex flex-nowrap">
                 <p className="font-bold max-sm:text-sm mt-2 max-sm:hidden">Address:</p>
-                <p className="ml-2 max-sm:ml-0 max-sm:text-xs max-sm:pr-2">Unique_Beauty_Salon, Beside HDFC Bank ,<br /> SriRama colony , Banswada ,<br /> Kamareddy 503187</p>
+                <p className="ml-2 max-sm:ml-0 max-sm:text-xs max-sm:pr-2">Unique_Beauty_Salon, Beside HDFC Bank ,<br /> SriRama colony , Banswada,<br /> Kamareddy 503187</p>
               
               </div>
               <div className="s_address max-sm:mt-4  xl:mt-4 space-y-2 flex flex-nowrap ">
