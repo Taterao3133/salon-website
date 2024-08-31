@@ -7,8 +7,8 @@ import pedicure1 from '../Images/pedicure1.jpg'
 function Courses() {
   return (
     <div className="ntg  overflow-hidden">
-      <div className="h-auto w-full relative">
-        <img src={courseimg1} alt="" className='opacity-100 max-sm:hidden'  />
+      <div className="h-auto  w-full relative">
+        <img src={courseimg1} alt="" className='opacity-100  w-full max-sm:hidden'  />
         <img src={courseimg2} alt="" className='opacity-100 md:hidden lg:hidden xl:hidden'  />
         {/* large scree */}
         <div className="absolute  h-86 w-1/2  max-sm:w-full max-sm:h-auto max-sm:pr-10   inset-0 flex flex-col max-sm:mt-16 max-sm:ml-7 md:mt-8 md:ml-14  lg:mt-20 xl:mt-28  lg:ml-24 max-xl:ml-32 2xl:mt-40 ">

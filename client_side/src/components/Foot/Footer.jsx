@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
    <>
-    <div className="footer ">
+    <div className="footer overflow-x-hidden">
       <div className="box w-full max-sm:h-auto xl:h-96 border-2 bg-[#241520]">
         <div className="inner_Container max-sm:h-auto   xl:h-80 xl:w-3/4 max-sm:ml-5 max-sm:m-5  xl:ml-48 xl:mt-10 ">
           <div className="ls_icons md:h-24  xl:h-24 max-sm:mb-5 flex">
