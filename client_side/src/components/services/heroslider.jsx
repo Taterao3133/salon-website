@@ -51,16 +51,6 @@ function HeroSlider() {
       <div className="bg-[#fff] md:h-auto xl:h-[650px] max-sm:h-auto max-lg:h-[400px] w-full xl:relative overflow-hidden">
         
             <img src={heroimg2} alt="" className='md:hidden lg:hidden xl:hidden' /> 
-        {/* Small Device Image */}
-        {/* <div className="bx2 max-sm:hidden relative  pt-10 opacity-40">
-          <img
-            src={slides[currentSlide].smallImage}
-            alt=""
-            className={`h-[400px] w-full transition-transform duration-500`}
-          />
-        </div> */}
-
-
         {/* Large Device Background Circles */}
         <div className="bg-rounds max-sm:hidden  sm:block">
           <div className="xl:ml-[750px] md:ml-[360px] md:-mt-20 xl:-mt-44 bg-[#cef1ea] md:w-32 md:h-32 xl:h-60 xl:w-60 rounded-full"></div>

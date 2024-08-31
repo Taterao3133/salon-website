@@ -4,8 +4,6 @@ import { FaFacebookF } from "react-icons/fa";
 import Logo from '../../Images/salon-logo.png';
 import { Link } from "react-router-dom";
 
-
-
 function Footer() {
   return (
    <>

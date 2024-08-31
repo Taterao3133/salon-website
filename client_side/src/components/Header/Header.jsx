@@ -35,7 +35,7 @@ function Header({ isPopupOpen }) {
 
   return (
     <>
-      <div className={`Header max-sm:h-16  xl:h-[70px] pt-1 ${isPopupOpen  ? 'overflow-hidden ' : ''} bg-white ${isSticky ? 'fixed top-0 left-0 w-full shadow-lg z-50' : ''} transition-all duration-500`}>
+      <div className={`Header max-sm:h-16  w-full xl:h-[70px] pt-1 ${isPopupOpen  ? 'overflow-hidden ' : ''} bg-white ${isSticky ? 'fixed top-0 left-0 w-full shadow-lg z-50' : ''} transition-all duration-500`}>
         <div className="flex justify-between items-center  border-b-2 w-full h-full px-4 md:px-[120px]">
           <div className="leftheader flex items-center">
             <div className="logo cursor-pointer">

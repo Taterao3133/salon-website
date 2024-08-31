@@ -59,9 +59,6 @@ function Services() {
             <img src={Serviceimage} alt=""  className='max-sm:h-56 h-[70%] w-auto drop-shadow-2xl -mt-2' style={{ transform: `translateX(${offsetY * -0.05}px)` }} />
             <img src={Serviceimage2} alt="" className=' max-sm:h-56   w-auto drop-shadow-2xl mt-6'style={{ transform: `translateX(${offsetY * 0.05}px)` }}/>
             </div>
-           
-
-
         </div>
 
       </div>

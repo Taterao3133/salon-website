@@ -37,7 +37,7 @@ function Home() {
     }, []);
 
   return <>
-  <div className="home-section  overflow-hidden">
+  <div className="home-section  overflow-hidden sm:overflow-hidden">
 
         <HeroSlider/>
 
@@ -74,7 +74,7 @@ function Home() {
               
             <Link to="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer">
             <button className='bg-[#cef1ea] xl:mt-6 max-sm:mt-3  md:mt-5 max-sm:ml-9 max-sm:text-sm  max-sm:hover:text-xl xl:text-base font-medium hover:text-lg border-[#cef1ea] font-lato p-3 rounded-full'>
-              What'sapp Us
+              Whatsapp Us
               </button>
              </Link>
         </div>
@@ -83,7 +83,7 @@ function Home() {
       <div className="s-details bg-[#ffffff] max-sm:mt-5 max-sm:pt-10 xl:pt-5 pb-5 h-auto w-full">
         <div className="in-details  w-[80%]  m-auto md:flex xl:flex h-auto">
           <div className="r-c flex-[0.5] xl:p-10 ">
-          <hr className='max-sm:hidden border-[2px] md:hidden w-20 mt-14  :border-[#cef1ea]  '/>
+          <hr className='hidden xl:block border-[2px]  w-20 mt-10 hover:cursor-pointer lg:border-[#cef1ea]   '/>
             <h2 className='max-sm:text-3xl md:text-4xl xl:text-5xl font-playfair font-semibold tracking-wider xl:ml-24 md:mt-10 xl:-mt-7 '>Our Beauty Salon</h2>
             <p className='font-raleway max-sm:mt-3 md:mt-3  xl:mt-5 max-sm:text-base xl:text-lg pr-5 font-medium'><span className=' font-bold'>Unique Beauty Salon</span> offers beauty services of an 
             utmost level to all LA residents and guests who are looking for high-quality beauty care.</p>

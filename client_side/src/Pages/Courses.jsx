@@ -10,21 +10,6 @@ function Courses() {
       <div className="h-auto w-full relative">
         <img src={courseimg1} alt="" className='opacity-100 max-sm:hidden'  />
         <img src={courseimg2} alt="" className='opacity-100 md:hidden lg:hidden xl:hidden'  />
-        {/* <div className="absolute lg:hidden xl:hidden 2xl:hidden inset-0 flex flex-col max-sm:mt-10 max-sm:ml-7 md:mt-8 md:ml-14 lg:mt-20 xl:mt-28  lg:ml-24 max-xl:ml-32 2xl:mt-40    p-4">
-          <h2 className="text-3xl md:text-3xl lg:text-5xl font-playfair text-[#1f2c32]  font-bold mb-4">
-              Start Your Career <br /> <span className='text-2xl md:text-2xl lg:text-4xl'> In the Beauty Industry</span>
-            </h2>
-            <p className="text-base text-[#576c57]  font-raleway md:pr-72  max-2xl:pr-[600px] md:text-lg md:mb-3 mb-6">
-              The Beauty Academy specializes in providing students with quality education 
-               <span className=''> and individualized training to maintain the high standards required by the Beauty Industry.</span>
-            </p>
-               
-            <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
-            className="">
-            <button className="bg-white hover:bg-blue-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
-              Register Now
-            </button></a>
-        </div> */}
         {/* large scree */}
         <div className="absolute  h-86 w-1/2  max-sm:w-full max-sm:h-auto max-sm:pr-10   inset-0 flex flex-col max-sm:mt-16 max-sm:ml-7 md:mt-8 md:ml-14  lg:mt-20 xl:mt-28  lg:ml-24 max-xl:ml-32 2xl:mt-40 ">
           <h2 className="text-3xl md:text-3xl lg:text-5xl font-playfair text-[#1f2c32]  font-bold mb-4">
@@ -59,13 +44,10 @@ function Courses() {
             <h3 className='font-montserrat font-bold max-sm:text-lg md:text-xl max-sm:text-center text-2xl'>Quality & Standard </h3>
             <p className='font-raleway max-sm:text-sm md:text-base max-sm:px-2 max-sm:text-center text-base mt-3 text-gray-700 pr-5'>Our courses are designed to uphold the highest standards of excellence, ensuring you receive a top-tier education in beauty. With a focus on quality, we prepare you to meet and exceed industry expectations.</p>
           </div>
-          <div className="bx1 h-56 md:h-auto w-[100%] bg-white text-left max-sm:px-4 max-sm:py-4 md:py-4 pl-9 pt-9 hover:drop-shadow-xl shadow-lg rounded-lg">
+          <div className="bx1 h-56 md:h-auto w-[100%] max-sm:h-auto bg-white text-left max-sm:px-4 max-sm:py-4 md:py-4 pl-9 pt-9 hover:drop-shadow-xl shadow-lg rounded-lg">
             <h3 className='font-montserrat font-bold max-sm:text-lg md:text-xl max-sm:text-center text-2xl'>ISO Certified</h3>
             <p className='font-raleway max-sm:text-sm md:text-base max-sm:px-2 max-sm:text-center text-base mt-3 text-gray-700 pr-5'>As an ISO-certified institution, we are committed to maintaining the highest standards of quality and excellence. Our certification ensures that you receive a globally recognized education that meets rigorous industry benchmarks.</p>
-          </div>
-        
-          
-          
+          </div>  
         </div>
       </div>
 
@@ -78,10 +60,10 @@ function Courses() {
             <img src={pedicure1} alt="" className='lg:h-56 lg:w-96 md:w-full md:h-72 object-cover rounded-xl ' />
             <h3 className='text-2xl font-bold font-playfair tracking-tight mt-5 ml-5 text-[#442e46]'>Pedicure</h3>
             <p className='text-gray-600 text-base font-lato tracking-wide max-sm:mt-2 max-sm:text-sm mt-3 ml-5'>Pampering your feet with precision and care for a flawless finish.</p>
-            <div className="flex xl:mt-7 max-sm:mt-3 2xl:mt-7 lg:mt-3 justify-between lg:px-2 xl:px-5 md:mt-7 px-5">
+            <div className="flex xl:mt-7 max-sm:mt-3 2xl:mt-7 lg:mt-3 justify-between max-sm:px-1 lg:px-2 xl:px-5 md:mt-7 px-5">
               <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
               className="">
-              <button className='bg-blue-600 text-lg max-lg:text-[16px] max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl 2xl:px-3 xl:px-3 lg:px-2 p-2  px-3 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
+              <button className='bg-blue-600 text-lg max-lg:text-[16px] max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl 2xl:px-3 xl:px-3 max-sm:px-2 lg:px-2 p-2  px-3 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
               </a>
               <h4 className='text-lg font-playfair font-bold rounded-xl text-white bg-pink-400 max-sm:px-2 max-sm:text-base p-2 px-3'>Don't miss</h4>
             </div>
@@ -92,7 +74,7 @@ function Courses() {
             <img src={haircut1} alt="" className='lg:h-56 lg:w-96 md:w-full md:h-72 object-cover rounded-xl ' />
             <h3 className='text-2xl font-bold font-playfair tracking-tight mt-5 ml-5 text-[#442e46]'>Haircut</h3>
             <p className='text-gray-600 text-base max-sm:mt-2 max-sm:text-sm font-lato tracking-wide mt-3 ml-5'>Transforming your look with expert cuts tailored to your style.</p>
-            <div className="flex md:mt-7 max-sm:mt-3 xl:mt-7 2xl:mt-7 lg:mt-3 justify-between lg:px-2 xl:px-5 px-5">
+            <div className="flex md:mt-7 max-sm:mt-3 xl:mt-7 2xl:mt-7 lg:mt-3 justify-between max-sm:px-1 lg:px-2 xl:px-5 px-5">
               <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
               className="">
               <button className='bg-blue-600 text-lg max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl p-2 px-3 2xl:px-3 xl:px-3 lg:px-2 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
@@ -107,33 +89,16 @@ function Courses() {
             <img src={makaup1} alt="" className='lg:h-56 lg:w-96 md:w-full md:h-72 object-cover rounded-xl ' />
             <h3 className='text-2xl font-bold font-playfair tracking-tight mt-5 ml-5 text-[#442e46]'>Makaup</h3>
             <p className='text-gray-600 text-base font-lato tracking-wide max-sm:mt-2 max-sm:text-sm mt-3 ml-5'>Empowering students with engaging, interactive learning experiences.</p>
-            <div className="flex md:mt-7 max-sm:mt-3 xl:mt-7 2xl:mt-7 lg:mt-3 justify-between lg:px-2 xl:px-5 px-5">
+            <div className="flex md:mt-7 max-sm:mt-3 xl:mt-7 2xl:mt-7 lg:mt-3 justify-between max-sm:px-1 lg:px-2 xl:px-5 px-5">
               <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
               className="">
-              <button className='bg-blue-600 text-lg max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl p-2 px-3 2xl:px-3 xl:px-3 lg:px-2 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
+              <button  className='bg-blue-600 text-lg max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl p-2 px-3 2xl:px-3 xl:px-3 lg:px-2 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
               </a>
               <h4 className='text-lg font-playfair font-bold rounded-xl text-white bg-pink-400 max-sm:px-2 max-sm:text-base p-2 px-3'>Don't miss</h4>
 
             </div>
              
-          </div>
-{/* 
-
-          <div className="bx1 h-56 w-[100%] bg-white text-left pl-9 pt-9 hover:drop-shadow-xl  shadow-lg rounded-lg">
-            <h3 className='font-montserrat font-bold text-2xl'>Best Beauty Expert</h3>
-            <p className='font-raleway text-base mt-3 text-gray-700 pr-5'>Learn from the best in the industry with our top beauty experts who bring years of experience and cutting-edge techniques. Achieve excellence with personalized guidance from professionals dedicated to your success.</p>
-          </div>
-          <div className="bx1 h-56 w-[100%] bg-white text-left pl-9 pt-9 hover:drop-shadow-xl shadow-lg rounded-lg">
-            <h3 className='font-montserrat font-bold text-2xl'>Quality & Standard </h3>
-            <p className='font-raleway text-base mt-3 text-gray-700 pr-5'>Our courses are designed to uphold the highest standards of excellence, ensuring you receive a top-tier education in beauty. With a focus on quality, we prepare you to meet and exceed industry expectations.</p>
-          </div> */}
-          {/* <div className="bx1 h-56 w-[100%] bg-white text-left pl-9 pt-9 hover:drop-shadow-xl shadow-lg rounded-lg">
-            <h3 className='font-montserrat font-bold text-2xl'>ISO Certified</h3>
-            <p className='font-raleway text-base mt-3 text-gray-700 pr-5'>As an ISO-certified institution, we are committed to maintaining the highest standards of quality and excellence. Our certification ensures that you receive a globally recognized education that meets rigorous industry benchmarks.</p>
-          </div> */}
-        
-          
-          
+          </div>          
         </div>
       </div>
     </div>

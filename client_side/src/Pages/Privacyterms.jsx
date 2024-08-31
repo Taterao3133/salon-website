@@ -2,7 +2,7 @@
 
 function Privacyterms() {
   return (
-    <div className="container w-full h-auto border-t-2 max-sm:p-9 max-sm:mt-16 xl:p-36 bg-[#ffffff]">
+    <div className="container w-full h-auto border-t-2 md:p-10 md:mt-10 max-sm:p-9 max-sm:mt-16 xl:p-36 bg-[#ffffff]">
       <h2 className="font-playfair max-sm:text-2xl xl:text-5xl font-semibold">Terms of Use</h2>
       <hr className="w-28  border-[#cef1ea] border-2  max-sm:mt-3 xl:mt-5 "/>
       <h4 className="text-[#2b2c2f] max-sm:text-base  xl:text-xl font-semibold mt-5">General Information</h4>
