@@ -39,18 +39,3 @@ exports.submitContactForm = async (req, res) => {
   }
 };
 
-// src/controllers/bookingController.js
-exports.submitBooking = async (req, res) => {
-  try {
-    const { name, email, phone, message } = req.body;
-
-    // Save booking information to the database
-    const newBooking = new Booking({ name, email, phone,message });
-    await newBooking.save();
-
-    res.status(200).send({ message: 'Booking submitted successfully' });
-  } catch (error) {
-    console.error('Error submitting booking:', error);
-    res.status(500).send({ message: 'Server error' });
-  }
-};

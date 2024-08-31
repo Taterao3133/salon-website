@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
       from: process.env.EMAIL_USER,
       to: email, // Send confirmation to the user's email
       subject: 'Thank You for Contacting Us',
-      text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nBest regards,\nUnique Beauty Salon`
+      text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nBest regards,\nUnique Beauty Salon,\nBanswada.`
     };
 
     await transporter.sendMail(customerMailOptions);
