@@ -143,7 +143,7 @@ const handleSubmit = async (e) => {
     {/* contact-details section */}
       <div className="cd_details md:pb-7  bg-[#FBF2E0] w-full max-sm:pb-3 xl:h-[670px] ">
         <div className="cd_inner_b w-60% m-auto max-sm:pt-5 md:pt-8 xl:pt-10 max-sm:h-auto xl:h-4/5">
-         <p className=' text-center max-sm:text-xs text-[#BA7894]'>Schadule for Presence</p>
+         <p className=' text-center max-sm:text-xs text-[#BA7894]'>Schedule for Presence</p>
          <p className="text-[#422A3C] text-center max-sm:pt-2 xl:pt-3 font-playfair max-sm:text-lg md:text-2xl xl:text-3xl font-bold">Get In Touch</p>
          <p className='text-[#555555] font-raleway text-center xl:pt-3 max-sm:pt-1 max-sm:mb-3 max-sm:text-xs xl:mb-5'>Feel Free to ask Query</p>
 
