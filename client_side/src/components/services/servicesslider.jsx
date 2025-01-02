@@ -32,7 +32,7 @@ const ServicesSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 100,
+    speed: 70,
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
