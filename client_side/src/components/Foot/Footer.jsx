@@ -3,12 +3,38 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import Logo from '../../Images/salon-logo.png';
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../../firebase'
 
 function Footer() {
+  // const [contactDetails, setContactDetails] = useState({ email: "", phone: "", address: "" });
+  const [socialLinks, setSocialLinks] = useState({});
+
+  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment`
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    
+      
+    }
+    fetchSocialLinks();
+  },[])
+  
+
   return (
    <>
     <div className="footer overflow-x-hidden">
-      <div className="box w-full max-sm:h-auto xl:h-96 border-2 bg-[#241520]">
+      <div className="box w-full max-sm:h-auto xl:h-auto border-2 bg-[#241520]">
         <div className="inner_Container max-sm:h-auto   xl:h-80 xl:w-3/4 max-sm:ml-5 max-sm:m-5  xl:ml-48 xl:mt-10 ">
           <div className="ls_icons md:h-24  xl:h-24 max-sm:mb-5 flex">
             <div className="f_logo flex-1  md:mt-5 md:ml-5">
@@ -19,7 +45,7 @@ function Footer() {
             </div>
             <div className="f_sIcons text-white md:mb-6 md:gap-3 md:mr-5 xl:mb-8 flex items-end max-sm:gap-2 xl:gap-4">
               <Link to='https://www.instagram.com/unique_beauty_salon90/'><FaInstagram className="max-sm:h-8 w-auto p-1 xl:p-2 md:h-10 md:p-1 xl:h-12 border-2 cursor-pointer rounded-md"/></Link>
-              <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer">
+              <a href={whatsApplink} target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="max-sm:h-8 w-auto xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" /></a>
               <FaFacebookF className="max-sm:h-8 w-auto  xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" />
             </div>
@@ -66,7 +92,7 @@ function Footer() {
 
         </div>
         <div className="f-credit bg-slate-50 max-sm:h-6 max-sm:-mt-12 md:h-11 xl:h-11 xl:text-center   text-center max-sm:w-full">
-          <p className="max-sm:text-sm xl:text-lg xl:pt-2">&copy; {new Date().getFullYear()} TechnoNxtgen. All rights reserved.</p>
+          <p className="max-sm:text-sm xl:text-lg xl:pt-2">&copy; {new Date().getFullYear()} Uniquebeautysalon. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -74,4 +100,4 @@ function Footer() {
   )
 }
 
-export default Footer 
+export default Footer ;

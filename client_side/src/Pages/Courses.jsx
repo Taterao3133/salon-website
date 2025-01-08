@@ -1,10 +1,33 @@
+import { useEffect, useState } from 'react'
 import courseimg1 from '../Images/course-heroimg.jpg'
 import courseimg2 from '../Images/course-heroimg2.jpg'
 import haircut1 from '../Images/haircut1.jpg'
 import makaup1 from '../Images/makaup1.jpg'
 import pedicure1 from '../Images/pedicure1.jpg'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../firebase'
 
 function Courses() {
+  const [socialLinks, setSocialLinks] = useState({});
+
+  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment`
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    
+      
+    }
+    fetchSocialLinks();
+  },[])
   return (
     <div className="ntg  overflow-hidden">
       <div className="h-auto  w-full relative">
@@ -20,9 +43,9 @@ function Courses() {
                <span className=''> and individualized training to maintain the high standards required by the Beauty Industry.</span>
             </p>
                
-            <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
+            <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
             className="">
-            <button className="bg-white hover:bg-blue-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
+            <button className="bg-white lg:mt-4 hover:bg-blue-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
               Register Now
             </button></a>
         </div>
@@ -61,7 +84,7 @@ function Courses() {
             <h3 className='text-2xl font-bold font-playfair tracking-tight mt-5 ml-5 text-[#442e46]'>Pedicure</h3>
             <p className='text-gray-600 text-base font-lato tracking-wide max-sm:mt-2 max-sm:text-sm mt-3 ml-5'>Pampering your feet with precision and care for a flawless finish.</p>
             <div className="flex xl:mt-7 max-sm:mt-3 2xl:mt-7 lg:mt-3 justify-between max-sm:px-1 lg:px-2 xl:px-5 md:mt-7 px-5">
-              <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
+              <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
               className="">
               <button className='bg-blue-600 text-lg max-lg:text-[16px] max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl 2xl:px-3 xl:px-3 max-sm:px-2 lg:px-2 p-2  px-3 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
               </a>
@@ -75,7 +98,7 @@ function Courses() {
             <h3 className='text-2xl font-bold font-playfair tracking-tight mt-5 ml-5 text-[#442e46]'>Haircut</h3>
             <p className='text-gray-600 text-base max-sm:mt-2 max-sm:text-sm font-lato tracking-wide mt-3 ml-5'>Transforming your look with expert cuts tailored to your style.</p>
             <div className="flex md:mt-7 max-sm:mt-3 xl:mt-7 2xl:mt-7 lg:mt-3 justify-between max-sm:px-1 lg:px-2 xl:px-5 px-5">
-              <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
+              <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
               className="">
               <button className='bg-blue-600 text-lg max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl p-2 px-3 2xl:px-3 xl:px-3 lg:px-2 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
               </a>
@@ -90,7 +113,7 @@ function Courses() {
             <h3 className='text-2xl font-bold font-playfair tracking-tight mt-5 ml-5 text-[#442e46]'>Makaup</h3>
             <p className='text-gray-600 text-base font-lato tracking-wide max-sm:mt-2 max-sm:text-sm mt-3 ml-5'>Empowering students with engaging, interactive learning experiences.</p>
             <div className="flex md:mt-7 max-sm:mt-3 xl:mt-7 2xl:mt-7 lg:mt-3 justify-between max-sm:px-1 lg:px-2 xl:px-5 px-5">
-              <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20I%20want%20to%20to%20join%20a%20course%20Send%20me%20details." target="_blank" rel="noopener noreferrer"
+              <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
               className="">
               <button  className='bg-blue-600 text-lg max-sm:text-base  font-playfair tracking-wide font-semibold text-white rounded-xl p-2 px-3 2xl:px-3 xl:px-3 lg:px-2 hover:text-black hover:bg-white active:drop-shadow-lg hover:drop-shadow-2xl active:text-purple-400'>Register Now</button>
               </a>

@@ -6,33 +6,32 @@ require('dotenv').config();
 
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // Use your email service (e.g., 'gmail', 'yahoo')
+  service: 'gmail', 
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
   }
 });
 
-// POST: Submit contact form
 router.post('/', async (req, res) => {
   try {
     const { name, email, phone, message } = req.body;
 
-    // Save contact form data to MongoDB
+    
     const newContact = new Contact({ name, email, phone, message });
     await newContact.save();
 
-    // Send confirmation email to the customer
+    
     const customerMailOptions = {
       from: process.env.EMAIL_USER,
-      to: email, // Send confirmation to the user's email
+      to: email, 
       subject: 'Thank You for Contacting Us',
       text: `Dear ${name},\n\nThank you for reaching out to us. We have received your message and will get back to you soon.\n\nBest regards,\nUnique Beauty Salon,\nBanswada.`
     };
 
     await transporter.sendMail(customerMailOptions);
 
-    // Send notification email to the owner
+    
     const ownerMailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.OWNER_EMAIL, // Owner's email address
