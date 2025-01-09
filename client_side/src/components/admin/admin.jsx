@@ -7,10 +7,10 @@ import { FaGreaterThan } from "react-icons/fa";
 import { signOut } from "firebase/auth";
 
 const AdminPanel = () => {
-  const [portfolioItems, setPortfolioItems] = useState([]);
-  const [newPortfolioItem, setNewPortfolioItem] = useState({
-    title: "",
-    description: "",
+  const [UserReviews, setUserReviews] = useState([]);
+  const [newUserReview, setNewUserReviews] = useState({
+    UserName: "",
+    UserReview: "",
     imageUrl: "",
   });
   const [contactData, setContactData] = useState({ email: "", phone: "" });
@@ -27,16 +27,21 @@ const AdminPanel = () => {
     const fetchData = async () => {
       
       try {
-        const portfolioDoc = await getDoc(doc(db, "siteDetails", "portfolio"));
+        
         const contactDoc = await getDoc(doc(db, "siteDetails", "contact"));
         const socialDoc = await getDoc(doc(db, "siteDetails", "socialLinks"));
 
-        if (portfolioDoc.exists()) {
-          setPortfolioItems(portfolioDoc.data().items || []);
-         
+        const reviewsDoc = await getDoc(doc(db, "siteDetails", "Reviews"));
+        if (reviewsDoc.exists()) {
+          setUserReviews(reviewsDoc.data().items || []); // Default to an empty array
         } else {
-          console.log("Portfolio data not found");
+          console.log("No reviews data found");
+          setUserReviews([]); // Fallback to empty array
         }
+      // } catch (error) {
+      //   console.error("Error fetching reviews:", error);
+      //   setUserReviews([]); // Fallback to empty array on error
+      // }
 
         if (contactDoc.exists()) {
           setContactData(contactDoc.data());
@@ -74,31 +79,31 @@ const AdminPanel = () => {
       if (file) {
         const formData = new FormData();
         formData.append("file", file);
-        formData.append("upload_preset", "myPortfolioImg"); 
+        formData.append("upload_preset", "salonReviews"); 
 
-        const cloudinaryResponse = await axios.post('https://api.cloudinary.com/v1_1/dhtglbqk8/image/upload', formData);
+        const cloudinaryResponse = await axios.post('https://api.cloudinary.com/v1_1/dteobghdz/image/upload', formData);
          
         const imageUrl = cloudinaryResponse.data.secure_url;
 
-        const updatedPortfolioItems = [
-          ...portfolioItems,
-          { ...newPortfolioItem, imageUrl },
+        const updatedUserReviews = [
+          ...UserReviews,
+          { ...newUserReview, imageUrl },
         ];
 
 
-        await setDoc(doc(db, "siteDetails", "portfolio"), {
-          items: updatedPortfolioItems,
+        await setDoc(doc(db, "siteDetails", "Reviews"), {
+          items: updatedUserReviews,
         });
 
-        setPortfolioItems(updatedPortfolioItems); 
-        setNewPortfolioItem({ title: "", description: "", imageUrl: "" });
+        setUserReviews(updatedUserReviews); 
+        setNewUserReviews({ UserName: "", UserReview: "", imageUrl: "" });
         setFile(null); 
-        alert("Portfolio item added successfully!");
+        alert("User Reviews  item added successfully!");
       } else {
         alert("Please upload an image first");
       }
     } catch (error) {
-      console.error("Error saving portfolio item:", error);
+      console.error("Error saving Reviews item:", error);
     }
   };
 
@@ -106,13 +111,13 @@ const AdminPanel = () => {
     const uploadedFile = e.target.files[0];
     setFile(uploadedFile);
     const imageUrl = URL.createObjectURL(uploadedFile); 
-    setNewPortfolioItem({ ...newPortfolioItem, imageUrl });
+    setNewUserReviews({ ...newUserReview, imageUrl });
   };
   const handleLogout = async () => {
     try {
       await signOut(auth);
       alert("Logged out successfully!");
-      window.location.href = "/"; 
+      window.location.href = "/home"; 
     } catch (error) {
       console.error("Error logging out:", error);
       alert("Failed to log out. Please try again.");
@@ -129,32 +134,32 @@ const AdminPanel = () => {
       <h2 className="text-center text-4xl max-sm:text-2xl font-roboto-serif font-medium ">Admin Panel</h2>
       <div className="  mt-4 ">
         <div className="space-y-8 border-2 border-[#ce6ad0] rounded-lg mt-2 py-5 mx-auto grid justify-center items-center grid-flow-row max-sm:w-[90%] w-[60%] text-center">
-          <h3 className="text-center text-2xl  font-roboto font-medium max-sm:text-xl ">Portfolio Changes</h3>
+          <h3 className="text-center text-2xl  font-roboto font-medium max-sm:text-xl ">User Reviews Add</h3>
         
-        <input
-          type="text" className="border-2  p-3 w-full border-[#c573c7] rounded-lg "
-          placeholder="Title"
-          value={newPortfolioItem.title}
-          onChange={(e) =>
-            setNewPortfolioItem({ ...newPortfolioItem, title: e.target.value })
-          }
-        />
-        <textarea
-          placeholder="Description" className="border-2 p-3 w-full border-[#c573c7] rounded-lg   mt-2" 
-          value={newPortfolioItem.description}
-          onChange={(e) =>
-            setNewPortfolioItem({
-              ...newPortfolioItem,
-              description: e.target.value,
-            })
-          }
-        />
+          <input
+              type="text"
+              className="border-2 p-3 w-full border-[#c573c7] rounded-lg"
+              placeholder="Enter Reviewer Name"
+              value={newUserReview.UserName}
+              onChange={(e) =>
+                setNewUserReviews({ ...newUserReview, UserName: e.target.value })
+              }
+            />
+            <textarea
+              placeholder="Enter User Review"
+              className="border-2 p-3 w-full border-[#c573c7] rounded-lg mt-2"
+              value={newUserReview.UserReview}
+              onChange={(e) =>
+                setNewUserReviews({ ...newUserReview, UserReview: e.target.value })
+              }
+            />
+            <p>Upload User Icon</p>
         <input type="file" accept="image/*" onChange={handleImageUpload} className="mt-5 mx-auto" />
-        {newPortfolioItem.imageUrl && (
+        {newUserReview.imageUrl && (
           <img
-            src={newPortfolioItem.imageUrl}
-            className="w-40 h-40 mx-auto mt-2"
-            alt="Uploaded"
+            src={newUserReview.imageUrl}
+            className="w-40 h-40 mx-auto mt-2 cursor-pointer"
+            alt="Uploaded" 
           />
         )}
         <div onClick={handleSavePortfolioItem} className="bt flex md:mx-auto  hover:bg-[#ce6ad0] hover:border-none cursor-pointer mt-7 max-sm:mx-auto w-56 max-sm:w-[60%] max-sm:h-auto max-sm:py-2 hover:drop-shadow-lg h-14 border-2 border-[#000000]  rounded-[20px]">
@@ -163,19 +168,20 @@ const AdminPanel = () => {
       
         </div>
 
-        <h4 className="text-4xl text-center max-sm:text-2xl font-roboto-serif font-medium mt-8"> Current Portfolio Items</h4>
+        <h4 className="text-4xl text-center max-sm:text-2xl font-roboto-serif font-medium mt-8">Current User Reviews</h4>
         
        
         <div className="gf grid grid-cols-3 max-sm:grid-cols-2 gap-4 mt-5"> 
-          {portfolioItems.map((item, index) => (
+        {Array.isArray(UserReviews) &&
+              UserReviews.map((review, index) => (
             <div key={index} className="border p-4 border-[#bb6dbc] rounded-lg"> 
-              <h5 className="max-sm:text-lg ">{item.title}</h5>
-              <p className="max-sm:text-xs pb-2 ">{item.description}</p>
-              {item.imageUrl && (
+              <h5 className="max-sm:text-lg font-playfair text-2xl ">{review.UserName}</h5>
+              <p className="max-sm:text-xs pb-2 mt-2 text-lg font-manrope ">{review.UserReview}</p>
+              {review.imageUrl && (
                 <img
-                  src={item.imageUrl}
+                  src={review.imageUrl}
                   className="w-20 h-20"
-                  alt={`Portfolio ${index}`}
+                  alt={`userReviews ${index}`}
                 />
               )}
             </div>
@@ -184,7 +190,7 @@ const AdminPanel = () => {
       </div>
  {/* contact details */}
       <div className="space-y-8 mt-5 border-2 border-[#ce6ad0] rounded-lg py-5 mx-auto grid justify-center items-center grid-flow-row max-sm:w-[90%] w-[60%] text-center">
-        <h3 className="text-center  text-4xl max-sm:text-2xl font-roboto-serif font-medium">Contact </h3>
+        <h3 className="text-center  text-4xl max-sm:text-2xl font-roboto-serif font-medium">Contact Details add </h3>
         <div className="inp"></div>
         <input
           type="text"

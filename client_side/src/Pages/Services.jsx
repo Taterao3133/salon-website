@@ -9,11 +9,33 @@ import Pedicure from '../Images/hands.png'
 import Waxing from '../Images/waxing.png'
 import Skincare from '../Images/skincare.png'
 import Testimonial from '../components/testimonial/Testimonial';
+import { db } from '../firebase';
+import { doc, getDoc } from 'firebase/firestore';
 
 function Services() {
 
   const [scaleX, setScaleX] = useState(1);
   const [offsetY, setOffsetY] = useState(0);
+  const [socialLinks, setSocialLinks] = useState({});
+
+  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment`
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    
+      
+    }
+    fetchSocialLinks();
+  },[])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +71,7 @@ function Services() {
             <p className='font-raleway text-gray-800 max-sm:p-9 max-sm:text-sm xl:p-16 md:mt-3 md:pr-10  xl:-mt-5'>"Our clients choose us for our personalized care, expert services, 
                 and dedication to making every visit a luxurious and relaxing experience. 
                 We take pride in our attention to detail, ensuring that each client leaves feeling confident and rejuvenated.</p>
-                <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
+                <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
             className="r">
             <button className='bg-[#cef1ea] xl:ml-16 max-sm:ml-9  md:mt-5 xl:mt-0 max-sm:text-lg max-sm:hover:text-xl xl:text-xl hover:text-2xl border-[#cef1ea] font-raleway p-3 rounded-full'>Book Now</button>
              </a>

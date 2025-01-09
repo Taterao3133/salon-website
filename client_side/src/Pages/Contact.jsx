@@ -9,6 +9,9 @@ import { VscCallOutgoing } from "react-icons/vsc";
 import Testimonial from '../components/testimonial/Testimonial';
 import { useState } from 'react';
 import { submitContactForm } from '../utils/apiService';
+import { useEffect } from 'react';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../firebase';
 
 
 
@@ -18,9 +21,9 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '', // Added phone field to state
+    phone: '', 
     message: '',
-    service: '', // Added service field to state
+    service: '', 
 });
 
 const [error, setError] = useState(null);
@@ -32,6 +35,25 @@ const handleChange = (e) => {
         [e.target.name]: e.target.value,
     });
 };
+const [contactDetails, setContactDetails] = useState({ email: "", phone: "", address: "" });
+
+  useEffect(() => {
+    const fetchContactDetails = async () => {
+      try {
+        const contactDoc = await getDoc(doc(db, "siteDetails", "contact"));
+        if (contactDoc.exists()) {
+          setContactDetails(contactDoc.data());
+        } else {
+          console.log("Contact data not found");
+        }
+      } catch (error) {
+        console.error("Error fetching contact data:", error);
+      }
+    };
+
+    fetchContactDetails();
+  }, []);
+
 
 const handleSubmit = async (e) => {
     e.preventDefault();
@@ -87,7 +109,7 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-xl text-[#422A3C]'>
               Email Us:
              </p>
-             <p className='text-sm font-raleway '> Uniquebeautysalon90@gmail.com </p>
+             <p className='text-sm font-raleway '> {contactDetails.email} </p>
              </div>
            
             </div>
@@ -98,7 +120,7 @@ const handleSubmit = async (e) => {
               Call Us:
              </p>
              <p className='text-sm font-lato '> 
-             +91 8688664812 </p>
+             +91 {contactDetails.phone} </p>
              </div>
            
             </div>
@@ -123,7 +145,7 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-base text-[#422A3C]'>
               Email Us:
              </p>
-             <p className='text-xs font-raleway'> Uniquebeautysalon90@gmail.com </p>
+             <p className='text-xs font-raleway'> {contactDetails.email} </p>
              </div>
            
             </div>
@@ -134,7 +156,7 @@ const handleSubmit = async (e) => {
               <p className='font-playfair font-bold text-base text-[#422A3C]'>
               Call Us:
              </p>
-             <p className='text-xs font-lato '> +91 8688664812 </p>
+             <p className='text-xs font-lato '> +91 {contactDetails.phone} </p>
              </div>
            
             </div>

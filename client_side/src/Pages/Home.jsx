@@ -21,6 +21,8 @@ import ServicesSlider from '../components/services/servicesslider';
 import { useEffect, useState } from 'react';
 import { RiDoubleQuotesR } from 'react-icons/ri';
 import { Link } from 'react-router-dom'
+import { db } from '../firebase'
+import { doc, getDoc } from 'firebase/firestore'
 
 // import { Link } from 'react-router-dom'
 
@@ -30,7 +32,26 @@ function Home() {
     const handleScroll = () => {
       setOffsetY(window.scrollY);
     };
+    const [socialLinks, setSocialLinks] = useState({});
+
+    const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment`
   
+    useEffect(() => {
+      const fetchSocialLinks = async () => {
+        try {
+          const socialRef = doc(db, "siteDetails", "socialLinks");
+          const socialDoc = await getDoc(socialRef);
+          if (socialDoc.exists()) {
+            setSocialLinks(socialDoc.data());
+          }
+        } catch (error) {
+          console.error("Error fetching social links:", error);
+        }
+      
+        
+      }
+      fetchSocialLinks();
+    },[])
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
@@ -72,7 +93,7 @@ function Home() {
             <p className='font-lato xl:text-base max-sm:text-sm md:mt-3 max-sm:pl-9 text-gray-500 max-sm:mt-2 max-md:pr-5 xl:mt-6 xl:pr-36'>Our clients appreciate and value our level of customer service, the skills of our stylists 
               and estheticians as well as our professional approach to everything we do.</p>
               
-            <Link to="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer">
+            <Link to={whatsApplink} target="_blank" rel="noopener noreferrer">
             <button className='bg-[#cef1ea] xl:mt-6 max-sm:mt-3  md:mt-5 max-sm:ml-9 max-sm:text-sm  max-sm:hover:text-xl xl:text-base font-medium hover:text-lg border-[#cef1ea] font-lato p-3 rounded-full'>
               Whatsapp Us
               </button>

@@ -11,7 +11,9 @@ import abt_img from '../Images/exp-pic3.jpg'
 import { Link } from "react-router-dom";
 import { RiDoubleQuotesR } from "react-icons/ri";
 
+
 function About() {
+  
   return (
     <div className="about_section overflow-hidden">
     <div className="tagline bg-[#422A3C] xl:h-auto w-full xl:pb-5 lg:pb-5 lg:h-auto md:pb-4  max-sm:pb-3 max-md:h-auto max-sm:h-auto justify-items-center  text-center ">
