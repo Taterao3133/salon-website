@@ -33,16 +33,11 @@ const AdminPanel = () => {
 
         const reviewsDoc = await getDoc(doc(db, "siteDetails", "Reviews"));
         if (reviewsDoc.exists()) {
-          setUserReviews(reviewsDoc.data().items || []); // Default to an empty array
+          setUserReviews(reviewsDoc.data().items || []); 
         } else {
           console.log("No reviews data found");
-          setUserReviews([]); // Fallback to empty array
+          setUserReviews([]); 
         }
-      // } catch (error) {
-      //   console.error("Error fetching reviews:", error);
-      //   setUserReviews([]); // Fallback to empty array on error
-      // }
-
         if (contactDoc.exists()) {
           setContactData(contactDoc.data());
         } else {

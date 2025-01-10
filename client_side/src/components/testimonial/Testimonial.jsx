@@ -104,17 +104,7 @@ function Testimonial() {
                 <RiDoubleQuotesR className="text-right text-[#d5d5d5] xl:ml-96 lg:ml-72 lg:w-14 lg:-mt-0 xl:-mt-8 md:w-20 md:h-20 md:ml-[450px] max-sm:h-14 max-sm:w-14 xl:h-20 xl:w-20" />
               </div>
             ))}
-            {/* <div className="progression-btn flex ml-11 gap-2">
-              {UserReviewsData.map((_, i) => (
-                <div
-                  key={i}
-                  style={{ width: currentIndex === i ? '40px' : '16px' }}
-                  className={`${
-                    currentIndex === i ? 'bg-[#FD4755]' : 'border-2 border-black'
-                  } h-3 rounded-[5px]`}
-                ></div>
-              ))}
-            </div> */}
+            
           </Slider>
         </div>
         

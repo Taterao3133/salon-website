@@ -1,4 +1,4 @@
-import './Home.css'
+// import './Home.css'
 import Haircut from '../Images/hair-cutting.png'
 import home1 from '../Images/home-1.jpg'
 import home2 from '../Images/home-2.jpg'
