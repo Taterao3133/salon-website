@@ -9,8 +9,8 @@ import { db } from '../firebase'
 
 function Courses() {
   const [socialLinks, setSocialLinks] = useState({});
-
-  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20Know%20abot%20Courses`
+  const countryCode='+91'
+  const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20Know%20abot%20Courses`
 
   useEffect(() => {
     const fetchSocialLinks = async () => {

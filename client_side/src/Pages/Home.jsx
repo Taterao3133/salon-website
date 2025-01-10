@@ -33,8 +33,8 @@ function Home() {
       setOffsetY(window.scrollY);
     };
     const [socialLinks, setSocialLinks] = useState({});
-
-    const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment`
+     const countryCode='+91'
+    const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment`
   
     useEffect(() => {
       const fetchSocialLinks = async () => {

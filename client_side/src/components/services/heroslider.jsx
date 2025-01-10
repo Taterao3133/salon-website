@@ -6,6 +6,8 @@ import Homeslide4 from '../../Images/home-slide-3sm.png';
 import Homeslide5 from '../../Images/home-slide-2sm.png';
 import Homeslide6 from '../../Images/home-slide-1sm.png';
 import heroimg2 from '../../Images/course-heroimg2.jpg'
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../../firebase';
 
 const slides = [
   {
@@ -38,6 +40,28 @@ function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
+  const [socialLinks, setSocialLinks] = useState({});
+  const countryCode='+91'
+  const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment`
+  
+
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    
+      
+    }
+    fetchSocialLinks();
+  },[])
   useEffect(() => {
     const interval = setInterval(() => {
       setIsAnimating(true);
@@ -80,14 +104,14 @@ function HeroSlider() {
               <p className='font-lato md:hidden lg:hidden x:hidden 2xl:hidden max-sm:pl-0 max-sm:pt-2 max-sm:pb-2  text-[#939191] p-8 text-left '>{slides[currentSlide].smText}</p>
             </div>
             
-            <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
+            <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
             className="relative max-sm:hidden  z-10">
               <button className='bg-[#b0ebdf] max-sm:hidden md:ml-16 ml-10 mt-6  lg:mt-0 lg:ml-32 hover:scale-110 xl:mt-10 xl:ml-44  p-3 xl:p-4 rounded-full text-lg xl:text-xl tracking-wider font-montserrat font-medium'>
                 Book Now 
               </button>
             </a>
             <div className="absolute">
-            <a href="https://wa.me/+918688664812?text=Hello%20there!%20I%20would%20like%20to%20make%20an%20appointment." target="_blank" rel="noopener noreferrer"
+            <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
             className="">
               <button className="bg-white md:hidden ml-6 -mt-10 hover:bg-green-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
               Register Now
