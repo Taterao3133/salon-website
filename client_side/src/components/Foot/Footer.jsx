@@ -43,7 +43,7 @@ function Footer() {
               </div>
             </div>
             <div className="f_sIcons text-white md:mb-6 md:gap-3 md:mr-5 xl:mb-8 flex items-end max-sm:gap-2 xl:gap-4">
-              <Link to='https://www.instagram.com/unique_beauty_salon90/'><FaInstagram className="max-sm:h-8 w-auto p-1 xl:p-2 md:h-10 md:p-1 xl:h-12 border-2 cursor-pointer rounded-md"/></Link>
+              <Link to={socialLinks.instagram}><FaInstagram className="max-sm:h-8 w-auto p-1 xl:p-2 md:h-10 md:p-1 xl:h-12 border-2 cursor-pointer rounded-md"/></Link>
               <a href={whatsApplink} target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="max-sm:h-8 w-auto xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" /></a>
               <FaFacebookF className="max-sm:h-8 w-auto  xl:h-12 max-sm:p-1 md:h-10 md:p-1 xl:p-2 border-2 cursor-pointer rounded-md" />
@@ -91,7 +91,7 @@ function Footer() {
 
         </div>
         <div className="f-credit bg-slate-50 max-sm:h-6 max-sm:-mt-12 md:h-11 xl:h-11 xl:text-center   text-center max-sm:w-full">
-          <p className="max-sm:text-sm xl:text-lg xl:pt-2">&copy; {new Date().getFullYear()} Uniquebeautysalon. All rights reserved.</p>
+          <p className="max-sm:text-sm xl:text-lg my-auto xl:pt-2">&copy; {new Date().getFullYear()} Uniquebeautysalon. All rights reserved.</p>
         </div>
       </div>
     </div>

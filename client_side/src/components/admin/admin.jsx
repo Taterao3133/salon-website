@@ -235,7 +235,7 @@ const AdminPanel = () => {
         <p className="max-sm:text-xl md:text-xl font-roboto-serif font-medium">Facebook Link Here</p>
           <input
             type="url"
-            placeholder="LinkedIn URL"
+            placeholder="Facebook URL"
             value={socialLinks.Linkedin}
             onChange={(e) =>
               setSocialLinks({ ...socialLinks, Linkedin: e.target.value })
