@@ -68,8 +68,8 @@ function HeroSlider() {
       setTimeout(() => {
         setIsAnimating(false);
         setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-      }, 800); // Set this timeout to match the animation duration
-    }, 5000); // Change slide every 5 seconds
+      }, 800); 
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 
