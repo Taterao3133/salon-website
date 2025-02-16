@@ -15,16 +15,15 @@ import "@fontsource/manrope";
 
 import Testimonial from '../components/testimonial/Testimonial';
 import HeroSlider from '../components/services/heroslider'
-// import { useEffect } from 'react';
+
 import ServicesSlider from '../components/services/servicesslider';
-// import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { RiDoubleQuotesR } from 'react-icons/ri';
 import { Link } from 'react-router-dom'
 import { db } from '../firebase'
 import { doc, getDoc } from 'firebase/firestore'
 
-// import { Link } from 'react-router-dom'
+
 
 function Home() {
     const [offsetY, setOffsetY] = useState(0);
