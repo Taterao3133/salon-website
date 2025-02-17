@@ -12,6 +12,8 @@ const firebaseConfig = {
   messagingSenderId: process.env.REACT_APP_Firebase_MessagingSenderId,
   appId: process.env.REACT_APP_Firebase_AppId,
   measurementId: process.env.REACT_APP_Firebase_MeasurementId
+
+  
 };
 const app = initializeApp(firebaseConfig);
 const auth =getAuth(app)

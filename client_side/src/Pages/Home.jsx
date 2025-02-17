@@ -22,6 +22,7 @@ import { RiDoubleQuotesR } from 'react-icons/ri';
 import { Link } from 'react-router-dom'
 import { db } from '../firebase'
 import { doc, getDoc } from 'firebase/firestore'
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -57,6 +58,24 @@ function Home() {
     }, []);
 
   return <>
+
+     <Helmet>
+        <title>Unique Beauty Salon – Best Beauty & Makeup Services in Banswada</title>
+        <meta 
+          name="description" 
+          content="Looking for the best beauty salon in Banswada? Uniq Beauty Salon offers expert makeup, facials, and bridal services. Book your appointment today!" 
+        />
+        <meta 
+          name="keywords" 
+          content="beauty salon, bridal makeup, facials, hair spa, best salon in Banswada" 
+        />
+        <meta name="keywords" content="bridal makeup artist in Banswada, wedding makeup services, party makeup, engagement makeup, HD makeup, airbrush makeup, makeup artist near me, best bridal salon in Banswada" />
+        <meta name="keywords" content="best hair salon in Banswada, hair spa, keratin treatment, hair smoothening, hair straightening, balayage, ombre, hair color, hair botox, best hairstylist in Banswada" />
+        <meta name="keywords" content="nail salon in Mumbai, nail extensions, gel nails, acrylic nails, nail art, eyelash extensions, lash lift, best nail salon near me" />
+        <meta name="keywords" content="beauty training courses in Banswada, makeup classes in Nizamabad, professional makeup training, hairstyling course, nail art classes, cosmetology course, beauty academy" />
+        <meta name="keywords" content="best beauty salon in Banswada, top bridal makeup artist in Banswada, hair spa in Thane, facial treatments in Navi Banswada, best nail salon in Banswada" />
+
+      </Helmet>  
   <div className="home-section  overflow-hidden sm:overflow-hidden">
 
         <HeroSlider/>
