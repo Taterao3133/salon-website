@@ -34,7 +34,7 @@ function Testimonial() {
   }, []);
 
   useEffect(() => {
-    console.log(UserReviewsData);
+   
   }, [UserReviewsData]);
 
   const settings = {

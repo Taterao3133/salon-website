@@ -32,7 +32,7 @@ function Footer() {
 
   return (
    <>
-    <div className="footer overflow-x-hidden">
+    <div className="footer overflow-x-hidden overflow-hidden">
       <div className="box w-full max-sm:h-auto xl:h-auto border-2 bg-[#241520]">
         <div className="inner_Container max-sm:h-auto   xl:h-80 xl:w-3/4 max-sm:ml-5 max-sm:m-5  xl:ml-48 xl:mt-10 ">
           <div className="ls_icons md:h-24  xl:h-24 max-sm:mb-5 flex">
@@ -76,7 +76,7 @@ function Footer() {
               </div>
               <div className="s_address max-sm:mt-4  xl:mt-4 space-y-2 flex flex-nowrap ">
                 <p className="font-bold max-sm:hidden max-sm:mt-2 xl:mt-2 md:mt-2 max-sm:text-sm xl:ml-5">Email:</p>
-                <p className="ml-2 max-sm:ml-0 max-sm:text-xs md:text-base ">Unique_Beauty_Salon90@gmail.com</p>
+                <p className="ml-2 max-sm:ml-0 max-sm:text-xs md:text-base ">Uniquebeautysalon90@gmail.com</p>
               
               </div>
             </div>

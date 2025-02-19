@@ -114,7 +114,7 @@ function HeroSlider() {
             <a href={whatsApplink} target="_blank" rel="noopener noreferrer"
             className="">
               <button className="bg-white md:hidden ml-6 -mt-10 hover:bg-green-600 hover:text-white active:bg-white active:text-gray-500 w-32 xl:text-xl lg:px-1 lg:font-semibold lg:rounded-2xl lg:py-3 xl:w-48 text-black py-2 px-4 rounded-md">
-              Register Now
+              Book Now
             </button></a>
             </div>
           </div>
